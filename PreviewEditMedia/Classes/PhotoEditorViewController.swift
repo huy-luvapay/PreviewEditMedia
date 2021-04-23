@@ -134,23 +134,23 @@ public final class PhotoEditorViewController: UIViewController {
     override public func viewDidLoad() {
         super.viewDidLoad()
         
-        cancelButton.setImage(UIImage(named: "close-icon.png", in: PreviewEditMedia.bundle(), compatibleWith: nil)?.withRenderingMode(.alwaysTemplate), for: UIControl.State())
+        cancelButton.setImage(UIImage(named: "PEM-close-icon.png", in: PreviewEditMedia.bundle(), compatibleWith: nil)?.withRenderingMode(.alwaysTemplate), for: UIControl.State())
         cancelButton.imageView?.contentMode = .scaleAspectFit
         cancelButton.tintColor = UIColor.white
         cancelButton.setTitle("", for: UIControl.State())
         
-        drawButton.setImage(UIImage(named: "drawing-icon.png", in: PreviewEditMedia.bundle(), compatibleWith: nil)?.withRenderingMode(.alwaysTemplate), for: UIControl.State())
+        drawButton.setImage(UIImage(named: "PEM-drawing-icon.png", in: PreviewEditMedia.bundle(), compatibleWith: nil)?.withRenderingMode(.alwaysTemplate), for: UIControl.State())
         drawButton.imageView?.contentMode = .scaleAspectFit
         drawButton.tintColor = UIColor.white
         drawButton.setTitle("", for: UIControl.State())
         
         
-        textButton.setImage(UIImage(named: "text-icon.png", in: PreviewEditMedia.bundle(), compatibleWith: nil)?.withRenderingMode(.alwaysTemplate), for: UIControl.State())
+        textButton.setImage(UIImage(named: "PEM-text-icon.png", in: PreviewEditMedia.bundle(), compatibleWith: nil)?.withRenderingMode(.alwaysTemplate), for: UIControl.State())
         textButton.imageView?.contentMode = .scaleAspectFit
         textButton.tintColor = UIColor.white
         textButton.setTitle("", for: UIControl.State())
         
-        self.imageOk = self.imageOk == nil ? UIImage(named: "sent-icon.png", in: PreviewEditMedia.bundle(), compatibleWith: nil)?.withRenderingMode(.alwaysTemplate) : nil
+        self.imageOk = self.imageOk == nil ? UIImage(named: "PEM-sent-icon.png", in: PreviewEditMedia.bundle(), compatibleWith: nil)?.withRenderingMode(.alwaysTemplate) : nil
         continueButton.setImage(self.imageOk, for: UIControl.State())
         continueButton.imageView?.contentMode = .scaleAspectFit
         continueButton.tintColor = UIColor.blue
@@ -159,12 +159,12 @@ public final class PhotoEditorViewController: UIViewController {
         continueButton.layer.cornerRadius = 29
         continueButton.clipsToBounds = true
         
-        saveButton.setImage(UIImage(named: "save-icon.png", in: PreviewEditMedia.bundle(), compatibleWith: nil)?.withRenderingMode(.alwaysTemplate), for: UIControl.State())
+        saveButton.setImage(UIImage(named: "PEM-save-icon.png", in: PreviewEditMedia.bundle(), compatibleWith: nil)?.withRenderingMode(.alwaysTemplate), for: UIControl.State())
         saveButton.imageView?.contentMode = .scaleAspectFit
         saveButton.tintColor = UIColor.white
         saveButton.setTitle("", for: UIControl.State())
         
-        clearButton.setImage(UIImage(named: "clear-all-icon.png", in: PreviewEditMedia.bundle(), compatibleWith: nil)?.withRenderingMode(.alwaysTemplate), for: UIControl.State())
+        clearButton.setImage(UIImage(named: "PEM-clear-all-icon.png", in: PreviewEditMedia.bundle(), compatibleWith: nil)?.withRenderingMode(.alwaysTemplate), for: UIControl.State())
         clearButton.imageView?.contentMode = .scaleAspectFit
         clearButton.tintColor = UIColor.white
         clearButton.setTitle("", for: UIControl.State())
@@ -179,7 +179,7 @@ public final class PhotoEditorViewController: UIViewController {
         deleteView.clipsToBounds = true
         
         deleteImageView.tintColor = UIColor.white
-        deleteImageView.image = UIImage(named: "delete-icon.png", in: PreviewEditMedia.bundle(), compatibleWith: nil)?.withRenderingMode(.alwaysTemplate)
+        deleteImageView.image = UIImage(named: "PEM-delete-icon.png", in: PreviewEditMedia.bundle(), compatibleWith: nil)?.withRenderingMode(.alwaysTemplate)
     
         tickerButton.isHidden = true
         topGradient.isHidden = true
