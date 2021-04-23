@@ -1,0 +1,6 @@
+framework module PreviewEditMedia {
+  umbrella header "PreviewEditMedia-umbrella.h"
+
+  export *
+  module * { export * }
+}

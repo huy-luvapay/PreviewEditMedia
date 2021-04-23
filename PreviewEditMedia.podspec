@@ -28,9 +28,19 @@ TODO: Add long description of the pod here.
   s.source           = { :git => 'https://github.com/huy-luvapay/PreviewEditMedia.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '9.0'
+  s.ios.deployment_target = '10.0'
 
-  s.source_files = 'PreviewEditMedia/Classes/**/*'
+  s.swift_version = '5.0'
+
+  s.source_files = 'PreviewEditMedia/Classes/**/*.{h,m,mm,swift}'
+  
+  s.resources = [
+    'PreviewEditMedia/Assets/**/*.png',
+    'PreviewEditMedia/Classes/**/*.bundle',
+    'PreviewEditMedia/Classes/**/*.xib',
+    'PreviewEditMedia/Classes/**/*.storyboard',
+    "PreviewEditMedia/Assets/**/*.lproj"
+  ]
   
   # s.resource_bundles = {
   #   'PreviewEditMedia' => ['PreviewEditMedia/Assets/*.png']

@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import PreviewEditMedia
 
 class ViewController: UIViewController {
 
@@ -19,6 +20,17 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    func presentEditPhoto() {
+        self.presetPhotoEditorViewController(photo: UIImage(named: "photo2.jpg")!)
+    }
+    
+    
+    @IBAction func showPressed() {
+        self.presentEditPhoto()
+
+    }
+    
 
 }
 

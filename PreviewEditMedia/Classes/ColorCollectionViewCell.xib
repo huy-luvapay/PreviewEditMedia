@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ColorCollectionViewCell" id="gTV-IL-0wX" customClass="ColorCollectionViewCell" customModule="PreviewEditMedia" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="120" height="120"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="120" height="120"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iKq-tD-1v8">
+                        <rect key="frame" x="0.0" y="0.0" width="120" height="120"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9fw-SJ-Q32">
+                                <rect key="frame" x="3" y="3" width="114" height="114"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="9fw-SJ-Q32" secondAttribute="height" multiplier="1:1" id="kep-v5-0H0"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="9fw-SJ-Q32" firstAttribute="leading" secondItem="iKq-tD-1v8" secondAttribute="leading" constant="3" id="U2C-wY-fuU"/>
+                            <constraint firstAttribute="trailing" secondItem="9fw-SJ-Q32" secondAttribute="trailing" constant="3" id="VEv-RX-rhH"/>
+                            <constraint firstItem="9fw-SJ-Q32" firstAttribute="top" secondItem="iKq-tD-1v8" secondAttribute="top" constant="3" id="WmU-Fs-LQe"/>
+                            <constraint firstAttribute="bottom" secondItem="9fw-SJ-Q32" secondAttribute="bottom" constant="3" id="oFA-wC-Qhg"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ncL-uU-y1P">
+                        <rect key="frame" x="4" y="4" width="112" height="112"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="ncL-uU-y1P" secondAttribute="height" multiplier="1:1" id="YNO-F7-rb8"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="iKq-tD-1v8" secondAttribute="trailing" id="GHS-8P-tBV"/>
+                <constraint firstItem="ncL-uU-y1P" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="4" id="GgC-tN-ImO"/>
+                <constraint firstItem="iKq-tD-1v8" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="VrW-ip-ANA"/>
+                <constraint firstAttribute="bottom" secondItem="ncL-uU-y1P" secondAttribute="bottom" constant="4" id="WiA-kS-ttk"/>
+                <constraint firstAttribute="trailing" secondItem="ncL-uU-y1P" secondAttribute="trailing" constant="4" id="ZX1-ny-WUH"/>
+                <constraint firstAttribute="bottom" secondItem="iKq-tD-1v8" secondAttribute="bottom" id="kTe-ie-SJ1"/>
+                <constraint firstItem="ncL-uU-y1P" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="4" id="kkh-2o-erm"/>
+                <constraint firstItem="iKq-tD-1v8" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="p2l-Cl-6ww"/>
+            </constraints>
+            <size key="customSize" width="120" height="114"/>
+            <connections>
+                <outlet property="colorView" destination="ncL-uU-y1P" id="7PV-0E-mnW"/>
+                <outlet property="selectedColorView" destination="iKq-tD-1v8" id="ubI-Aj-JxS"/>
+                <outlet property="selectedInsideView" destination="9fw-SJ-Q32" id="gKv-J4-sUy"/>
+            </connections>
+            <point key="canvasLocation" x="64" y="81.5"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

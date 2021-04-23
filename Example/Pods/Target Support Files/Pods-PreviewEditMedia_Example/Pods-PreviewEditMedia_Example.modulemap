@@ -1,0 +1,6 @@
+framework module Pods_PreviewEditMedia_Example {
+  umbrella header "Pods-PreviewEditMedia_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,13 +1,8 @@
 use_frameworks!
 
-platform :ios, '9.0'
+platform :ios, '10.0'
 
 target 'PreviewEditMedia_Example' do
   pod 'PreviewEditMedia', :path => '../'
 
-  target 'PreviewEditMedia_Tests' do
-    inherit! :search_paths
-
-    
-  end
 end
