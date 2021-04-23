@@ -44,12 +44,14 @@ open class PreviewEditMedia {
 
 @objc public extension UIViewController {
     
-    @objc func presetPhotoEditorViewController(photo: UIImage, imageOk: UIImage? = nil) {
+    @objc func presetPhotoEditorViewController(photo: UIImage, imageOk: UIImage? = nil, mainColor: UIColor? = nil, photoEditorDelegate: PhotoEditorDelegate? = nil) {
         let storyboard = UIStoryboard(name: "PhotoEditor", bundle: PreviewEditMedia.bundle())
         let vc = storyboard.instantiateViewController(withIdentifier: "PhotoEditorViewController") as! PhotoEditorViewController
         vc.imageOk = imageOk
         vc.photo = photo
+        vc.mainColor = mainColor
         vc.checkVideoOrIamge = true
+        vc.photoEditorDelegate = photoEditorDelegate
         vc.modalPresentationStyle = .fullScreen
         self.present(vc, animated: false, completion: nil)
     }
@@ -108,6 +110,8 @@ public final class PhotoEditorViewController: UIViewController {
     
     var imageOk: UIImage? = nil
     
+    var mainColor: UIColor? = nil
+    
     //
     var bottomSheetIsVisible = false
     var drawColor: UIColor = UIColor.black
@@ -153,7 +157,7 @@ public final class PhotoEditorViewController: UIViewController {
         self.imageOk = self.imageOk == nil ? UIImage(named: "PEM-sent-icon.png", in: PreviewEditMedia.bundle(), compatibleWith: nil)?.withRenderingMode(.alwaysTemplate) : nil
         continueButton.setImage(self.imageOk, for: UIControl.State())
         continueButton.imageView?.contentMode = .scaleAspectFit
-        continueButton.tintColor = UIColor.blue
+        continueButton.tintColor = self.mainColor ?? UIColor.blue
         continueButton.setTitle("", for: UIControl.State())
         continueButton.backgroundColor = UIColor.white
         continueButton.layer.cornerRadius = 29
@@ -861,10 +865,8 @@ public final class PhotoEditorViewController: UIViewController {
     @IBAction func continueButtonPressed(_ sender: Any) {
         if checkVideoOrIamge {
             self.photoEditorDelegate?.endEdited(viewController: self, image: canvasView.toImage())
-            print("Image")
             
         } else {
-            print("Video")
             
             
         }
