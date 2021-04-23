@@ -44,9 +44,12 @@ open class PreviewEditMedia {
 
 @objc public extension UIViewController {
     
-    @objc func presetPhotoEditorViewController(photo: UIImage, imageOk: UIImage? = nil, mainColor: UIColor? = nil, photoEditorDelegate: PhotoEditorDelegate? = nil) {
+    @objc func presetPhotoEditorViewController(photo: UIImage, imageOk: UIImage? = nil, mainColor: UIColor? = nil, photoEditorDelegate: PhotoEditorDelegate? = nil, saveImageToLibrary: ((PhotoEditorViewController, UIImage) -> Void)? = nil, endEdited: ((PhotoEditorViewController, UIImage) -> Void)? = nil, canceled: (() -> Void)? = nil) {
         let storyboard = UIStoryboard(name: "PhotoEditor", bundle: PreviewEditMedia.bundle())
         let vc = storyboard.instantiateViewController(withIdentifier: "PhotoEditorViewController") as! PhotoEditorViewController
+        vc.saveImageToLibrary = saveImageToLibrary
+        vc.endEdited = endEdited
+        vc.canceled = canceled
         vc.imageOk = imageOk
         vc.photo = photo
         vc.mainColor = mainColor
@@ -107,6 +110,10 @@ public final class PhotoEditorViewController: UIViewController {
     public var stickers : [UIImage] = []
     
     public var photoEditorDelegate: PhotoEditorDelegate?
+    
+    public var saveImageToLibrary: ((PhotoEditorViewController, UIImage) -> Void)? = nil
+    public var endEdited: ((PhotoEditorViewController, UIImage) -> Void)? = nil
+    public var canceled: (() -> Void)? = nil
     
     var imageOk: UIImage? = nil
     
@@ -313,7 +320,9 @@ public final class PhotoEditorViewController: UIViewController {
     @IBAction func saveButtonTapped(_ sender: AnyObject) {
         
         if checkVideoOrIamge {
-            self.photoEditorDelegate?.saveImageToLibrary(viewController: self, image: canvasView.toImage())
+            let image = canvasView.toImage()
+            self.photoEditorDelegate?.saveImageToLibrary(viewController: self, image: image)
+            self.saveImageToLibrary?(self, image)
             //UIImageWriteToSavedPhotosAlbum(canvasView.toImage(),self, #selector(PhotoEditorViewController.image(_:withPotentialError:contextInfo:)), nil)
             
         } else {
@@ -458,6 +467,7 @@ public final class PhotoEditorViewController: UIViewController {
     
     @IBAction func cancelButtonTapped(_ sender: Any) {
         photoEditorDelegate?.editorCanceled()
+        self.canceled?()
         self.dismiss(animated: true, completion: nil)
     }
     
@@ -864,8 +874,9 @@ public final class PhotoEditorViewController: UIViewController {
     
     @IBAction func continueButtonPressed(_ sender: Any) {
         if checkVideoOrIamge {
-            self.photoEditorDelegate?.endEdited(viewController: self, image: canvasView.toImage())
-            
+            let image = canvasView.toImage()
+            self.photoEditorDelegate?.endEdited(viewController: self, image: image)
+            self.endEdited?(self, image)
         } else {
             
             
