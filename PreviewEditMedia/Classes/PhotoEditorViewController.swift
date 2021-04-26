@@ -60,7 +60,7 @@ open class PreviewEditMedia {
     }
 }
 
-public final class PhotoEditorViewController: UIViewController {
+public final class PhotoEditorViewController: UIViewController, CropViewControllerDelegate {
     
     
     @IBOutlet weak var canvasView: UIView!
@@ -88,6 +88,7 @@ public final class PhotoEditorViewController: UIViewController {
     
     @IBOutlet weak var tickerButton: UIButton!
     @IBOutlet weak var drawButton: UIButton!
+    @IBOutlet weak var cropButton: UIButton!
     @IBOutlet weak var textButton: UIButton!
     @IBOutlet weak var clearButton: UIButton!
     @IBOutlet weak var cancelButton: UIButton!
@@ -154,6 +155,11 @@ public final class PhotoEditorViewController: UIViewController {
         drawButton.imageView?.contentMode = .scaleAspectFit
         drawButton.tintColor = UIColor.white
         drawButton.setTitle("", for: UIControl.State())
+        
+        cropButton.setImage(UIImage(named: "PEM-crop-icon.png", in: PreviewEditMedia.bundle(), compatibleWith: nil)?.withRenderingMode(.alwaysTemplate), for: UIControl.State())
+        cropButton.imageView?.contentMode = .scaleAspectFit
+        cropButton.tintColor = UIColor.white
+        cropButton.setTitle("", for: UIControl.State())
         
         
         textButton.setImage(UIImage(named: "PEM-text-icon.png", in: PreviewEditMedia.bundle(), compatibleWith: nil)?.withRenderingMode(.alwaysTemplate), for: UIControl.State())
@@ -369,6 +375,34 @@ public final class PhotoEditorViewController: UIViewController {
         tempImageView.isUserInteractionEnabled = true
         hideToolbar(hide: false)
         isDrawing = false
+    }
+    
+    
+    private var croppedRect = CGRect.zero
+    private var croppedAngle = 0
+    
+    @IBAction func cropButtonTapped(_ sender: Any) {
+        if let photo = self.photo {
+            let cropViewController = CropViewController(croppingStyle: .default, image: photo)
+            cropViewController.delegate = self
+            let viewFrame = view.convert(self.canvasView.frame, to: navigationController?.view)
+            cropViewController.presentAnimatedFrom(self, fromImage: nil, fromView: nil, fromFrame: viewFrame, angle: self.croppedAngle, toImageFrame: self.croppedRect) { () -> (Void) in
+                
+            } completion: { () -> (Void) in
+                
+            }
+        }
+        
+    
+    }
+    
+    
+    //MARK: - CropViewControllerDelegate
+    func cropViewController(_ cropViewController: CropViewController, didCropToImage image: UIImage, withRect cropRect: CGRect, angle: Int) {
+        self.croppedRect = cropRect
+        self.croppedAngle = angle
+        self.imageView.image = image
+        cropViewController.dismiss(animated: true, completion: nil)
     }
     
     @objc func keyboardWillShow(notification: NSNotification) {

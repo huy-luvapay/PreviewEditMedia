@@ -78,10 +78,22 @@
                                         </connections>
                                     </button>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="yUw-6S-RSl">
-                                        <rect key="frame" x="225" y="0.0" width="120" height="60"/>
+                                        <rect key="frame" x="180" y="0.0" width="165" height="60"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dQs-tt-W1k">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oaE-Ny-51z">
                                                 <rect key="frame" x="0.0" y="0.0" width="30" height="60"/>
+                                                <fontDescription key="fontDescription" name="Eventtus-Icons" family="Eventtus-Icons" pointSize="25"/>
+                                                <size key="titleShadowOffset" width="1" height="0.0"/>
+                                                <state key="normal" title="">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <color key="titleShadowColor" red="0.0" green="0.0" blue="0.0" alpha="0.1532266695" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="cropButtonTapped:" destination="qal-IL-P5A" eventType="touchUpInside" id="NPu-1g-0bO"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dQs-tt-W1k">
+                                                <rect key="frame" x="45" y="0.0" width="30" height="60"/>
                                                 <fontDescription key="fontDescription" name="Eventtus-Icons" family="Eventtus-Icons" pointSize="25"/>
                                                 <size key="titleShadowOffset" width="1" height="0.0"/>
                                                 <state key="normal" title="">
@@ -93,7 +105,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cIa-FY-gdx">
-                                                <rect key="frame" x="45" y="0.0" width="30" height="60"/>
+                                                <rect key="frame" x="90" y="0.0" width="30" height="60"/>
                                                 <fontDescription key="fontDescription" name="Eventtus-Icons" family="Eventtus-Icons" pointSize="25"/>
                                                 <size key="titleShadowOffset" width="1" height="0.0"/>
                                                 <state key="normal" title="">
@@ -105,7 +117,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q1e-6L-kot">
-                                                <rect key="frame" x="90" y="0.0" width="30" height="60"/>
+                                                <rect key="frame" x="135" y="0.0" width="30" height="60"/>
                                                 <fontDescription key="fontDescription" name="Eventtus-Icons" family="Eventtus-Icons" pointSize="25"/>
                                                 <size key="titleShadowOffset" width="1" height="0.0"/>
                                                 <state key="normal" title="">
@@ -298,6 +310,7 @@
                         <outlet property="colorPickerViewBottomConstraint" destination="i1M-eR-HDU" id="wwl-fD-e7z"/>
                         <outlet property="colorsCollectionView" destination="Rj9-kC-KVu" id="TIT-yx-dZs"/>
                         <outlet property="continueButton" destination="2sC-op-bgJ" id="pkv-kI-c2h"/>
+                        <outlet property="cropButton" destination="oaE-Ny-51z" id="sMC-0I-LBk"/>
                         <outlet property="deleteImageView" destination="0YH-FE-9vV" id="I9g-Hv-Azs"/>
                         <outlet property="deleteView" destination="7vr-iI-SJ5" id="PFe-fd-ix3"/>
                         <outlet property="doneButton" destination="NZX-b4-TnS" id="yjH-49-cgb"/>
