@@ -14,6 +14,126 @@ import Photos
 public var switchCam = Bool()
 
 
+internal extension UIImage {
+    
+    func resized(to size: CGSize) -> UIImage? {
+        UIGraphicsBeginImageContextWithOptions(size, false, scale)
+        defer { UIGraphicsEndImageContext() }
+        draw(in: CGRect(origin: .zero, size: size))
+        return UIGraphicsGetImageFromCurrentImageContext()
+    }
+    
+    /// Kudos to Trevor Harmon and his UIImage+Resize category from
+    // which this code is heavily inspired.
+    func resetOrientation() -> UIImage {
+        // Image has no orientation, so keep the same
+        if imageOrientation == .up {
+            return self
+        }
+        
+        // Process the transform corresponding to the current orientation
+        var transform = CGAffineTransform.identity
+        switch imageOrientation {
+        case .down, .downMirrored:           // EXIF = 3, 4
+            transform = transform.translatedBy(x: size.width, y: size.height)
+            transform = transform.rotated(by: CGFloat(Double.pi))
+            
+        case .left, .leftMirrored:           // EXIF = 6, 5
+            transform = transform.translatedBy(x: size.width, y: 0)
+            transform = transform.rotated(by: CGFloat(Double.pi / 2))
+            
+        case .right, .rightMirrored:          // EXIF = 8, 7
+            transform = transform.translatedBy(x: 0, y: size.height)
+            transform = transform.rotated(by: -CGFloat((Double.pi / 2)))
+        default:
+            ()
+        }
+        
+        switch imageOrientation {
+        case .upMirrored, .downMirrored:     // EXIF = 2, 4
+            transform = transform.translatedBy(x: size.width, y: 0)
+            transform = transform.scaledBy(x: -1, y: 1)
+            
+        case .leftMirrored, .rightMirrored:   //EXIF = 5, 7
+            transform = transform.translatedBy(x: size.height, y: 0)
+            transform = transform.scaledBy(x: -1, y: 1)
+        default:
+            ()
+        }
+        
+        // Draw a new image with the calculated transform
+        let context = CGContext(data: nil,
+                                width: Int(size.width),
+                                height: Int(size.height),
+                                bitsPerComponent: cgImage!.bitsPerComponent,
+                                bytesPerRow: 0,
+                                space: cgImage!.colorSpace!,
+                                bitmapInfo: cgImage!.bitmapInfo.rawValue)
+        context?.concatenate(transform)
+        switch imageOrientation {
+        case .left, .leftMirrored, .right, .rightMirrored:
+            context?.draw(cgImage!, in: CGRect(x: 0, y: 0, width: size.height, height: size.width))
+        default:
+            context?.draw(cgImage!, in: CGRect(x: 0, y: 0, width: size.width, height: size.height))
+        }
+        
+        if let newImageRef =  context?.makeImage() {
+            let newImage = UIImage(cgImage: newImageRef)
+            return newImage
+        }
+        
+        // In case things go wrong, still return self.
+        return self
+    }
+    
+    
+    fileprivate func cappedSize(for size: CGSize, cappedAt: CGFloat) -> CGSize {
+        var cappedWidth: CGFloat = 0
+        var cappedHeight: CGFloat = 0
+        if size.width > size.height {
+            // Landscape
+            let heightRatio = size.height / size.width
+            cappedWidth = min(size.width, cappedAt)
+            cappedHeight = cappedWidth * heightRatio
+        } else if size.height > size.width {
+            // Portrait
+            let widthRatio = size.width / size.height
+            cappedHeight = min(size.height, cappedAt)
+            cappedWidth = cappedHeight * widthRatio
+        } else {
+            // Squared
+            cappedWidth = min(size.width, cappedAt)
+            cappedHeight = min(size.height, cappedAt)
+        }
+        return CGSize(width: cappedWidth, height: cappedHeight)
+    }
+    
+    func toCIImage() -> CIImage? {
+        return self.ciImage ?? CIImage(cgImage: self.cgImage!)
+    }
+}
+
+internal extension CIImage {
+    func toUIImage() -> UIImage {
+        /*
+            If need to reduce the process time, than use next code.
+            But ot produce a bug with wrong filling in the simulator.
+            return UIImage(ciImage: self)
+         */
+        let context: CIContext = CIContext.init(options: nil)
+        let cgImage: CGImage = context.createCGImage(self, from: self.extent)!
+        let image: UIImage = UIImage(cgImage: cgImage)
+        return image
+    }
+    
+    func toCGImage() -> CGImage? {
+        let context = CIContext(options: nil)
+        if let cgImage = context.createCGImage(self, from: self.extent) {
+            return cgImage
+        }
+        return nil
+    }
+}
 
 open class PreviewEditMedia {
     open class func podBundleImage(named: String) -> UIImage? {
@@ -326,10 +446,11 @@ public final class PhotoEditorViewController: UIViewController, CropViewControll
     @IBAction func saveButtonTapped(_ sender: AnyObject) {
         
         if checkVideoOrIamge {
-            let image = canvasView.toImage()
-            self.photoEditorDelegate?.saveImageToLibrary(viewController: self, image: image)
-            self.saveImageToLibrary?(self, image)
-            //UIImageWriteToSavedPhotosAlbum(canvasView.toImage(),self, #selector(PhotoEditorViewController.image(_:withPotentialError:contextInfo:)), nil)
+            if let finalImage = self.getFinalImage() {
+                self.photoEditorDelegate?.saveImageToLibrary(viewController: self, image: finalImage)
+                self.saveImageToLibrary?(self, finalImage)
+            }
+            
             
         } else {
             // Call function to convert and save video
@@ -903,14 +1024,59 @@ public final class PhotoEditorViewController: UIViewController, CropViewControll
         } catch { fatalError("Unable to delete file: \(error)") }
     }
     
+    func getImageFrameInImageView(imageView : UIImageView) -> CGRect {
+        
+        if let image = imageView.image {
+            let wi = image.size.width
+            let hi = image.size.height
+
+            let wv = imageView.frame.width
+            let hv = imageView.frame.height
+
+            let ri = hi / wi
+            let rv = hv / wv
+
+            var x, y, w, h: CGFloat
+
+            if ri > rv {
+                h = hv
+                w = h / ri
+                x = (wv / 2) - (w / 2)
+                y = 0
+            } else {
+                w = wv
+                h = w * ri
+                x = 0
+                y = (hv / 2) - (h / 2)
+            }
+
+            let scale = UIScreen.main.scale
+            return CGRect(x: x * scale, y: y * scale, width: w * scale, height: h * scale)
+        }
+        return .zero
+        
+    }
     
+    
+    func getFinalImage() -> UIImage? {
+        let image = canvasView.toImage()
+        let rect = self.getImageFrameInImageView(imageView: self.imageView)
+        if let cgImage = image.toCIImage()?.toCGImage(), let imageRef = cgImage.cropping(to: rect) {
+            let croppedImage = UIImage(cgImage: imageRef)
+            return croppedImage
+        }
+        return nil
+        
+    }
     
     
     @IBAction func continueButtonPressed(_ sender: Any) {
         if checkVideoOrIamge {
-            let image = canvasView.toImage()
-            self.photoEditorDelegate?.endEdited(viewController: self, image: image)
-            self.endEdited?(self, image)
+            if let finalImage = self.getFinalImage() {
+                self.imageView.image = finalImage
+                self.photoEditorDelegate?.endEdited(viewController: self, image: finalImage)
+                self.endEdited?(self, finalImage)
+            }
         } else {
             
             
