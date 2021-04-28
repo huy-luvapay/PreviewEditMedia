@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'PreviewEditMedia'
-  s.version          = '0.1.7'
+  s.version          = '0.1.8'
   s.summary          = 'A short description of PreviewEditMedia.'
 
 # This description is used to generate tags and improve search results.
@@ -34,6 +34,8 @@ TODO: Add long description of the pod here.
 
   s.source_files = 'PreviewEditMedia/Classes/**/*.{h,m,mm,swift}'
   
+  s.requires_arc = true
+  
   s.resources = [
     'PreviewEditMedia/Assets/**/*.png',
     'PreviewEditMedia/Classes/**/*.bundle',
@@ -49,4 +51,6 @@ TODO: Add long description of the pod here.
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
+  s.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
+  s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
 end
