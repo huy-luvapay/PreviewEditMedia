@@ -10,6 +10,7 @@
 #endif
 #endif
 
+#import "PreviewEditMedia.h"
 #import "UIImage+CropRotate.h"
 #import "TOCropViewConstants.h"
 #import "TOActivityCroppedImageProvider.h"
