@@ -1,0 +1,19 @@
+/*
+ Localizable.strings
+
+ 
+ Created by Van Trieu Phu Huy on 9/12/17.
+ Copyright © 2017 ePepaperSmart. All rights reserved.
+ */
+
+"Done" = "Xong";
+"Cancel" = "Huỷ";
+"Reset" = "Đặt lại";
+"Original" = "Hình gốc";
+"Square" = "Vuông";
+"Delete Changes" = "Xóa Thay đổi";
+"Yes" = "Có";
+"No" = "Không";
+
+
+

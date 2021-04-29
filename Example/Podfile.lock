@@ -1,5 +1,5 @@
 PODS:
-  - PreviewEditMedia (0.1.11)
+  - PreviewEditMedia (0.1.12)
 
 DEPENDENCIES:
   - PreviewEditMedia (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  PreviewEditMedia: 7e28146e49b3cbfc3c70db99f63fa17a3d659f10
+  PreviewEditMedia: b363e2fa90fcb3db6d953a15d65ce5600660f400
 
 PODFILE CHECKSUM: 260d48bca0d810b5f17757e0cd92fc90c222c3b2
 

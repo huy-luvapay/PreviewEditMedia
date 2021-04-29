@@ -10,6 +10,8 @@
 #endif
 #endif
 
+#import "NSBundle+ EditMediaLanguage.h"
+#import "NSString+Localized.h"
 #import "PreviewEditMedia.h"
 #import "UIImage+CropRotate.h"
 #import "TOCropViewConstants.h"

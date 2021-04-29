@@ -162,9 +162,14 @@ open class PreviewEditMedia {
     @objc func editorCanceled()
 }
 
+
+
 @objc public extension UIViewController {
     
-    @objc func presetPhotoEditorViewController(photo: UIImage, imageOk: UIImage? = nil, mainColor: UIColor? = nil, photoEditorDelegate: PhotoEditorDelegate? = nil, saveImageToLibrary: ((PhotoEditorViewController, UIImage) -> Void)? = nil, endEdited: ((PhotoEditorViewController, UIImage) -> Void)? = nil, canceled: (() -> Void)? = nil) {
+    @objc func presetPhotoEditorViewController(photo: UIImage, imageOk: UIImage? = nil, mainColor: UIColor? = nil, photoEditorDelegate: PhotoEditorDelegate? = nil, languageInt: Int = 1, saveImageToLibrary: ((PhotoEditorViewController, UIImage) -> Void)? = nil, endEdited: ((PhotoEditorViewController, UIImage) -> Void)? = nil, canceled: (() -> Void)? = nil) {
+        EditMediaSetting.shared.languageApp = EditMediaLanguage(rawValue: languageInt) ?? EditMediaLanguage.en
+        EditMediaSetting.shared.loadLocalized()
+        
         let storyboard = UIStoryboard(name: "PhotoEditor", bundle: PreviewEditMedia.bundle())
         let vc = storyboard.instantiateViewController(withIdentifier: "PhotoEditorViewController") as! PhotoEditorViewController
         vc.saveImageToLibrary = saveImageToLibrary
@@ -265,6 +270,8 @@ public final class PhotoEditorViewController: UIViewController, CropViewControll
     
     override public func viewDidLoad() {
         super.viewDidLoad()
+        
+        
         
         cancelButton.setImage(UIImage(named: "PEM-close-icon.png", in: PreviewEditMedia.bundle(), compatibleWith: nil)?.withRenderingMode(.alwaysTemplate), for: UIControl.State())
         cancelButton.imageView?.contentMode = .scaleAspectFit
