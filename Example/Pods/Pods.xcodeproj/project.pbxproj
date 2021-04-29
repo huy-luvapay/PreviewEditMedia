@@ -7,343 +7,254 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		00484136B1B7B98C3D856AAB1AC8FFA5 /* CropViewController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2296B039088FC5F62DD2E4798C8B98D /* CropViewController.framework */; };
-		019516545AC63CA984C16C93734685B9 /* TOCropViewControllerBundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 97A93DCEF2B1499B1F84D43333829DC7 /* TOCropViewControllerBundle.bundle */; };
-		021B4FFA0B1FFC37A3A55BA08D8ED450 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7CDFAFE494A14548468736B6EC7077F /* Foundation.framework */; };
-		035EBCDDDF072A1EDE3754101D25E333 /* pt.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 4B38CFEF2291CEE6690D7D694B3D650E /* pt.lproj */; };
-		04CD40BE32B0F61E2FEB9AB2B7D8D411 /* PEM-sent-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 617855DE6FA769AD97CEE811A7D4009D /* PEM-sent-icon.png */; };
-		08A1266F5D9C8BA40333277549795943 /* PEM-crop-icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D1F53AB7AEC25A8FEDEE8122D28E3E71 /* PEM-crop-icon@2x.png */; };
-		0A8010519CFBDE465454769536803C51 /* ko.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 878B3117FCD9AE016E621E2E523DDA57 /* ko.lproj */; };
-		132DD5E93E7B67F1E48225D9E2FD8F22 /* ColorCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844CB1AB51C2B631BD6984A9E4FF215B /* ColorCollectionViewCell.swift */; };
-		14CBFFEE110AB4DFD38FABB97C9FB230 /* PEM-clear-all-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = BE0DD758DD3E8021394C0799B21EF1AF /* PEM-clear-all-icon.png */; };
-		15B5BB3CEADF868E2A0A6C0E04969A95 /* ru.lproj in Resources */ = {isa = PBXBuildFile; fileRef = EA24ABF1FA69053906D5CA677D08DE28 /* ru.lproj */; };
-		1958DFD95B95B786E0941BF3FA6D1F44 /* PhotoEditor.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45DAD6DA4BADEC61233E8DAFBB72C240 /* PhotoEditor.storyboard */; };
-		20190E7544A41131DE4B679976B07DC6 /* bottom_shadow.png in Resources */ = {isa = PBXBuildFile; fileRef = 77E3AFB230581219CD6C57821D84DBE5 /* bottom_shadow.png */; };
-		23C52D623597F2C07D36B73D709D1AAA /* it.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 07EC8453C5412770373B42E04A297ACB /* it.lproj */; };
-		24810750C58EA74BB77C77BB21803FED /* PEM-save-icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 209A8C284B60E5A7486454A8662D9339 /* PEM-save-icon@2x.png */; };
-		25C034A74E9084272B27D6C6A83B8B5D /* PEM-delete-icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B19C14849CB59E1AF2C5AD83571359F4 /* PEM-delete-icon@2x.png */; };
-		28BB3EB566E124451F2D74E0B7A0B7E2 /* ca.lproj in Resources */ = {isa = PBXBuildFile; fileRef = F989FC22960E4496DC07FF9B6703507A /* ca.lproj */; };
-		2F4CC51183FFC90AADC5108693CE36AD /* PreviewEditMedia-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B4F606C1B5011290EE4128AB31006F3E /* PreviewEditMedia-dummy.m */; };
-		300E2925FFEBDB41B651C4D97888A910 /* PreviewEditMedia-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DB420C1D79837A78D4B053FE75C6DA1D /* PreviewEditMedia-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		30794B85385B60B35FE4CEA49FE3473C /* EmojisCollectionViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 669F4530BA6578074CF2676197D65F79 /* EmojisCollectionViewDelegate.swift */; };
-		308FCDC60C77611DF2D8750C0C595A71 /* TOCropView.h in Headers */ = {isa = PBXBuildFile; fileRef = 98518B5B15997C14AE14EF8C8D165E0F /* TOCropView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3223419CDA99A329C8882B8E3395C6C6 /* PEM-drawing-icon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = F24D92E4FA9BCCA095D89E794638223E /* PEM-drawing-icon@3x.png */; };
-		32BB5FA39236193B1991C31852D98FED /* Pods-PreviewEditMedia_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B5B1DB52C6AAFCA4B3E36492C36D512 /* Pods-PreviewEditMedia_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		33B1EC57AF279AA1C936FEF6F3A49C62 /* TOCropViewControllerTransitioning.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A9D935C23B3CEF503732E4E7CEDBEDD /* TOCropViewControllerTransitioning.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		36D2C89933FACA19497BF99047A11534 /* pt-BR.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 204BB4396683C4CA13516AD5523AF56D /* pt-BR.lproj */; };
-		37BFDD6043D01A1266403AE88AB8C383 /* fr.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 9F45D8A42874619FE67E8A78EFA3C4DA /* fr.lproj */; };
-		38D44E2273593EFDC604A0EAD9477E83 /* TOCropScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = D6C0AC86695EB12BE4D0507BA386C54F /* TOCropScrollView.m */; };
-		3902F3BDDF682DB57BA4F7244C7607C3 /* zh-Hans.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 03A867CEAF9754D0B3614EC97A1A7DF0 /* zh-Hans.lproj */; };
-		399A969220B6CA303A1E21F3FB853FA4 /* PEM-clear-all-icon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = D5E6D10B0C78258B24978DBD635345CA /* PEM-clear-all-icon@3x.png */; };
-		3CA8EAC8609DA77C47ABB8CA4F358630 /* UIView+Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBEFFE5CDF1BA023404D1A5F1AB96D14 /* UIView+Image.swift */; };
-		3EAC12CA501993BE84ABCC9F4CF18504 /* vi.lproj in Resources */ = {isa = PBXBuildFile; fileRef = BC560ACABC8688098A1F20A100B17AA0 /* vi.lproj */; };
-		401CD0BD09E521F419A29D14B6A3BBD1 /* CropViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06E4F16A75860954F1E8613F2036A855 /* CropViewController.swift */; };
-		41DE4003048C2962091A731359C5A0E3 /* TOActivityCroppedImageProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = C581D6AB6D1C4A410FF33BD6687CC0D6 /* TOActivityCroppedImageProvider.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		41FC38D10F9B2B8322DADBB76653EDE7 /* Pencil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438FB41F051D201568207DE7FE63EA11 /* Pencil.swift */; };
-		43E38F8F8CECC2E8B3FDAC710D529979 /* sk.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 7BB149E31DC158D47086658B6268E2CD /* sk.lproj */; };
-		47092AB076EEB0E83408250BA2A32B0B /* ar.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 9FB0B72A175FD99D254EBD0F4CFEC084 /* ar.lproj */; };
-		4765C44E9B4A3259F3F659B192874C3F /* ColorsCollectionViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A715EE21D1B4056DE5AD6DB89049D3B /* ColorsCollectionViewDelegate.swift */; };
-		4CD668410AFB057FFD7129B25DC5B012 /* TOCropScrollView.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DEF521BC255BF271033D7BEC495D69D /* TOCropScrollView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4D8AEC7166448533CDE631B93D969B8C /* en.lproj in Resources */ = {isa = PBXBuildFile; fileRef = DA3438861FB3D774806CF42509D1B927 /* en.lproj */; };
-		4EBAF1322938391D1BC2008F6615569C /* EmojiCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9908E0733C1B06E25563D23EDC645D3 /* EmojiCollectionViewCell.swift */; };
-		4F429E0DD0275CD9CDE171B34924570E /* PEM-delete-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = DE765433E1EF101C430EE4AA147C5664 /* PEM-delete-icon.png */; };
-		51093ECE58C2AF8308A1109D96624736 /* PEM-text-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 786F425A8D8E0DAD1B261E55F924BAEF /* PEM-text-icon.png */; };
-		513BC041A794E9E1BF21DC1238F3EEC1 /* PEM-close-icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C65CCD67E0BC99951DD198122166B630 /* PEM-close-icon@2x.png */; };
-		567168AC6B518DC83BFA2A64019AC618 /* PEM-clear-all-icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 98B04660B680FB416D441C56A9B49BF7 /* PEM-clear-all-icon@2x.png */; };
-		5807D20E008994BFBEB83A4105E7DEEC /* top_shadow.png in Resources */ = {isa = PBXBuildFile; fileRef = 1CFA6CEEEC4179E420A0D13A40A2EBCA /* top_shadow.png */; };
-		59A581048B2EFBC87B9814FD88EA128E /* TOCroppedImageAttributes.h in Headers */ = {isa = PBXBuildFile; fileRef = FD32C55F516A43B810ABACF043704678 /* TOCroppedImageAttributes.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5CD7C164D645C311140C12CAE0F2A398 /* PEM-sent-icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BC029982345A2CEEE298ADF88D9A1AF3 /* PEM-sent-icon@2x.png */; };
-		61092E96BFF9C31C64ADB19C6A68D472 /* UIImageViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58E910A9C4356D29C62841E457B785AF /* UIImageViewExtensions.swift */; };
-		64DCA22C7B0053BB9B3BA925FBD0B5F0 /* ViewGestures.swift in Sources */ = {isa = PBXBuildFile; fileRef = C294BC43D1987A6C829F6D07ED60EF39 /* ViewGestures.swift */; };
-		684468FDB145A40EC281F5E69C760C2E /* WatermarkCompositionInstruction.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0CB4D30E091DA9BE25BFE9C46C8F70D /* WatermarkCompositionInstruction.swift */; };
-		69D8A914589B21D8893A8B5FE5425965 /* zh-Hant.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 820EA9E886FAFCF46438E2DBD79A1C45 /* zh-Hant.lproj */; };
-		6B5CBE682C3AEDDA634915BC0A230CD9 /* tr.lproj in Resources */ = {isa = PBXBuildFile; fileRef = C557F878DC80A567942EEE9AAED3B9F4 /* tr.lproj */; };
-		6D6A7EE278BF0459F6076E2704A20824 /* de.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 727CE0CCDB2E6BF8136781457AD38A10 /* de.lproj */; };
-		6E4BCC765F85720CB0DA22B83BDF182C /* PreviewEditMedia.h in Headers */ = {isa = PBXBuildFile; fileRef = 79855DC8E38491A586619AA2496AEED1 /* PreviewEditMedia.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		70CBF2782BA7B4EDFEFC116F4FFC3370 /* ro.lproj in Resources */ = {isa = PBXBuildFile; fileRef = D771C7CB96BB30F1DA10903F18DC01E5 /* ro.lproj */; };
-		714D6513C52D68F8AC46660F059F15B1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6126FD2387DE1747B308B0FA2D669F9 /* ViewController.swift */; };
-		725E2A6B6C99139683C80A356D586E55 /* UIImageExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AD1B65674A51EF76EADAA3B37326665 /* UIImageExtensions.swift */; };
-		743A22F821B4D58A1AB9A08673EBB8F2 /* PEM-close-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 27ACAEFDE67761FD1A8AF88C03C4D7E5 /* PEM-close-icon.png */; };
-		76B604DE9F93A454923AA4EC14D69230 /* TOCropToolbar.h in Headers */ = {isa = PBXBuildFile; fileRef = A8DE099FEB0F04A09450DF02FAA9EA07 /* TOCropToolbar.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7792FA12CCDDAC82901BBE6AEB8D2E3B /* CropViewController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 332D554ADC02369587FD88031B0D3A1E /* CropViewController-dummy.m */; };
-		78779A8005F0C528ED48F58E5DB4E792 /* TOCropViewConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D335F892EAED03485EDB3C05A65F67B /* TOCropViewConstants.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		79D52079D65D3B9E60EBA38107DAEE09 /* PEM-text-icon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C310ACE7AD750A9A502146FDFF1501A4 /* PEM-text-icon@3x.png */; };
-		7BD263EC68A2D8F64D4C8095B474072B /* StickerCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5F899846E4D759B8547093384CB37E /* StickerCollectionViewCell.swift */; };
-		81F238602C7F1B1015BA840AACF5C469 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F63A0BACE15F4E7FBF260A65E73CB6F3 /* GradientView.swift */; };
-		82EE2CE19BD98A32335383D7217F0336 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7CDFAFE494A14548468736B6EC7077F /* Foundation.framework */; };
-		8819E22B8E826DCD61545A8FD7AAC74C /* CropViewController-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 113B0FBF7F65B97C4FEE01B87032BF0E /* CropViewController-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8B3DAFF9DBB2C19E5B333D3B242E7AFD /* Pods-PreviewEditMedia_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 43D1D7F0D9EBCBB16C85B44BC854A744 /* Pods-PreviewEditMedia_Example-dummy.m */; };
-		90F142054E2AC145D278ACA4F92B55AE /* PhotoEditorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299FD0F5D4ACE6A9C36D27BC49EEBE56 /* PhotoEditorViewController.swift */; };
-		92191BFA8894EA408A3A34D20D75BD27 /* fi.lproj in Resources */ = {isa = PBXBuildFile; fileRef = F564FC7837EB53BCCBF4B3589AF2E797 /* fi.lproj */; };
-		933A05EF9D5E5ABDCD9024DB8B941B50 /* PEM-crop-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E3F67DED9D1250881D623CC4261A5A1 /* PEM-crop-icon.png */; };
-		95C157372EE372F0D0D3EFE761B0D108 /* fa-IR.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 74CF12EC039772C0F3862B5907A15C13 /* fa-IR.lproj */; };
-		98B3CD2F10F45617D2F9E097A031D0F6 /* ja.lproj in Resources */ = {isa = PBXBuildFile; fileRef = E7907617E16FE5F81A439E768172D599 /* ja.lproj */; };
-		99A179F3F84D0CEF05FEFC32DB2609E3 /* PEM-crop-icon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = F76C1E38A5E17959B46A84E3CF2BD97A /* PEM-crop-icon@3x.png */; };
-		9C977CBEE0DCB07FF65719D3E720CCB9 /* id.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 725944E1A37D8BB71D5B825F95FE309A /* id.lproj */; };
-		9E41DEAECD7D6B9514A813480E61A530 /* hu.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 56C050BABF2208AFEA53ABDF71088B6A /* hu.lproj */; };
-		9E473BE991C7A78954D2AFAF8CFB7AB2 /* es.lproj in Resources */ = {isa = PBXBuildFile; fileRef = DD168299FB412285079D91AB2DC11C19 /* es.lproj */; };
-		9EEC431379D3E0817A6775B784054D5C /* TOCropView.m in Sources */ = {isa = PBXBuildFile; fileRef = C44858419396723AC0502BE0B6224E91 /* TOCropView.m */; };
-		A3B0BAB6E6C625DF7E502FD7E5481474 /* nl.lproj in Resources */ = {isa = PBXBuildFile; fileRef = A891CE00FCF9CDC93E6F5ACED521132C /* nl.lproj */; };
-		A761F97D4EC47EED02F793A03262E162 /* UIImage+CropRotate.h in Headers */ = {isa = PBXBuildFile; fileRef = 861D1975EE1F10A4B83C8BB160169341 /* UIImage+CropRotate.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A82B291754E9BD97E45F7C2DB7AC5C39 /* PEM-save-icon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = DA99DA6360FDA4C1671CEDB097656981 /* PEM-save-icon@3x.png */; };
-		B1256CCFA2D619D02A81562FA3FEA093 /* PEM-close-icon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 167051EED15A7F4377370464B956A5E8 /* PEM-close-icon@3x.png */; };
-		C1694BB5A65DE144BEF4B9EA69505255 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7CDFAFE494A14548468736B6EC7077F /* Foundation.framework */; };
-		C2DC4D021F180C8BD42879CFE7A5ABA1 /* TOCropToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = E96268D59EE34D6BAC190A52D0AD30DF /* TOCropToolbar.m */; };
-		C3EB90F7D927D81279F6EDD12BF5296D /* TOCropOverlayView.h in Headers */ = {isa = PBXBuildFile; fileRef = FDA1ACB6EACFE89C8FF78911BEDF8623 /* TOCropOverlayView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C4C75893575177E7415B155989EE6854 /* UIImage+CropRotate.m in Sources */ = {isa = PBXBuildFile; fileRef = FE8DC54462E25B8D98E412EF3CC4B50F /* UIImage+CropRotate.m */; };
-		C53C13E6B161951CE4AD5C7CC103E093 /* EmojiCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B209779DA3CB88BB40BEA1614A016007 /* EmojiCollectionViewCell.xib */; };
-		C5B7A069FE2E3D7F8960CC0A96014705 /* TOCroppedImageAttributes.m in Sources */ = {isa = PBXBuildFile; fileRef = E53B8EDB4135FDDF00FAB9FCD72F898A /* TOCroppedImageAttributes.m */; };
-		C70A78E4BCC5AB56FEC1A6EBE45FC7B1 /* CropViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = F6E5698D4F40CE7EF3C4D2D9F6E317AE /* CropViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C73043F372DB7AF03E0B0418CB0DC67B /* PEM-delete-icon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 816ECCDFF66E41EE5381A1DC9254C009 /* PEM-delete-icon@3x.png */; };
-		C8D83A98155AD69170667266D849814E /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB852D0613DE3B779B185E2CD185C018 /* ReplaceMe.swift */; };
-		CB0001777BFB3D1C371E4EF8AEA93C3A /* pl.lproj in Resources */ = {isa = PBXBuildFile; fileRef = D58970862108D761C47BEE0B564BF9CD /* pl.lproj */; };
-		CC562E77F6F309E4B2CA2CEA250A73E3 /* TOCropViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48096BB596B68A2971B5615A7B844245 /* TOCropViewController.m */; };
-		CF65B632A19B57D371085FBC1580AE7C /* ColorCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C806264157E663225D4CEF30A89A1C2B /* ColorCollectionViewCell.xib */; };
-		CFC7BCD792FD5C9481B1F73C210045D2 /* BottomSheetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADA73B803B06F35BF81359D58081208 /* BottomSheetViewController.swift */; };
-		D137392CD3E23E9AC5D26A552F1223FD /* CropViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40B7757C4697BE9CA084182BD49D3821 /* CropViewController.swift */; };
-		D6F4C0BD5596FD963A5145CA4CE681A9 /* TOActivityCroppedImageProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = AC425917BBEC823365C0D62DE48DD441 /* TOActivityCroppedImageProvider.m */; };
-		D740948F465644C61F0D81509ED52EDB /* PEM-drawing-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = CA331C97BB389B6F3F750C77DA45A270 /* PEM-drawing-icon.png */; };
-		DC9318DF0748DC29FC8A078D4EA9857F /* StickerCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF333E08EBE21AA8285AFE84DA06BB3D /* StickerCollectionViewCell.xib */; };
-		DF7A7B3D21760F88961F22853A7933D1 /* TOCropOverlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5862DC5F2C195A6AAEE9869B4E5FF9E0 /* TOCropOverlayView.m */; };
-		E03C83B9A27E51A02FBC18C6B32F323A /* da-DK.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 1F48620F3F262F77331C442A847E8E56 /* da-DK.lproj */; };
-		EA0616EB4A85ACBDC770669A9578F803 /* Base.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 782B9C26B991CC4C1997BC83D212FFEF /* Base.lproj */; };
-		EBABA2B5605E3DF9C4F665091F52AF7E /* PEM-sent-icon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 71347BE587FEF4D662108D40E7FC638A /* PEM-sent-icon@3x.png */; };
-		EF23F90F7398D744EE306801E3DC21AD /* TOCropViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A188D596EC259D79E722D2CC6080711 /* TOCropViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F4EB4606401DBEEBBDCBDAB7AC66EF9C /* PEM-text-icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F0A91A4306490B3C2B12F15B774DBE59 /* PEM-text-icon@2x.png */; };
-		F55E96D125013DD17286A21BB858EC37 /* PEM-save-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = C3FF4B3E76F5E3B87B6DE4FAAB258035 /* PEM-save-icon.png */; };
-		F6047B3C4722BEBCA10B5B3608FED6E5 /* cs.lproj in Resources */ = {isa = PBXBuildFile; fileRef = C05BB197990C66E260B8C16D3B319AA5 /* cs.lproj */; };
-		F76A06BA712A0E7333B5BC7BFC2E5803 /* ms.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 5CE9F24AD0433A7A7E8A8F0B11498D82 /* ms.lproj */; };
-		F7F29B0957743B548DFB6C6B18D005F3 /* TOCropViewControllerTransitioning.m in Sources */ = {isa = PBXBuildFile; fileRef = C75495794A791B2388B935AC1B892E4A /* TOCropViewControllerTransitioning.m */; };
-		F90A2049D43C2CB310692FFBD3CD573E /* fa.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 604E3F24286F2C4A7F2FEFFB63C9D112 /* fa.lproj */; };
-		F931DEB281D20107F7276AA1AA2D8D98 /* PEM-drawing-icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1317A2F3E19C70C3E7FC80E7FCF8DA66 /* PEM-drawing-icon@2x.png */; };
-		FE5FA4D0C6BA540782CDBE2E95687A1D /* BottomSheetViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A86ECABD28B12B4A6F9BB4512619371D /* BottomSheetViewController.xib */; };
+		086F804F627C2A9BB79681E5D19AEF66 /* PEM-text-icon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = A7C2EEDB243847CE179BE305D4CCDE04 /* PEM-text-icon@3x.png */; };
+		09EC879E41C831BBE394E72D6A1FAB61 /* ViewGestures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EC2DCCA3151282D0420C22C2DD2183B /* ViewGestures.swift */; };
+		0A40977CF0E9419DF1824D717A2D55B3 /* PEM-delete-icon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 780FE1882CCF50E12DED0A3BF26A5825 /* PEM-delete-icon@3x.png */; };
+		0AF16E8D1C1573E0809A5B2B6965A463 /* Pencil.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE572935EBDAC9EC28F2031154F85ED2 /* Pencil.swift */; };
+		0D4E3A9B6B0D4DC26FAE1E92EC6A0ECE /* TOCropViewConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = 041AA53E02928AA7D5A9E62EE916FF61 /* TOCropViewConstants.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0E7C5ABAEEFC730E7BBED6D459C15459 /* TOCropToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = F36426DE1CFC817C7E4CE58770AF301E /* TOCropToolbar.m */; };
+		0F9795108B9AB7D2AFA2BFCAE05E0AD2 /* PEM-crop-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = ADF105C55E887B81DAB2551555AD2A1A /* PEM-crop-icon.png */; };
+		1A0D811D7EC9D5AA994B3A028DDD985F /* TOCropView.m in Sources */ = {isa = PBXBuildFile; fileRef = B54DE6E6FC6CD1530261835906E21A83 /* TOCropView.m */; };
+		1C0699BFE93B67FC494263BBAA57FB07 /* UIImageViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D950460693704B7AB85EF87060916891 /* UIImageViewExtensions.swift */; };
+		2403206FBF3E9D7C0BA68288F3A17528 /* PEM-delete-icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 99C307D13A079A6E7AB6D6DCFED4AAF0 /* PEM-delete-icon@2x.png */; };
+		26BF77F08A155E567C560C2E36B724C9 /* top_shadow.png in Resources */ = {isa = PBXBuildFile; fileRef = E06D0C61714AA919B2EE996A5D980C9D /* top_shadow.png */; };
+		2727B7AB372A25341DFFADB7F49F6468 /* ColorCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A5264BA5B4D734BEF9E413EB87FDAE87 /* ColorCollectionViewCell.xib */; };
+		27CDF5AE6804771B035728CDCD87C467 /* UIImage+CropRotate.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F3DFFF295C5D94F9910382E1028DEAF /* UIImage+CropRotate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		29FB1B7670D0A1A0E714E583930894D9 /* TOCropView.h in Headers */ = {isa = PBXBuildFile; fileRef = 7121303908901C1622E3EB4FEFA7F98A /* TOCropView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2FAF4E60E36776ABCAC860C2D8BC057B /* UIImage+CropRotate.m in Sources */ = {isa = PBXBuildFile; fileRef = 752AEDD6368687D7AAEBC698829015A4 /* UIImage+CropRotate.m */; };
+		3004F1849ED009AE10553905D7ADA455 /* StickerCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A4DC07F10578EA3C3112315AD473FFBA /* StickerCollectionViewCell.xib */; };
+		32A2BBEA9DEC2D972227C83DD29DA836 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71920982C91E376F0455CE20F7572622 /* ViewController.swift */; };
+		3651524158A2CF5A212E4E9496BA4A09 /* PEM-clear-all-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = B914FD292CDA27A599665F0958C54209 /* PEM-clear-all-icon.png */; };
+		37A2A2AB0D71F1967E2FEF9EB2B7BA01 /* EmojiCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C4FF4C81BB201BA2A29FEA6A862C4CD /* EmojiCollectionViewCell.swift */; };
+		3B0898A82A0969A321F0432A7C04D233 /* TOCropScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 14F2AFB296C05BEA8FCE6028D8687E89 /* TOCropScrollView.m */; };
+		3D4B4316CDB653D75BFAAFEE788986FB /* TOCroppedImageAttributes.h in Headers */ = {isa = PBXBuildFile; fileRef = ACE7337AE705AEAE695B5ED2BFD417F0 /* TOCroppedImageAttributes.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3EF4D5C0B0817EED5649856A07901515 /* TOCroppedImageAttributes.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C91F4BD9208B59C095233154E9390B3 /* TOCroppedImageAttributes.m */; };
+		4BE0CBE3DC7C4AEF11E081E5D1D0EC5F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		4DE157437954584B996603E7013CBDF9 /* EmojiCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 071BF1EB0A378E76ED00E3C47A0529EA /* EmojiCollectionViewCell.xib */; };
+		5415627BDAE1B204C4C8CDFFA69A6A33 /* PEM-close-icon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = D948D84B8D186C4FB1DAEADD0F9EBB6A /* PEM-close-icon@3x.png */; };
+		5448E4198F22A0C19F48C04E2597CA9F /* PreviewEditMedia.h in Headers */ = {isa = PBXBuildFile; fileRef = 96C1B8A58BA7DC44DE0F8A29101F670B /* PreviewEditMedia.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		56B1D9D86931BADFCBBFB17E5B830F83 /* PEM-drawing-icon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = D92190DCF89FBA97E4CE56838C577B69 /* PEM-drawing-icon@3x.png */; };
+		5DD0FE9B53C718D5A1570C24544BFC39 /* PreviewEditMedia-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 68D84EF45BBE6FE61F69A1AA45227C9B /* PreviewEditMedia-dummy.m */; };
+		63079503ACB8BC55F28F64BB643406F9 /* TOCropToolbar.h in Headers */ = {isa = PBXBuildFile; fileRef = E46F7F42ADCDC8AB4F69E6042548933C /* TOCropToolbar.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		64D66E385A95766E1A48BEC27A149B09 /* PEM-close-icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EAD18F06F3265B685A95C15EBF20EB72 /* PEM-close-icon@2x.png */; };
+		6BB84D6B86AF46234E76EAF908A52EB1 /* CropViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 926ADD3F2B33C59D4439FAD53AAEE4A2 /* CropViewController.swift */; };
+		6C9399AF5BCAF4662CEE07800C91800B /* PEM-drawing-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 31783FE0EF4542648AA87D4930466290 /* PEM-drawing-icon.png */; };
+		6F6B93E39D5DFBE95D5FA7973BFD769B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		77ECC298F09FC1D5D12F3DEAAF541199 /* TOCropViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 33CE9B36EFF489245909BE80EED3E623 /* TOCropViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7A04DE9142FC99C18D1477F51911AFF3 /* TOCropViewControllerTransitioning.m in Sources */ = {isa = PBXBuildFile; fileRef = 4955111B02B8A04CEC85A9133E8D7A49 /* TOCropViewControllerTransitioning.m */; };
+		879F5B7D2067898558501575FB7CBBED /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4FC6D4F53D5EC8DA8DDE05CEF31CFB /* ReplaceMe.swift */; };
+		8B00EB04DF0F37B76FC4B3982B25D196 /* ColorCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD19FAC6BA036EB0C5762C7BCA0E39C2 /* ColorCollectionViewCell.swift */; };
+		8ED558EF592224CCBB33B432A0EBD080 /* PEM-clear-all-icon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = F4082013413C9DC307038C5B9E24E5A1 /* PEM-clear-all-icon@3x.png */; };
+		91766FAAA2E1CBD0650CF21415F1DA7B /* PEM-clear-all-icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A3B9B895C0BCA0B0FFAAF601FB707D3 /* PEM-clear-all-icon@2x.png */; };
+		94C1311832900E6ADCBAF5102F1192ED /* EmojisCollectionViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1F374CF745C1203FB3E71EC83D527DD /* EmojisCollectionViewDelegate.swift */; };
+		9A389EDD97DBA12CED845252C26236A5 /* PEM-crop-icon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 875A5337BAD4643D47921C06CB134976 /* PEM-crop-icon@3x.png */; };
+		9B22E406D22E6A39A45B2A8834E4B75B /* PEM-sent-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = E1F260D412D3515DEC7E507142DBF769 /* PEM-sent-icon.png */; };
+		A2A76409132642A015CC57B98F406F08 /* PEM-crop-icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 396EFF6548EC2543084732EEA87C9CB6 /* PEM-crop-icon@2x.png */; };
+		A7391FB1364A8056DFA8FDD75DF0CC70 /* TOCropScrollView.h in Headers */ = {isa = PBXBuildFile; fileRef = 98D833B6675C59F2262C50BC175D1174 /* TOCropScrollView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A74E4BDE33B3F4CA60B3356325064435 /* PEM-save-icon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C65A787FB08C3C66F019076CD5A7C7F7 /* PEM-save-icon@3x.png */; };
+		A83C1018AD3A39E7BC629D24744D8754 /* Pods-PreviewEditMedia_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 43D1D7F0D9EBCBB16C85B44BC854A744 /* Pods-PreviewEditMedia_Example-dummy.m */; };
+		A8AE9DDB6424C832E1D7507C30702A76 /* PEM-sent-icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B6C903A38FDBBC6F0A771691897DA364 /* PEM-sent-icon@2x.png */; };
+		A9C095B26EA9926F18A8C056E2F171D0 /* TOActivityCroppedImageProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = B7CA51B259A1D72A55FA983C85B12012 /* TOActivityCroppedImageProvider.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AA854B5F71D5D1DE8DD153DDE37EEDFD /* BottomSheetViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7BC08F107A8289BE66D0940AC5630DDA /* BottomSheetViewController.xib */; };
+		AD65EBE63305F26FA9FE73CBB3E1EB90 /* TOCropViewControllerTransitioning.h in Headers */ = {isa = PBXBuildFile; fileRef = AAAF614B92CDEF7694A375A83C6FE238 /* TOCropViewControllerTransitioning.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AE91340B555A5705380B3A0EFE783253 /* UIImageExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88626EA92512CA1DCE9CA1256DF84253 /* UIImageExtensions.swift */; };
+		B11D4CA25A49367836B45E5758756228 /* PEM-sent-icon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 12CD5E6E19B14EF531A0CDEA3788EFC0 /* PEM-sent-icon@3x.png */; };
+		B53D7B5B8F9DE972341F873AC79365D5 /* ColorsCollectionViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0228D873E5AE5B6F57B1760CA9768A24 /* ColorsCollectionViewDelegate.swift */; };
+		B5AB9A995060616DEB8197DA240469D6 /* PEM-delete-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = EF3DE1AD5763B50A043CFB0989781131 /* PEM-delete-icon.png */; };
+		BB57364AEEA27A6459531A4711B32C36 /* PEM-save-icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 08458C9264EE0786F57C1C8FF01027C9 /* PEM-save-icon@2x.png */; };
+		BBB8B798DE622800012F43C03C9E7E0F /* UIView+Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5BB7D5DB85A09739068E44C9249C580 /* UIView+Image.swift */; };
+		C0248A39B50AA8D374BB582894A852EA /* TOCropViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 041A629539C003A5D965711C8A7A51C4 /* TOCropViewController.m */; };
+		C025ADC1E1C6C635A430924F72EB6063 /* Pods-PreviewEditMedia_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B5B1DB52C6AAFCA4B3E36492C36D512 /* Pods-PreviewEditMedia_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C09638FA1E85A889B31E3EB3F52DB99A /* TOCropOverlayView.h in Headers */ = {isa = PBXBuildFile; fileRef = 7DA0D6E5BB3C54A3D6A95556F31B5D47 /* TOCropOverlayView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C220979F22E9EF099F6C8C8E58959469 /* PEM-close-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 6383C1E0EAE005D72CE36AA1E09FB688 /* PEM-close-icon.png */; };
+		C4731B665FC05E94D084D51256CFCDA6 /* bottom_shadow.png in Resources */ = {isa = PBXBuildFile; fileRef = 867BCE21B3F87E91DFA0776DBFDE9734 /* bottom_shadow.png */; };
+		C643C5489138B69339F48301699B4758 /* StickerCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 909B4BFBD78A2429DE1BB24AF6767F41 /* StickerCollectionViewCell.swift */; };
+		C8625C117F959E493B426A156B905689 /* PEM-save-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = F671BCE59147E25221F23F718F1FF3D4 /* PEM-save-icon.png */; };
+		C9F6BCD368FB74A7E071BE8E42CE23CB /* PhotoEditor.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63AC1CBB334C049CC9035F5CB86341B3 /* PhotoEditor.storyboard */; };
+		CF4A0F867C3544A6E844CED31EB6AA22 /* PEM-text-icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F4425A3E6FB2FB175A467D043FE9FF43 /* PEM-text-icon@2x.png */; };
+		D085BA9AABC75A86B527A55B41D6DA75 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A96C5496F60A125436AD58D334B77E00 /* GradientView.swift */; };
+		D3DE6573E21F0B87A0141101D9CF6187 /* WatermarkCompositionInstruction.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7AC5FF482B8E83E171D9871B8775B8B /* WatermarkCompositionInstruction.swift */; };
+		E185F7164E855E07A14FDD1F754BFE8F /* PhotoEditorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C81637E83ACFCB8CF9CD8F7A8818B2E8 /* PhotoEditorViewController.swift */; };
+		EA66C93645F693A56268323DCCF232C7 /* PEM-drawing-icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 28D10DA0BFD9153F6BBA135139587627 /* PEM-drawing-icon@2x.png */; };
+		EFAE2AABB674DB2982DA8AC0B823A324 /* TOCropOverlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE4E308EE71E3FB8680308717B1FA590 /* TOCropOverlayView.m */; };
+		F5CBBE44552A918027EFA8E1B0EF7D89 /* PreviewEditMedia-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 255100A1E23FB238B0DAE0E4F0B61365 /* PreviewEditMedia-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F666D217CB86C897EFD8589B6612A43C /* TOActivityCroppedImageProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B6ECA5B6A9347FC341020ECD2B8E242 /* TOActivityCroppedImageProvider.m */; };
+		FD8449DFE9E450D92CA1AFC64E97D94E /* BottomSheetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DFA771B291EB551E25F439240771C99 /* BottomSheetViewController.swift */; };
+		FF97C8FDD9687A445ECD2E10143DF7C2 /* PEM-text-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = EB79C564917C98CABCA35395EC9883E2 /* PEM-text-icon.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		25726181318721585BA39E20D024DAD7 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = CC81A5995F9CEB2971CBA61ACA13FCA3;
-			remoteInfo = CropViewController;
-		};
-		3AA9C83378E3D504E74B07432E7C59AA /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = CC81A5995F9CEB2971CBA61ACA13FCA3;
-			remoteInfo = CropViewController;
-		};
-		83BCA968660331E9A9E64B439F01076F /* PBXContainerItemProxy */ = {
+		4E0DDBBDDA4FA7E095C16F5FBED9ADB1 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 1DB89A86AE14E3D5399E50B45FDF21EB;
 			remoteInfo = PreviewEditMedia;
 		};
-		FF66402F37C9CAF15702F166DB45D0DB /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = BB4EEF23ECB2BAF774CE8EFA5AF90C40;
-			remoteInfo = "CropViewController-TOCropViewControllerBundle";
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		03A867CEAF9754D0B3614EC97A1A7DF0 /* zh-Hans.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = "zh-Hans.lproj"; path = "Objective-C/TOCropViewController/Resources/zh-Hans.lproj"; sourceTree = "<group>"; };
-		06E4F16A75860954F1E8613F2036A855 /* CropViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CropViewController.swift; path = Swift/CropViewController/CropViewController.swift; sourceTree = "<group>"; };
-		07EC8453C5412770373B42E04A297ACB /* it.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = it.lproj; path = "Objective-C/TOCropViewController/Resources/it.lproj"; sourceTree = "<group>"; };
+		022773745B18F0711F32D355998442F9 /* PreviewEditMedia-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "PreviewEditMedia-Info.plist"; sourceTree = "<group>"; };
+		0228D873E5AE5B6F57B1760CA9768A24 /* ColorsCollectionViewDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ColorsCollectionViewDelegate.swift; path = PreviewEditMedia/Classes/ColorsCollectionViewDelegate.swift; sourceTree = "<group>"; };
+		041A629539C003A5D965711C8A7A51C4 /* TOCropViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = TOCropViewController.m; sourceTree = "<group>"; };
+		041AA53E02928AA7D5A9E62EE916FF61 /* TOCropViewConstants.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TOCropViewConstants.h; sourceTree = "<group>"; };
+		071BF1EB0A378E76ED00E3C47A0529EA /* EmojiCollectionViewCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = EmojiCollectionViewCell.xib; sourceTree = "<group>"; };
+		0739E4837738B62731B5B4DA5E623C7E /* PreviewEditMedia.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PreviewEditMedia.release.xcconfig; sourceTree = "<group>"; };
+		08458C9264EE0786F57C1C8FF01027C9 /* PEM-save-icon@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "PEM-save-icon@2x.png"; sourceTree = "<group>"; };
 		0D7E7042E9CD9D8B3933B78C1F7A23F5 /* Pods-PreviewEditMedia_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PreviewEditMedia_Example.release.xcconfig"; sourceTree = "<group>"; };
-		0E1B43DF289F4D27D5F006D8FE43C3A7 /* CropViewController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CropViewController-prefix.pch"; sourceTree = "<group>"; };
-		113B0FBF7F65B97C4FEE01B87032BF0E /* CropViewController-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CropViewController-umbrella.h"; sourceTree = "<group>"; };
-		1317A2F3E19C70C3E7FC80E7FCF8DA66 /* PEM-drawing-icon@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "PEM-drawing-icon@2x.png"; sourceTree = "<group>"; };
-		167051EED15A7F4377370464B956A5E8 /* PEM-close-icon@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "PEM-close-icon@3x.png"; sourceTree = "<group>"; };
-		19672639458D5EF5EC76A48F6BF5A2B3 /* CropViewController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CropViewController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		1AD1B65674A51EF76EADAA3B37326665 /* UIImageExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UIImageExtensions.swift; path = PreviewEditMedia/Classes/UIImageExtensions.swift; sourceTree = "<group>"; };
-		1CFA6CEEEC4179E420A0D13A40A2EBCA /* top_shadow.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = top_shadow.png; sourceTree = "<group>"; };
-		1F48620F3F262F77331C442A847E8E56 /* da-DK.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = "da-DK.lproj"; path = "Objective-C/TOCropViewController/Resources/da-DK.lproj"; sourceTree = "<group>"; };
-		204BB4396683C4CA13516AD5523AF56D /* pt-BR.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = "pt-BR.lproj"; path = "Objective-C/TOCropViewController/Resources/pt-BR.lproj"; sourceTree = "<group>"; };
-		209A8C284B60E5A7486454A8662D9339 /* PEM-save-icon@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "PEM-save-icon@2x.png"; sourceTree = "<group>"; };
-		27ACAEFDE67761FD1A8AF88C03C4D7E5 /* PEM-close-icon.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "PEM-close-icon.png"; sourceTree = "<group>"; };
-		299FD0F5D4ACE6A9C36D27BC49EEBE56 /* PhotoEditorViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PhotoEditorViewController.swift; path = PreviewEditMedia/Classes/PhotoEditorViewController.swift; sourceTree = "<group>"; };
-		322833353F03C1E6F90E15FA1B391847 /* PreviewEditMedia.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = PreviewEditMedia.modulemap; sourceTree = "<group>"; };
-		332D554ADC02369587FD88031B0D3A1E /* CropViewController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CropViewController-dummy.m"; sourceTree = "<group>"; };
+		0DFA771B291EB551E25F439240771C99 /* BottomSheetViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BottomSheetViewController.swift; path = PreviewEditMedia/Classes/BottomSheetViewController.swift; sourceTree = "<group>"; };
+		0EC2DCCA3151282D0420C22C2DD2183B /* ViewGestures.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ViewGestures.swift; path = PreviewEditMedia/Classes/ViewGestures.swift; sourceTree = "<group>"; };
+		12960627197D2443868A68EACBBD57EF /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		12CD5E6E19B14EF531A0CDEA3788EFC0 /* PEM-sent-icon@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "PEM-sent-icon@3x.png"; sourceTree = "<group>"; };
+		14F2AFB296C05BEA8FCE6028D8687E89 /* TOCropScrollView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = TOCropScrollView.m; sourceTree = "<group>"; };
+		255100A1E23FB238B0DAE0E4F0B61365 /* PreviewEditMedia-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PreviewEditMedia-umbrella.h"; sourceTree = "<group>"; };
+		28D10DA0BFD9153F6BBA135139587627 /* PEM-drawing-icon@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "PEM-drawing-icon@2x.png"; sourceTree = "<group>"; };
+		2FA04C3CA78E4C4D9586D34BECDC3138 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		31783FE0EF4542648AA87D4930466290 /* PEM-drawing-icon.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "PEM-drawing-icon.png"; sourceTree = "<group>"; };
+		33CE9B36EFF489245909BE80EED3E623 /* TOCropViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TOCropViewController.h; sourceTree = "<group>"; };
 		3954808EDB26907D0F05B597E249C055 /* Pods-PreviewEditMedia_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-PreviewEditMedia_Example.modulemap"; sourceTree = "<group>"; };
-		3A7F5C553E7B4E9FA1C850750DCCABDE /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		396EFF6548EC2543084732EEA87C9CB6 /* PEM-crop-icon@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "PEM-crop-icon@2x.png"; sourceTree = "<group>"; };
 		3B5B1DB52C6AAFCA4B3E36492C36D512 /* Pods-PreviewEditMedia_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PreviewEditMedia_Example-umbrella.h"; sourceTree = "<group>"; };
-		3E3F67DED9D1250881D623CC4261A5A1 /* PEM-crop-icon.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "PEM-crop-icon.png"; sourceTree = "<group>"; };
+		3C4FF4C81BB201BA2A29FEA6A862C4CD /* EmojiCollectionViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EmojiCollectionViewCell.swift; path = PreviewEditMedia/Classes/EmojiCollectionViewCell.swift; sourceTree = "<group>"; };
 		3E775B83F914A9CBB9D613A0DE950A05 /* Pods-PreviewEditMedia_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PreviewEditMedia_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		40B7757C4697BE9CA084182BD49D3821 /* CropViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CropViewController.swift; path = PreviewEditMedia/Classes/CropViewController.swift; sourceTree = "<group>"; };
-		438FB41F051D201568207DE7FE63EA11 /* Pencil.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Pencil.swift; path = PreviewEditMedia/Classes/Pencil.swift; sourceTree = "<group>"; };
 		43D1D7F0D9EBCBB16C85B44BC854A744 /* Pods-PreviewEditMedia_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PreviewEditMedia_Example-dummy.m"; sourceTree = "<group>"; };
-		45DAD6DA4BADEC61233E8DAFBB72C240 /* PhotoEditor.storyboard */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; path = PhotoEditor.storyboard; sourceTree = "<group>"; };
-		48096BB596B68A2971B5615A7B844245 /* TOCropViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TOCropViewController.m; path = "Objective-C/TOCropViewController/TOCropViewController.m"; sourceTree = "<group>"; };
-		4A188D596EC259D79E722D2CC6080711 /* TOCropViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TOCropViewController.h; path = "Objective-C/TOCropViewController/TOCropViewController.h"; sourceTree = "<group>"; };
-		4A9D935C23B3CEF503732E4E7CEDBEDD /* TOCropViewControllerTransitioning.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TOCropViewControllerTransitioning.h; path = "Objective-C/TOCropViewController/Models/TOCropViewControllerTransitioning.h"; sourceTree = "<group>"; };
-		4B38CFEF2291CEE6690D7D694B3D650E /* pt.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = pt.lproj; path = "Objective-C/TOCropViewController/Resources/pt.lproj"; sourceTree = "<group>"; };
-		4D6297C83CBD1D6AA357C6383F9B172A /* PreviewEditMedia.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PreviewEditMedia.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		56C050BABF2208AFEA53ABDF71088B6A /* hu.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = hu.lproj; path = "Objective-C/TOCropViewController/Resources/hu.lproj"; sourceTree = "<group>"; };
-		585C1D50B1BFC85F6C0EA2101B11A6F1 /* CropViewController.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = CropViewController.modulemap; sourceTree = "<group>"; };
-		5862DC5F2C195A6AAEE9869B4E5FF9E0 /* TOCropOverlayView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TOCropOverlayView.m; path = "Objective-C/TOCropViewController/Views/TOCropOverlayView.m"; sourceTree = "<group>"; };
-		58E910A9C4356D29C62841E457B785AF /* UIImageViewExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UIImageViewExtensions.swift; path = PreviewEditMedia/Classes/UIImageViewExtensions.swift; sourceTree = "<group>"; };
-		5CE9F24AD0433A7A7E8A8F0B11498D82 /* ms.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = ms.lproj; path = "Objective-C/TOCropViewController/Resources/ms.lproj"; sourceTree = "<group>"; };
-		5D335F892EAED03485EDB3C05A65F67B /* TOCropViewConstants.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TOCropViewConstants.h; path = "Objective-C/TOCropViewController/Constants/TOCropViewConstants.h"; sourceTree = "<group>"; };
+		4955111B02B8A04CEC85A9133E8D7A49 /* TOCropViewControllerTransitioning.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = TOCropViewControllerTransitioning.m; sourceTree = "<group>"; };
+		4D6297C83CBD1D6AA357C6383F9B172A /* PreviewEditMedia.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = PreviewEditMedia.framework; path = PreviewEditMedia.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4F3DFFF295C5D94F9910382E1028DEAF /* UIImage+CropRotate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIImage+CropRotate.h"; sourceTree = "<group>"; };
+		5C91F4BD9208B59C095233154E9390B3 /* TOCroppedImageAttributes.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = TOCroppedImageAttributes.m; sourceTree = "<group>"; };
 		5D828B4EBA4688F896B351F99643D5BE /* Pods-PreviewEditMedia_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PreviewEditMedia_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		5DEF521BC255BF271033D7BEC495D69D /* TOCropScrollView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TOCropScrollView.h; path = "Objective-C/TOCropViewController/Views/TOCropScrollView.h"; sourceTree = "<group>"; };
-		604E3F24286F2C4A7F2FEFFB63C9D112 /* fa.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = fa.lproj; path = "Objective-C/TOCropViewController/Resources/fa.lproj"; sourceTree = "<group>"; };
-		617855DE6FA769AD97CEE811A7D4009D /* PEM-sent-icon.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "PEM-sent-icon.png"; sourceTree = "<group>"; };
-		669F4530BA6578074CF2676197D65F79 /* EmojisCollectionViewDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EmojisCollectionViewDelegate.swift; path = PreviewEditMedia/Classes/EmojisCollectionViewDelegate.swift; sourceTree = "<group>"; };
-		66E03097891C1EAE07E11A6C80CE268A /* CropViewController.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CropViewController.debug.xcconfig; sourceTree = "<group>"; };
-		6A715EE21D1B4056DE5AD6DB89049D3B /* ColorsCollectionViewDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ColorsCollectionViewDelegate.swift; path = PreviewEditMedia/Classes/ColorsCollectionViewDelegate.swift; sourceTree = "<group>"; };
-		71347BE587FEF4D662108D40E7FC638A /* PEM-sent-icon@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "PEM-sent-icon@3x.png"; sourceTree = "<group>"; };
-		725944E1A37D8BB71D5B825F95FE309A /* id.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = id.lproj; path = "Objective-C/TOCropViewController/Resources/id.lproj"; sourceTree = "<group>"; };
-		727CE0CCDB2E6BF8136781457AD38A10 /* de.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = de.lproj; path = "Objective-C/TOCropViewController/Resources/de.lproj"; sourceTree = "<group>"; };
-		74CF12EC039772C0F3862B5907A15C13 /* fa-IR.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = "fa-IR.lproj"; path = "Objective-C/TOCropViewController/Resources/fa-IR.lproj"; sourceTree = "<group>"; };
-		77E3AFB230581219CD6C57821D84DBE5 /* bottom_shadow.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = bottom_shadow.png; sourceTree = "<group>"; };
-		782B9C26B991CC4C1997BC83D212FFEF /* Base.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = Base.lproj; path = "Objective-C/TOCropViewController/Resources/Base.lproj"; sourceTree = "<group>"; };
-		786F425A8D8E0DAD1B261E55F924BAEF /* PEM-text-icon.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "PEM-text-icon.png"; sourceTree = "<group>"; };
-		79855DC8E38491A586619AA2496AEED1 /* PreviewEditMedia.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PreviewEditMedia.h; path = PreviewEditMedia/Classes/PreviewEditMedia.h; sourceTree = "<group>"; };
-		7BB149E31DC158D47086658B6268E2CD /* sk.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = sk.lproj; path = "Objective-C/TOCropViewController/Resources/sk.lproj"; sourceTree = "<group>"; };
-		816ECCDFF66E41EE5381A1DC9254C009 /* PEM-delete-icon@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "PEM-delete-icon@3x.png"; sourceTree = "<group>"; };
-		820EA9E886FAFCF46438E2DBD79A1C45 /* zh-Hant.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = "zh-Hant.lproj"; path = "Objective-C/TOCropViewController/Resources/zh-Hant.lproj"; sourceTree = "<group>"; };
-		84017D96BEC61C456E999404044F198A /* PreviewEditMedia.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PreviewEditMedia.release.xcconfig; sourceTree = "<group>"; };
-		844CB1AB51C2B631BD6984A9E4FF215B /* ColorCollectionViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ColorCollectionViewCell.swift; path = PreviewEditMedia/Classes/ColorCollectionViewCell.swift; sourceTree = "<group>"; };
-		861D1975EE1F10A4B83C8BB160169341 /* UIImage+CropRotate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+CropRotate.h"; path = "Objective-C/TOCropViewController/Categories/UIImage+CropRotate.h"; sourceTree = "<group>"; };
-		870E857945E483CE3DD2BE3638E93C33 /* CropViewController.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CropViewController.release.xcconfig; sourceTree = "<group>"; };
-		878B3117FCD9AE016E621E2E523DDA57 /* ko.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = ko.lproj; path = "Objective-C/TOCropViewController/Resources/ko.lproj"; sourceTree = "<group>"; };
-		8A975596122BC0291D00E2FF0ACCBC84 /* ResourceBundle-TOCropViewControllerBundle-CropViewController-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-TOCropViewControllerBundle-CropViewController-Info.plist"; sourceTree = "<group>"; };
-		97A93DCEF2B1499B1F84D43333829DC7 /* TOCropViewControllerBundle.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TOCropViewControllerBundle.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
-		98518B5B15997C14AE14EF8C8D165E0F /* TOCropView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TOCropView.h; path = "Objective-C/TOCropViewController/Views/TOCropView.h"; sourceTree = "<group>"; };
-		98B04660B680FB416D441C56A9B49BF7 /* PEM-clear-all-icon@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "PEM-clear-all-icon@2x.png"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9F45D8A42874619FE67E8A78EFA3C4DA /* fr.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = fr.lproj; path = "Objective-C/TOCropViewController/Resources/fr.lproj"; sourceTree = "<group>"; };
-		9FB0B72A175FD99D254EBD0F4CFEC084 /* ar.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = ar.lproj; path = "Objective-C/TOCropViewController/Resources/ar.lproj"; sourceTree = "<group>"; };
-		A86ECABD28B12B4A6F9BB4512619371D /* BottomSheetViewController.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = BottomSheetViewController.xib; sourceTree = "<group>"; };
-		A891CE00FCF9CDC93E6F5ACED521132C /* nl.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = nl.lproj; path = "Objective-C/TOCropViewController/Resources/nl.lproj"; sourceTree = "<group>"; };
-		A8DE099FEB0F04A09450DF02FAA9EA07 /* TOCropToolbar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TOCropToolbar.h; path = "Objective-C/TOCropViewController/Views/TOCropToolbar.h"; sourceTree = "<group>"; };
-		A9908E0733C1B06E25563D23EDC645D3 /* EmojiCollectionViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EmojiCollectionViewCell.swift; path = PreviewEditMedia/Classes/EmojiCollectionViewCell.swift; sourceTree = "<group>"; };
+		6383C1E0EAE005D72CE36AA1E09FB688 /* PEM-close-icon.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "PEM-close-icon.png"; sourceTree = "<group>"; };
+		63AC1CBB334C049CC9035F5CB86341B3 /* PhotoEditor.storyboard */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; path = PhotoEditor.storyboard; sourceTree = "<group>"; };
+		68D84EF45BBE6FE61F69A1AA45227C9B /* PreviewEditMedia-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PreviewEditMedia-dummy.m"; sourceTree = "<group>"; };
+		71079995FC5257DC84988CAD79EED574 /* PreviewEditMedia.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PreviewEditMedia.debug.xcconfig; sourceTree = "<group>"; };
+		7121303908901C1622E3EB4FEFA7F98A /* TOCropView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TOCropView.h; sourceTree = "<group>"; };
+		71920982C91E376F0455CE20F7572622 /* ViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = PreviewEditMedia/Classes/ViewController.swift; sourceTree = "<group>"; };
+		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		752AEDD6368687D7AAEBC698829015A4 /* UIImage+CropRotate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIImage+CropRotate.m"; sourceTree = "<group>"; };
+		780FE1882CCF50E12DED0A3BF26A5825 /* PEM-delete-icon@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "PEM-delete-icon@3x.png"; sourceTree = "<group>"; };
+		7BC08F107A8289BE66D0940AC5630DDA /* BottomSheetViewController.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = BottomSheetViewController.xib; sourceTree = "<group>"; };
+		7DA0D6E5BB3C54A3D6A95556F31B5D47 /* TOCropOverlayView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TOCropOverlayView.h; sourceTree = "<group>"; };
+		867BCE21B3F87E91DFA0776DBFDE9734 /* bottom_shadow.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = bottom_shadow.png; sourceTree = "<group>"; };
+		875A5337BAD4643D47921C06CB134976 /* PEM-crop-icon@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "PEM-crop-icon@3x.png"; sourceTree = "<group>"; };
+		88626EA92512CA1DCE9CA1256DF84253 /* UIImageExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UIImageExtensions.swift; path = PreviewEditMedia/Classes/UIImageExtensions.swift; sourceTree = "<group>"; };
+		8A3B9B895C0BCA0B0FFAAF601FB707D3 /* PEM-clear-all-icon@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "PEM-clear-all-icon@2x.png"; sourceTree = "<group>"; };
+		909B4BFBD78A2429DE1BB24AF6767F41 /* StickerCollectionViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StickerCollectionViewCell.swift; path = PreviewEditMedia/Classes/StickerCollectionViewCell.swift; sourceTree = "<group>"; };
+		926ADD3F2B33C59D4439FAD53AAEE4A2 /* CropViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CropViewController.swift; path = PreviewEditMedia/Classes/CropViewController.swift; sourceTree = "<group>"; };
+		946E0628A3826F143372E2F9DAAE251F /* PreviewEditMedia.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = PreviewEditMedia.modulemap; sourceTree = "<group>"; };
+		96C1B8A58BA7DC44DE0F8A29101F670B /* PreviewEditMedia.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PreviewEditMedia.h; path = PreviewEditMedia/Classes/PreviewEditMedia.h; sourceTree = "<group>"; };
+		98D833B6675C59F2262C50BC175D1174 /* TOCropScrollView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TOCropScrollView.h; sourceTree = "<group>"; };
+		99C307D13A079A6E7AB6D6DCFED4AAF0 /* PEM-delete-icon@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "PEM-delete-icon@2x.png"; sourceTree = "<group>"; };
+		9B6ECA5B6A9347FC341020ECD2B8E242 /* TOActivityCroppedImageProvider.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = TOActivityCroppedImageProvider.m; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A4DC07F10578EA3C3112315AD473FFBA /* StickerCollectionViewCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = StickerCollectionViewCell.xib; sourceTree = "<group>"; };
+		A5264BA5B4D734BEF9E413EB87FDAE87 /* ColorCollectionViewCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = ColorCollectionViewCell.xib; sourceTree = "<group>"; };
+		A7AC5FF482B8E83E171D9871B8775B8B /* WatermarkCompositionInstruction.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WatermarkCompositionInstruction.swift; path = PreviewEditMedia/Classes/WatermarkCompositionInstruction.swift; sourceTree = "<group>"; };
+		A7C2EEDB243847CE179BE305D4CCDE04 /* PEM-text-icon@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "PEM-text-icon@3x.png"; sourceTree = "<group>"; };
+		A96C5496F60A125436AD58D334B77E00 /* GradientView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GradientView.swift; path = PreviewEditMedia/Classes/GradientView.swift; sourceTree = "<group>"; };
+		A9EA545F1980D2C77EFBE706C9C794AD /* PreviewEditMedia-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PreviewEditMedia-prefix.pch"; sourceTree = "<group>"; };
 		AA97419418325CF769A1A136295C3549 /* Pods-PreviewEditMedia_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PreviewEditMedia_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		AC425917BBEC823365C0D62DE48DD441 /* TOActivityCroppedImageProvider.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TOActivityCroppedImageProvider.m; path = "Objective-C/TOCropViewController/Models/TOActivityCroppedImageProvider.m"; sourceTree = "<group>"; };
-		B0CB4D30E091DA9BE25BFE9C46C8F70D /* WatermarkCompositionInstruction.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WatermarkCompositionInstruction.swift; path = PreviewEditMedia/Classes/WatermarkCompositionInstruction.swift; sourceTree = "<group>"; };
-		B19C14849CB59E1AF2C5AD83571359F4 /* PEM-delete-icon@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "PEM-delete-icon@2x.png"; sourceTree = "<group>"; };
-		B209779DA3CB88BB40BEA1614A016007 /* EmojiCollectionViewCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = EmojiCollectionViewCell.xib; sourceTree = "<group>"; };
-		B2296B039088FC5F62DD2E4798C8B98D /* CropViewController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CropViewController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B4F606C1B5011290EE4128AB31006F3E /* PreviewEditMedia-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PreviewEditMedia-dummy.m"; sourceTree = "<group>"; };
-		BBC1A92B4E86B75285CD31C6AA3E0E9D /* PreviewEditMedia-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "PreviewEditMedia-Info.plist"; sourceTree = "<group>"; };
-		BC029982345A2CEEE298ADF88D9A1AF3 /* PEM-sent-icon@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "PEM-sent-icon@2x.png"; sourceTree = "<group>"; };
-		BC560ACABC8688098A1F20A100B17AA0 /* vi.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = vi.lproj; path = "Objective-C/TOCropViewController/Resources/vi.lproj"; sourceTree = "<group>"; };
-		BE0DD758DD3E8021394C0799B21EF1AF /* PEM-clear-all-icon.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "PEM-clear-all-icon.png"; sourceTree = "<group>"; };
-		BE577C600D799F2B99023C0EC8251500 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
-		C05BB197990C66E260B8C16D3B319AA5 /* cs.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = cs.lproj; path = "Objective-C/TOCropViewController/Resources/cs.lproj"; sourceTree = "<group>"; };
-		C294BC43D1987A6C829F6D07ED60EF39 /* ViewGestures.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ViewGestures.swift; path = PreviewEditMedia/Classes/ViewGestures.swift; sourceTree = "<group>"; };
-		C310ACE7AD750A9A502146FDFF1501A4 /* PEM-text-icon@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "PEM-text-icon@3x.png"; sourceTree = "<group>"; };
-		C3FF4B3E76F5E3B87B6DE4FAAB258035 /* PEM-save-icon.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "PEM-save-icon.png"; sourceTree = "<group>"; };
-		C44858419396723AC0502BE0B6224E91 /* TOCropView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TOCropView.m; path = "Objective-C/TOCropViewController/Views/TOCropView.m"; sourceTree = "<group>"; };
-		C557F878DC80A567942EEE9AAED3B9F4 /* tr.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = tr.lproj; path = "Objective-C/TOCropViewController/Resources/tr.lproj"; sourceTree = "<group>"; };
-		C581D6AB6D1C4A410FF33BD6687CC0D6 /* TOActivityCroppedImageProvider.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TOActivityCroppedImageProvider.h; path = "Objective-C/TOCropViewController/Models/TOActivityCroppedImageProvider.h"; sourceTree = "<group>"; };
-		C65CCD67E0BC99951DD198122166B630 /* PEM-close-icon@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "PEM-close-icon@2x.png"; sourceTree = "<group>"; };
-		C75495794A791B2388B935AC1B892E4A /* TOCropViewControllerTransitioning.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TOCropViewControllerTransitioning.m; path = "Objective-C/TOCropViewController/Models/TOCropViewControllerTransitioning.m"; sourceTree = "<group>"; };
-		C7CDFAFE494A14548468736B6EC7077F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		C806264157E663225D4CEF30A89A1C2B /* ColorCollectionViewCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = ColorCollectionViewCell.xib; sourceTree = "<group>"; };
+		AAAF614B92CDEF7694A375A83C6FE238 /* TOCropViewControllerTransitioning.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TOCropViewControllerTransitioning.h; sourceTree = "<group>"; };
+		ACE7337AE705AEAE695B5ED2BFD417F0 /* TOCroppedImageAttributes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TOCroppedImageAttributes.h; sourceTree = "<group>"; };
+		ADF105C55E887B81DAB2551555AD2A1A /* PEM-crop-icon.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "PEM-crop-icon.png"; sourceTree = "<group>"; };
+		B54DE6E6FC6CD1530261835906E21A83 /* TOCropView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = TOCropView.m; sourceTree = "<group>"; };
+		B6C903A38FDBBC6F0A771691897DA364 /* PEM-sent-icon@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "PEM-sent-icon@2x.png"; sourceTree = "<group>"; };
+		B7CA51B259A1D72A55FA983C85B12012 /* TOActivityCroppedImageProvider.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TOActivityCroppedImageProvider.h; sourceTree = "<group>"; };
+		B914FD292CDA27A599665F0958C54209 /* PEM-clear-all-icon.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "PEM-clear-all-icon.png"; sourceTree = "<group>"; };
+		BD19FAC6BA036EB0C5762C7BCA0E39C2 /* ColorCollectionViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ColorCollectionViewCell.swift; path = PreviewEditMedia/Classes/ColorCollectionViewCell.swift; sourceTree = "<group>"; };
+		C1F374CF745C1203FB3E71EC83D527DD /* EmojisCollectionViewDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EmojisCollectionViewDelegate.swift; path = PreviewEditMedia/Classes/EmojisCollectionViewDelegate.swift; sourceTree = "<group>"; };
+		C65A787FB08C3C66F019076CD5A7C7F7 /* PEM-save-icon@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "PEM-save-icon@3x.png"; sourceTree = "<group>"; };
+		C81637E83ACFCB8CF9CD8F7A8818B2E8 /* PhotoEditorViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PhotoEditorViewController.swift; path = PreviewEditMedia/Classes/PhotoEditorViewController.swift; sourceTree = "<group>"; };
 		C8934F8BB67BDC80C27D96009B12B9BA /* Pods-PreviewEditMedia_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PreviewEditMedia_Example-frameworks.sh"; sourceTree = "<group>"; };
-		CA331C97BB389B6F3F750C77DA45A270 /* PEM-drawing-icon.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "PEM-drawing-icon.png"; sourceTree = "<group>"; };
 		CA7CCAFB939342C9518D9A26F7C4B01B /* Pods-PreviewEditMedia_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PreviewEditMedia_Example-Info.plist"; sourceTree = "<group>"; };
-		CDACF7D82D5574DB4F5626A097C24881 /* CropViewController-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "CropViewController-Info.plist"; sourceTree = "<group>"; };
-		D1F53AB7AEC25A8FEDEE8122D28E3E71 /* PEM-crop-icon@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "PEM-crop-icon@2x.png"; sourceTree = "<group>"; };
-		D58970862108D761C47BEE0B564BF9CD /* pl.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = pl.lproj; path = "Objective-C/TOCropViewController/Resources/pl.lproj"; sourceTree = "<group>"; };
-		D5E6D10B0C78258B24978DBD635345CA /* PEM-clear-all-icon@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "PEM-clear-all-icon@3x.png"; sourceTree = "<group>"; };
-		D6C0AC86695EB12BE4D0507BA386C54F /* TOCropScrollView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TOCropScrollView.m; path = "Objective-C/TOCropViewController/Views/TOCropScrollView.m"; sourceTree = "<group>"; };
-		D771C7CB96BB30F1DA10903F18DC01E5 /* ro.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = ro.lproj; path = "Objective-C/TOCropViewController/Resources/ro.lproj"; sourceTree = "<group>"; };
-		DA3438861FB3D774806CF42509D1B927 /* en.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = en.lproj; path = "Objective-C/TOCropViewController/Resources/en.lproj"; sourceTree = "<group>"; };
-		DA7E714C076DAD6AFD9E2525A973BA96 /* Pods_PreviewEditMedia_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PreviewEditMedia_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		DA99DA6360FDA4C1671CEDB097656981 /* PEM-save-icon@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "PEM-save-icon@3x.png"; sourceTree = "<group>"; };
-		DB420C1D79837A78D4B053FE75C6DA1D /* PreviewEditMedia-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PreviewEditMedia-umbrella.h"; sourceTree = "<group>"; };
-		DB852D0613DE3B779B185E2CD185C018 /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReplaceMe.swift; path = PreviewEditMedia/Classes/ReplaceMe.swift; sourceTree = "<group>"; };
-		DBEFFE5CDF1BA023404D1A5F1AB96D14 /* UIView+Image.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+Image.swift"; path = "PreviewEditMedia/Classes/UIView+Image.swift"; sourceTree = "<group>"; };
-		DC3723C262240C4977F0AB357F750D49 /* PreviewEditMedia-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PreviewEditMedia-prefix.pch"; sourceTree = "<group>"; };
-		DD168299FB412285079D91AB2DC11C19 /* es.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = es.lproj; path = "Objective-C/TOCropViewController/Resources/es.lproj"; sourceTree = "<group>"; };
-		DD5F899846E4D759B8547093384CB37E /* StickerCollectionViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StickerCollectionViewCell.swift; path = PreviewEditMedia/Classes/StickerCollectionViewCell.swift; sourceTree = "<group>"; };
-		DE765433E1EF101C430EE4AA147C5664 /* PEM-delete-icon.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "PEM-delete-icon.png"; sourceTree = "<group>"; };
-		DF333E08EBE21AA8285AFE84DA06BB3D /* StickerCollectionViewCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = StickerCollectionViewCell.xib; sourceTree = "<group>"; };
-		E53B8EDB4135FDDF00FAB9FCD72F898A /* TOCroppedImageAttributes.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TOCroppedImageAttributes.m; path = "Objective-C/TOCropViewController/Models/TOCroppedImageAttributes.m"; sourceTree = "<group>"; };
-		E7907617E16FE5F81A439E768172D599 /* ja.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = ja.lproj; path = "Objective-C/TOCropViewController/Resources/ja.lproj"; sourceTree = "<group>"; };
-		E96268D59EE34D6BAC190A52D0AD30DF /* TOCropToolbar.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TOCropToolbar.m; path = "Objective-C/TOCropViewController/Views/TOCropToolbar.m"; sourceTree = "<group>"; };
-		EA24ABF1FA69053906D5CA677D08DE28 /* ru.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = ru.lproj; path = "Objective-C/TOCropViewController/Resources/ru.lproj"; sourceTree = "<group>"; };
-		EAA1C2847C4899E15E3ED2B9CA62BA54 /* PreviewEditMedia.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PreviewEditMedia.debug.xcconfig; sourceTree = "<group>"; };
-		EC92C9778229EB44B43E14FE526841F3 /* PreviewEditMedia.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = PreviewEditMedia.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		F0A91A4306490B3C2B12F15B774DBE59 /* PEM-text-icon@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "PEM-text-icon@2x.png"; sourceTree = "<group>"; };
-		F24D92E4FA9BCCA095D89E794638223E /* PEM-drawing-icon@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "PEM-drawing-icon@3x.png"; sourceTree = "<group>"; };
-		F564FC7837EB53BCCBF4B3589AF2E797 /* fi.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = fi.lproj; path = "Objective-C/TOCropViewController/Resources/fi.lproj"; sourceTree = "<group>"; };
-		F6126FD2387DE1747B308B0FA2D669F9 /* ViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = PreviewEditMedia/Classes/ViewController.swift; sourceTree = "<group>"; };
-		F63A0BACE15F4E7FBF260A65E73CB6F3 /* GradientView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GradientView.swift; path = PreviewEditMedia/Classes/GradientView.swift; sourceTree = "<group>"; };
-		F6E5698D4F40CE7EF3C4D2D9F6E317AE /* CropViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CropViewController.h; path = Swift/CropViewController/CropViewController.h; sourceTree = "<group>"; };
-		F76C1E38A5E17959B46A84E3CF2BD97A /* PEM-crop-icon@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "PEM-crop-icon@3x.png"; sourceTree = "<group>"; };
-		F989FC22960E4496DC07FF9B6703507A /* ca.lproj */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder; name = ca.lproj; path = "Objective-C/TOCropViewController/Resources/ca.lproj"; sourceTree = "<group>"; };
-		FADA73B803B06F35BF81359D58081208 /* BottomSheetViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BottomSheetViewController.swift; path = PreviewEditMedia/Classes/BottomSheetViewController.swift; sourceTree = "<group>"; };
-		FD32C55F516A43B810ABACF043704678 /* TOCroppedImageAttributes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TOCroppedImageAttributes.h; path = "Objective-C/TOCropViewController/Models/TOCroppedImageAttributes.h"; sourceTree = "<group>"; };
-		FDA1ACB6EACFE89C8FF78911BEDF8623 /* TOCropOverlayView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TOCropOverlayView.h; path = "Objective-C/TOCropViewController/Views/TOCropOverlayView.h"; sourceTree = "<group>"; };
-		FE8DC54462E25B8D98E412EF3CC4B50F /* UIImage+CropRotate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+CropRotate.m"; path = "Objective-C/TOCropViewController/Categories/UIImage+CropRotate.m"; sourceTree = "<group>"; };
+		CE4E308EE71E3FB8680308717B1FA590 /* TOCropOverlayView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = TOCropOverlayView.m; sourceTree = "<group>"; };
+		D92190DCF89FBA97E4CE56838C577B69 /* PEM-drawing-icon@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "PEM-drawing-icon@3x.png"; sourceTree = "<group>"; };
+		D948D84B8D186C4FB1DAEADD0F9EBB6A /* PEM-close-icon@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "PEM-close-icon@3x.png"; sourceTree = "<group>"; };
+		D950460693704B7AB85EF87060916891 /* UIImageViewExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UIImageViewExtensions.swift; path = PreviewEditMedia/Classes/UIImageViewExtensions.swift; sourceTree = "<group>"; };
+		DA4FC6D4F53D5EC8DA8DDE05CEF31CFB /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReplaceMe.swift; path = PreviewEditMedia/Classes/ReplaceMe.swift; sourceTree = "<group>"; };
+		DA7E714C076DAD6AFD9E2525A973BA96 /* Pods_PreviewEditMedia_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_PreviewEditMedia_Example.framework; path = "Pods-PreviewEditMedia_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DCCA2B97FAED1EB00C6797936971416E /* PreviewEditMedia.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = PreviewEditMedia.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		E06D0C61714AA919B2EE996A5D980C9D /* top_shadow.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = top_shadow.png; sourceTree = "<group>"; };
+		E1F260D412D3515DEC7E507142DBF769 /* PEM-sent-icon.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "PEM-sent-icon.png"; sourceTree = "<group>"; };
+		E46F7F42ADCDC8AB4F69E6042548933C /* TOCropToolbar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TOCropToolbar.h; sourceTree = "<group>"; };
+		EAD18F06F3265B685A95C15EBF20EB72 /* PEM-close-icon@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "PEM-close-icon@2x.png"; sourceTree = "<group>"; };
+		EB79C564917C98CABCA35395EC9883E2 /* PEM-text-icon.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "PEM-text-icon.png"; sourceTree = "<group>"; };
+		EF3DE1AD5763B50A043CFB0989781131 /* PEM-delete-icon.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "PEM-delete-icon.png"; sourceTree = "<group>"; };
+		F36426DE1CFC817C7E4CE58770AF301E /* TOCropToolbar.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = TOCropToolbar.m; sourceTree = "<group>"; };
+		F4082013413C9DC307038C5B9E24E5A1 /* PEM-clear-all-icon@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "PEM-clear-all-icon@3x.png"; sourceTree = "<group>"; };
+		F4425A3E6FB2FB175A467D043FE9FF43 /* PEM-text-icon@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "PEM-text-icon@2x.png"; sourceTree = "<group>"; };
+		F5BB7D5DB85A09739068E44C9249C580 /* UIView+Image.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+Image.swift"; path = "PreviewEditMedia/Classes/UIView+Image.swift"; sourceTree = "<group>"; };
+		F671BCE59147E25221F23F718F1FF3D4 /* PEM-save-icon.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "PEM-save-icon.png"; sourceTree = "<group>"; };
+		FE572935EBDAC9EC28F2031154F85ED2 /* Pencil.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Pencil.swift; path = PreviewEditMedia/Classes/Pencil.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		43994F25024B80E65651CA58D14FE23B /* Frameworks */ = {
+		5DA2EB04885528356F9CDEF2140F56FC /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				82EE2CE19BD98A32335383D7217F0336 /* Foundation.framework in Frameworks */,
+				4BE0CBE3DC7C4AEF11E081E5D1D0EC5F /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7D9BC69A491147E4260BA218722B2DAF /* Frameworks */ = {
+		F8B998E45BC13BF380C6DAEA69EB903C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				00484136B1B7B98C3D856AAB1AC8FFA5 /* CropViewController.framework in Frameworks */,
-				021B4FFA0B1FFC37A3A55BA08D8ED450 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		8A54CBBAC6489FBBE90288FA627D3BBC /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		DBE1770E76933EBFF18CC42B4B94D8ED /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C1694BB5A65DE144BEF4B9EA69505255 /* Foundation.framework in Frameworks */,
+				6F6B93E39D5DFBE95D5FA7973BFD769B /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		25A5EC51606085B647E24C9AE2460F5B /* Pods */ = {
+		0838F5599EF8FDF3BC71744B3362CA99 /* Categories */ = {
 			isa = PBXGroup;
 			children = (
-				E11C7D6AB7A8F77BF2503ADD7D30DD08 /* CropViewController */,
+				4F3DFFF295C5D94F9910382E1028DEAF /* UIImage+CropRotate.h */,
+				752AEDD6368687D7AAEBC698829015A4 /* UIImage+CropRotate.m */,
 			);
-			name = Pods;
+			name = Categories;
+			path = Categories;
 			sourceTree = "<group>";
 		};
-		32057FDBB561498CB738EEE8AC46EF10 /* Support Files */ = {
+		0C8ACCA74B772F25F78F3E44B003D97C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				585C1D50B1BFC85F6C0EA2101B11A6F1 /* CropViewController.modulemap */,
-				332D554ADC02369587FD88031B0D3A1E /* CropViewController-dummy.m */,
-				CDACF7D82D5574DB4F5626A097C24881 /* CropViewController-Info.plist */,
-				0E1B43DF289F4D27D5F006D8FE43C3A7 /* CropViewController-prefix.pch */,
-				113B0FBF7F65B97C4FEE01B87032BF0E /* CropViewController-umbrella.h */,
-				66E03097891C1EAE07E11A6C80CE268A /* CropViewController.debug.xcconfig */,
-				870E857945E483CE3DD2BE3638E93C33 /* CropViewController.release.xcconfig */,
-				8A975596122BC0291D00E2FF0ACCBC84 /* ResourceBundle-TOCropViewControllerBundle-CropViewController-Info.plist */,
+				DA7E714C076DAD6AFD9E2525A973BA96 /* Pods_PreviewEditMedia_Example.framework */,
+				4D6297C83CBD1D6AA357C6383F9B172A /* PreviewEditMedia.framework */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/CropViewController";
+			name = Products;
+			sourceTree = "<group>";
+		};
+		167CB4037CA609A84B0839390795F227 /* PreviewEditMedia */ = {
+			isa = PBXGroup;
+			children = (
+				0DFA771B291EB551E25F439240771C99 /* BottomSheetViewController.swift */,
+				BD19FAC6BA036EB0C5762C7BCA0E39C2 /* ColorCollectionViewCell.swift */,
+				0228D873E5AE5B6F57B1760CA9768A24 /* ColorsCollectionViewDelegate.swift */,
+				926ADD3F2B33C59D4439FAD53AAEE4A2 /* CropViewController.swift */,
+				3C4FF4C81BB201BA2A29FEA6A862C4CD /* EmojiCollectionViewCell.swift */,
+				C1F374CF745C1203FB3E71EC83D527DD /* EmojisCollectionViewDelegate.swift */,
+				A96C5496F60A125436AD58D334B77E00 /* GradientView.swift */,
+				FE572935EBDAC9EC28F2031154F85ED2 /* Pencil.swift */,
+				C81637E83ACFCB8CF9CD8F7A8818B2E8 /* PhotoEditorViewController.swift */,
+				96C1B8A58BA7DC44DE0F8A29101F670B /* PreviewEditMedia.h */,
+				DA4FC6D4F53D5EC8DA8DDE05CEF31CFB /* ReplaceMe.swift */,
+				909B4BFBD78A2429DE1BB24AF6767F41 /* StickerCollectionViewCell.swift */,
+				88626EA92512CA1DCE9CA1256DF84253 /* UIImageExtensions.swift */,
+				D950460693704B7AB85EF87060916891 /* UIImageViewExtensions.swift */,
+				F5BB7D5DB85A09739068E44C9249C580 /* UIView+Image.swift */,
+				71920982C91E376F0455CE20F7572622 /* ViewController.swift */,
+				0EC2DCCA3151282D0420C22C2DD2183B /* ViewGestures.swift */,
+				A7AC5FF482B8E83E171D9871B8775B8B /* WatermarkCompositionInstruction.swift */,
+				C0D4136521D85B9440CA5DA59027D31C /* Assets */,
+				76D3583CC712AE4EC149191A51D13BC5 /* Classes */,
+				FFF33DBABF25BD08BC7C74647BCCE3D0 /* Pod */,
+				829E52570604DD2C972219D84ABF6A12 /* Support Files */,
+				532FC2A0CD76CC629B62353A26FA1EF7 /* TOCropViewController */,
+			);
+			name = PreviewEditMedia;
+			path = ../..;
 			sourceTree = "<group>";
 		};
 		370EF48FF91A5A64AE6A78DB55E9238B /* Pods-PreviewEditMedia_Example */ = {
@@ -363,132 +274,76 @@
 			path = "Target Support Files/Pods-PreviewEditMedia_Example";
 			sourceTree = "<group>";
 		};
-		3AEB255E61E9EBA722C3A1CE05EB7297 /* Resources */ = {
+		532FC2A0CD76CC629B62353A26FA1EF7 /* TOCropViewController */ = {
 			isa = PBXGroup;
 			children = (
-				9FB0B72A175FD99D254EBD0F4CFEC084 /* ar.lproj */,
-				782B9C26B991CC4C1997BC83D212FFEF /* Base.lproj */,
-				F989FC22960E4496DC07FF9B6703507A /* ca.lproj */,
-				C05BB197990C66E260B8C16D3B319AA5 /* cs.lproj */,
-				1F48620F3F262F77331C442A847E8E56 /* da-DK.lproj */,
-				727CE0CCDB2E6BF8136781457AD38A10 /* de.lproj */,
-				DA3438861FB3D774806CF42509D1B927 /* en.lproj */,
-				DD168299FB412285079D91AB2DC11C19 /* es.lproj */,
-				604E3F24286F2C4A7F2FEFFB63C9D112 /* fa.lproj */,
-				74CF12EC039772C0F3862B5907A15C13 /* fa-IR.lproj */,
-				F564FC7837EB53BCCBF4B3589AF2E797 /* fi.lproj */,
-				9F45D8A42874619FE67E8A78EFA3C4DA /* fr.lproj */,
-				56C050BABF2208AFEA53ABDF71088B6A /* hu.lproj */,
-				725944E1A37D8BB71D5B825F95FE309A /* id.lproj */,
-				07EC8453C5412770373B42E04A297ACB /* it.lproj */,
-				E7907617E16FE5F81A439E768172D599 /* ja.lproj */,
-				878B3117FCD9AE016E621E2E523DDA57 /* ko.lproj */,
-				5CE9F24AD0433A7A7E8A8F0B11498D82 /* ms.lproj */,
-				A891CE00FCF9CDC93E6F5ACED521132C /* nl.lproj */,
-				D58970862108D761C47BEE0B564BF9CD /* pl.lproj */,
-				4B38CFEF2291CEE6690D7D694B3D650E /* pt.lproj */,
-				204BB4396683C4CA13516AD5523AF56D /* pt-BR.lproj */,
-				D771C7CB96BB30F1DA10903F18DC01E5 /* ro.lproj */,
-				EA24ABF1FA69053906D5CA677D08DE28 /* ru.lproj */,
-				7BB149E31DC158D47086658B6268E2CD /* sk.lproj */,
-				C557F878DC80A567942EEE9AAED3B9F4 /* tr.lproj */,
-				BC560ACABC8688098A1F20A100B17AA0 /* vi.lproj */,
-				03A867CEAF9754D0B3614EC97A1A7DF0 /* zh-Hans.lproj */,
-				820EA9E886FAFCF46438E2DBD79A1C45 /* zh-Hant.lproj */,
+				33CE9B36EFF489245909BE80EED3E623 /* TOCropViewController.h */,
+				041A629539C003A5D965711C8A7A51C4 /* TOCropViewController.m */,
+				0838F5599EF8FDF3BC71744B3362CA99 /* Categories */,
+				E1B515BED7BC888486C1113EC1E15860 /* Constants */,
+				5A5081DA2D719F9C5DD8BD6A2736226D /* Models */,
+				FA22ABCA2C75F88151751CA55DD3932A /* Views */,
 			);
-			name = Resources;
+			name = TOCropViewController;
+			path = PreviewEditMedia/Classes/TOCropViewController;
 			sourceTree = "<group>";
 		};
-		3CB6F4585E31D6F74084DE12832402E6 /* Support Files */ = {
+		56629D9E23D17033B60501F5F267595D /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				322833353F03C1E6F90E15FA1B391847 /* PreviewEditMedia.modulemap */,
-				B4F606C1B5011290EE4128AB31006F3E /* PreviewEditMedia-dummy.m */,
-				BBC1A92B4E86B75285CD31C6AA3E0E9D /* PreviewEditMedia-Info.plist */,
-				DC3723C262240C4977F0AB357F750D49 /* PreviewEditMedia-prefix.pch */,
-				DB420C1D79837A78D4B053FE75C6DA1D /* PreviewEditMedia-umbrella.h */,
-				EAA1C2847C4899E15E3ED2B9CA62BA54 /* PreviewEditMedia.debug.xcconfig */,
-				84017D96BEC61C456E999404044F198A /* PreviewEditMedia.release.xcconfig */,
+				167CB4037CA609A84B0839390795F227 /* PreviewEditMedia */,
 			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/PreviewEditMedia";
+			name = "Development Pods";
 			sourceTree = "<group>";
 		};
-		42A16648F0A6F40BC91CD2D26E0F55F1 /* PreviewEditMedia */ = {
+		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				FADA73B803B06F35BF81359D58081208 /* BottomSheetViewController.swift */,
-				844CB1AB51C2B631BD6984A9E4FF215B /* ColorCollectionViewCell.swift */,
-				6A715EE21D1B4056DE5AD6DB89049D3B /* ColorsCollectionViewDelegate.swift */,
-				40B7757C4697BE9CA084182BD49D3821 /* CropViewController.swift */,
-				A9908E0733C1B06E25563D23EDC645D3 /* EmojiCollectionViewCell.swift */,
-				669F4530BA6578074CF2676197D65F79 /* EmojisCollectionViewDelegate.swift */,
-				F63A0BACE15F4E7FBF260A65E73CB6F3 /* GradientView.swift */,
-				438FB41F051D201568207DE7FE63EA11 /* Pencil.swift */,
-				299FD0F5D4ACE6A9C36D27BC49EEBE56 /* PhotoEditorViewController.swift */,
-				79855DC8E38491A586619AA2496AEED1 /* PreviewEditMedia.h */,
-				DB852D0613DE3B779B185E2CD185C018 /* ReplaceMe.swift */,
-				DD5F899846E4D759B8547093384CB37E /* StickerCollectionViewCell.swift */,
-				1AD1B65674A51EF76EADAA3B37326665 /* UIImageExtensions.swift */,
-				58E910A9C4356D29C62841E457B785AF /* UIImageViewExtensions.swift */,
-				DBEFFE5CDF1BA023404D1A5F1AB96D14 /* UIView+Image.swift */,
-				F6126FD2387DE1747B308B0FA2D669F9 /* ViewController.swift */,
-				C294BC43D1987A6C829F6D07ED60EF39 /* ViewGestures.swift */,
-				B0CB4D30E091DA9BE25BFE9C46C8F70D /* WatermarkCompositionInstruction.swift */,
-				5C1ECF1EE3CAD6826C1CE226CD517516 /* Assets */,
-				6DD78382EB0819CA0A9225D498324A77 /* Classes */,
-				DBB2533BB78419AE643FB9F9E652CCB1 /* Pod */,
-				3CB6F4585E31D6F74084DE12832402E6 /* Support Files */,
+				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
 			);
-			name = PreviewEditMedia;
-			path = ../..;
+			name = iOS;
 			sourceTree = "<group>";
 		};
-		5C1ECF1EE3CAD6826C1CE226CD517516 /* Assets */ = {
+		5A5081DA2D719F9C5DD8BD6A2736226D /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				77E3AFB230581219CD6C57821D84DBE5 /* bottom_shadow.png */,
-				BE0DD758DD3E8021394C0799B21EF1AF /* PEM-clear-all-icon.png */,
-				98B04660B680FB416D441C56A9B49BF7 /* PEM-clear-all-icon@2x.png */,
-				D5E6D10B0C78258B24978DBD635345CA /* PEM-clear-all-icon@3x.png */,
-				27ACAEFDE67761FD1A8AF88C03C4D7E5 /* PEM-close-icon.png */,
-				C65CCD67E0BC99951DD198122166B630 /* PEM-close-icon@2x.png */,
-				167051EED15A7F4377370464B956A5E8 /* PEM-close-icon@3x.png */,
-				3E3F67DED9D1250881D623CC4261A5A1 /* PEM-crop-icon.png */,
-				D1F53AB7AEC25A8FEDEE8122D28E3E71 /* PEM-crop-icon@2x.png */,
-				F76C1E38A5E17959B46A84E3CF2BD97A /* PEM-crop-icon@3x.png */,
-				DE765433E1EF101C430EE4AA147C5664 /* PEM-delete-icon.png */,
-				B19C14849CB59E1AF2C5AD83571359F4 /* PEM-delete-icon@2x.png */,
-				816ECCDFF66E41EE5381A1DC9254C009 /* PEM-delete-icon@3x.png */,
-				CA331C97BB389B6F3F750C77DA45A270 /* PEM-drawing-icon.png */,
-				1317A2F3E19C70C3E7FC80E7FCF8DA66 /* PEM-drawing-icon@2x.png */,
-				F24D92E4FA9BCCA095D89E794638223E /* PEM-drawing-icon@3x.png */,
-				C3FF4B3E76F5E3B87B6DE4FAAB258035 /* PEM-save-icon.png */,
-				209A8C284B60E5A7486454A8662D9339 /* PEM-save-icon@2x.png */,
-				DA99DA6360FDA4C1671CEDB097656981 /* PEM-save-icon@3x.png */,
-				617855DE6FA769AD97CEE811A7D4009D /* PEM-sent-icon.png */,
-				BC029982345A2CEEE298ADF88D9A1AF3 /* PEM-sent-icon@2x.png */,
-				71347BE587FEF4D662108D40E7FC638A /* PEM-sent-icon@3x.png */,
-				786F425A8D8E0DAD1B261E55F924BAEF /* PEM-text-icon.png */,
-				F0A91A4306490B3C2B12F15B774DBE59 /* PEM-text-icon@2x.png */,
-				C310ACE7AD750A9A502146FDFF1501A4 /* PEM-text-icon@3x.png */,
-				1CFA6CEEEC4179E420A0D13A40A2EBCA /* top_shadow.png */,
+				B7CA51B259A1D72A55FA983C85B12012 /* TOActivityCroppedImageProvider.h */,
+				9B6ECA5B6A9347FC341020ECD2B8E242 /* TOActivityCroppedImageProvider.m */,
+				ACE7337AE705AEAE695B5ED2BFD417F0 /* TOCroppedImageAttributes.h */,
+				5C91F4BD9208B59C095233154E9390B3 /* TOCroppedImageAttributes.m */,
+				AAAF614B92CDEF7694A375A83C6FE238 /* TOCropViewControllerTransitioning.h */,
+				4955111B02B8A04CEC85A9133E8D7A49 /* TOCropViewControllerTransitioning.m */,
 			);
-			name = Assets;
-			path = PreviewEditMedia/Assets;
+			name = Models;
+			path = Models;
 			sourceTree = "<group>";
 		};
-		6DD78382EB0819CA0A9225D498324A77 /* Classes */ = {
+		76D3583CC712AE4EC149191A51D13BC5 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				A86ECABD28B12B4A6F9BB4512619371D /* BottomSheetViewController.xib */,
-				C806264157E663225D4CEF30A89A1C2B /* ColorCollectionViewCell.xib */,
-				B209779DA3CB88BB40BEA1614A016007 /* EmojiCollectionViewCell.xib */,
-				45DAD6DA4BADEC61233E8DAFBB72C240 /* PhotoEditor.storyboard */,
-				DF333E08EBE21AA8285AFE84DA06BB3D /* StickerCollectionViewCell.xib */,
+				7BC08F107A8289BE66D0940AC5630DDA /* BottomSheetViewController.xib */,
+				A5264BA5B4D734BEF9E413EB87FDAE87 /* ColorCollectionViewCell.xib */,
+				071BF1EB0A378E76ED00E3C47A0529EA /* EmojiCollectionViewCell.xib */,
+				63AC1CBB334C049CC9035F5CB86341B3 /* PhotoEditor.storyboard */,
+				A4DC07F10578EA3C3112315AD473FFBA /* StickerCollectionViewCell.xib */,
 			);
 			name = Classes;
 			path = PreviewEditMedia/Classes;
+			sourceTree = "<group>";
+		};
+		829E52570604DD2C972219D84ABF6A12 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				946E0628A3826F143372E2F9DAAE251F /* PreviewEditMedia.modulemap */,
+				68D84EF45BBE6FE61F69A1AA45227C9B /* PreviewEditMedia-dummy.m */,
+				022773745B18F0711F32D355998442F9 /* PreviewEditMedia-Info.plist */,
+				A9EA545F1980D2C77EFBE706C9C794AD /* PreviewEditMedia-prefix.pch */,
+				255100A1E23FB238B0DAE0E4F0B61365 /* PreviewEditMedia-umbrella.h */,
+				71079995FC5257DC84988CAD79EED574 /* PreviewEditMedia.debug.xcconfig */,
+				0739E4837738B62731B5B4DA5E623C7E /* PreviewEditMedia.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/PreviewEditMedia";
 			sourceTree = "<group>";
 		};
 		B9F13FCDC4D5DC9F8EC3AA2AF8286817 /* Targets Support Files */ = {
@@ -499,130 +354,121 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		BB2CEBB9EF6F2C522D42E4F2ECCBE510 /* iOS */ = {
+		C0D4136521D85B9440CA5DA59027D31C /* Assets */ = {
 			isa = PBXGroup;
 			children = (
-				C7CDFAFE494A14548468736B6EC7077F /* Foundation.framework */,
+				867BCE21B3F87E91DFA0776DBFDE9734 /* bottom_shadow.png */,
+				B914FD292CDA27A599665F0958C54209 /* PEM-clear-all-icon.png */,
+				8A3B9B895C0BCA0B0FFAAF601FB707D3 /* PEM-clear-all-icon@2x.png */,
+				F4082013413C9DC307038C5B9E24E5A1 /* PEM-clear-all-icon@3x.png */,
+				6383C1E0EAE005D72CE36AA1E09FB688 /* PEM-close-icon.png */,
+				EAD18F06F3265B685A95C15EBF20EB72 /* PEM-close-icon@2x.png */,
+				D948D84B8D186C4FB1DAEADD0F9EBB6A /* PEM-close-icon@3x.png */,
+				ADF105C55E887B81DAB2551555AD2A1A /* PEM-crop-icon.png */,
+				396EFF6548EC2543084732EEA87C9CB6 /* PEM-crop-icon@2x.png */,
+				875A5337BAD4643D47921C06CB134976 /* PEM-crop-icon@3x.png */,
+				EF3DE1AD5763B50A043CFB0989781131 /* PEM-delete-icon.png */,
+				99C307D13A079A6E7AB6D6DCFED4AAF0 /* PEM-delete-icon@2x.png */,
+				780FE1882CCF50E12DED0A3BF26A5825 /* PEM-delete-icon@3x.png */,
+				31783FE0EF4542648AA87D4930466290 /* PEM-drawing-icon.png */,
+				28D10DA0BFD9153F6BBA135139587627 /* PEM-drawing-icon@2x.png */,
+				D92190DCF89FBA97E4CE56838C577B69 /* PEM-drawing-icon@3x.png */,
+				F671BCE59147E25221F23F718F1FF3D4 /* PEM-save-icon.png */,
+				08458C9264EE0786F57C1C8FF01027C9 /* PEM-save-icon@2x.png */,
+				C65A787FB08C3C66F019076CD5A7C7F7 /* PEM-save-icon@3x.png */,
+				E1F260D412D3515DEC7E507142DBF769 /* PEM-sent-icon.png */,
+				B6C903A38FDBBC6F0A771691897DA364 /* PEM-sent-icon@2x.png */,
+				12CD5E6E19B14EF531A0CDEA3788EFC0 /* PEM-sent-icon@3x.png */,
+				EB79C564917C98CABCA35395EC9883E2 /* PEM-text-icon.png */,
+				F4425A3E6FB2FB175A467D043FE9FF43 /* PEM-text-icon@2x.png */,
+				A7C2EEDB243847CE179BE305D4CCDE04 /* PEM-text-icon@3x.png */,
+				E06D0C61714AA919B2EE996A5D980C9D /* top_shadow.png */,
 			);
-			name = iOS;
-			sourceTree = "<group>";
-		};
-		BCEDC2FE0C031720B33248AFA046B74E /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				19672639458D5EF5EC76A48F6BF5A2B3 /* CropViewController.framework */,
-				DA7E714C076DAD6AFD9E2525A973BA96 /* Pods_PreviewEditMedia_Example.framework */,
-				4D6297C83CBD1D6AA357C6383F9B172A /* PreviewEditMedia.framework */,
-				97A93DCEF2B1499B1F84D43333829DC7 /* TOCropViewControllerBundle.bundle */,
-			);
-			name = Products;
+			name = Assets;
+			path = PreviewEditMedia/Assets;
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				CFE1A984FEF8CD7B788593FDCDF9CAA8 /* Development Pods */,
-				E0D9EAF431DECD325E08A6136ED7A5ED /* Frameworks */,
-				25A5EC51606085B647E24C9AE2460F5B /* Pods */,
-				BCEDC2FE0C031720B33248AFA046B74E /* Products */,
+				56629D9E23D17033B60501F5F267595D /* Development Pods */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				0C8ACCA74B772F25F78F3E44B003D97C /* Products */,
 				B9F13FCDC4D5DC9F8EC3AA2AF8286817 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		CFE1A984FEF8CD7B788593FDCDF9CAA8 /* Development Pods */ = {
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				42A16648F0A6F40BC91CD2D26E0F55F1 /* PreviewEditMedia */,
-			);
-			name = "Development Pods";
-			sourceTree = "<group>";
-		};
-		DBB2533BB78419AE643FB9F9E652CCB1 /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				BE577C600D799F2B99023C0EC8251500 /* LICENSE */,
-				EC92C9778229EB44B43E14FE526841F3 /* PreviewEditMedia.podspec */,
-				3A7F5C553E7B4E9FA1C850750DCCABDE /* README.md */,
-			);
-			name = Pod;
-			sourceTree = "<group>";
-		};
-		E0D9EAF431DECD325E08A6136ED7A5ED /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				B2296B039088FC5F62DD2E4798C8B98D /* CropViewController.framework */,
-				BB2CEBB9EF6F2C522D42E4F2ECCBE510 /* iOS */,
+				578452D2E740E91742655AC8F1636D1F /* iOS */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		E11C7D6AB7A8F77BF2503ADD7D30DD08 /* CropViewController */ = {
+		E1B515BED7BC888486C1113EC1E15860 /* Constants */ = {
 			isa = PBXGroup;
 			children = (
-				F6E5698D4F40CE7EF3C4D2D9F6E317AE /* CropViewController.h */,
-				06E4F16A75860954F1E8613F2036A855 /* CropViewController.swift */,
-				C581D6AB6D1C4A410FF33BD6687CC0D6 /* TOActivityCroppedImageProvider.h */,
-				AC425917BBEC823365C0D62DE48DD441 /* TOActivityCroppedImageProvider.m */,
-				FDA1ACB6EACFE89C8FF78911BEDF8623 /* TOCropOverlayView.h */,
-				5862DC5F2C195A6AAEE9869B4E5FF9E0 /* TOCropOverlayView.m */,
-				FD32C55F516A43B810ABACF043704678 /* TOCroppedImageAttributes.h */,
-				E53B8EDB4135FDDF00FAB9FCD72F898A /* TOCroppedImageAttributes.m */,
-				5DEF521BC255BF271033D7BEC495D69D /* TOCropScrollView.h */,
-				D6C0AC86695EB12BE4D0507BA386C54F /* TOCropScrollView.m */,
-				A8DE099FEB0F04A09450DF02FAA9EA07 /* TOCropToolbar.h */,
-				E96268D59EE34D6BAC190A52D0AD30DF /* TOCropToolbar.m */,
-				98518B5B15997C14AE14EF8C8D165E0F /* TOCropView.h */,
-				C44858419396723AC0502BE0B6224E91 /* TOCropView.m */,
-				5D335F892EAED03485EDB3C05A65F67B /* TOCropViewConstants.h */,
-				4A188D596EC259D79E722D2CC6080711 /* TOCropViewController.h */,
-				48096BB596B68A2971B5615A7B844245 /* TOCropViewController.m */,
-				4A9D935C23B3CEF503732E4E7CEDBEDD /* TOCropViewControllerTransitioning.h */,
-				C75495794A791B2388B935AC1B892E4A /* TOCropViewControllerTransitioning.m */,
-				861D1975EE1F10A4B83C8BB160169341 /* UIImage+CropRotate.h */,
-				FE8DC54462E25B8D98E412EF3CC4B50F /* UIImage+CropRotate.m */,
-				3AEB255E61E9EBA722C3A1CE05EB7297 /* Resources */,
-				32057FDBB561498CB738EEE8AC46EF10 /* Support Files */,
+				041AA53E02928AA7D5A9E62EE916FF61 /* TOCropViewConstants.h */,
 			);
-			path = CropViewController;
+			name = Constants;
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		FA22ABCA2C75F88151751CA55DD3932A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7DA0D6E5BB3C54A3D6A95556F31B5D47 /* TOCropOverlayView.h */,
+				CE4E308EE71E3FB8680308717B1FA590 /* TOCropOverlayView.m */,
+				98D833B6675C59F2262C50BC175D1174 /* TOCropScrollView.h */,
+				14F2AFB296C05BEA8FCE6028D8687E89 /* TOCropScrollView.m */,
+				E46F7F42ADCDC8AB4F69E6042548933C /* TOCropToolbar.h */,
+				F36426DE1CFC817C7E4CE58770AF301E /* TOCropToolbar.m */,
+				7121303908901C1622E3EB4FEFA7F98A /* TOCropView.h */,
+				B54DE6E6FC6CD1530261835906E21A83 /* TOCropView.m */,
+			);
+			name = Views;
+			path = Views;
+			sourceTree = "<group>";
+		};
+		FFF33DBABF25BD08BC7C74647BCCE3D0 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				2FA04C3CA78E4C4D9586D34BECDC3138 /* LICENSE */,
+				DCCA2B97FAED1EB00C6797936971416E /* PreviewEditMedia.podspec */,
+				12960627197D2443868A68EACBBD57EF /* README.md */,
+			);
+			name = Pod;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		0EEF4F5AA68390DFE0E3F83DC38B1DA7 /* Headers */ = {
+		118D69E13AA402C7E727701B511E4080 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				32BB5FA39236193B1991C31852D98FED /* Pods-PreviewEditMedia_Example-umbrella.h in Headers */,
+				C025ADC1E1C6C635A430924F72EB6063 /* Pods-PreviewEditMedia_Example-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		11F1E70697D08D00031264441C3E6FBE /* Headers */ = {
+		809D8FE10C1D6A2BD82CA88545339291 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				300E2925FFEBDB41B651C4D97888A910 /* PreviewEditMedia-umbrella.h in Headers */,
-				6E4BCC765F85720CB0DA22B83BDF182C /* PreviewEditMedia.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		FD904BBD6547CFCD43F7D5AACA2AEB1A /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				8819E22B8E826DCD61545A8FD7AAC74C /* CropViewController-umbrella.h in Headers */,
-				C70A78E4BCC5AB56FEC1A6EBE45FC7B1 /* CropViewController.h in Headers */,
-				41DE4003048C2962091A731359C5A0E3 /* TOActivityCroppedImageProvider.h in Headers */,
-				C3EB90F7D927D81279F6EDD12BF5296D /* TOCropOverlayView.h in Headers */,
-				59A581048B2EFBC87B9814FD88EA128E /* TOCroppedImageAttributes.h in Headers */,
-				4CD668410AFB057FFD7129B25DC5B012 /* TOCropScrollView.h in Headers */,
-				76B604DE9F93A454923AA4EC14D69230 /* TOCropToolbar.h in Headers */,
-				308FCDC60C77611DF2D8750C0C595A71 /* TOCropView.h in Headers */,
-				78779A8005F0C528ED48F58E5DB4E792 /* TOCropViewConstants.h in Headers */,
-				EF23F90F7398D744EE306801E3DC21AD /* TOCropViewController.h in Headers */,
-				33B1EC57AF279AA1C936FEF6F3A49C62 /* TOCropViewControllerTransitioning.h in Headers */,
-				A761F97D4EC47EED02F793A03262E162 /* UIImage+CropRotate.h in Headers */,
+				F5CBBE44552A918027EFA8E1B0EF7D89 /* PreviewEditMedia-umbrella.h in Headers */,
+				5448E4198F22A0C19F48C04E2597CA9F /* PreviewEditMedia.h in Headers */,
+				A9C095B26EA9926F18A8C056E2F171D0 /* TOActivityCroppedImageProvider.h in Headers */,
+				C09638FA1E85A889B31E3EB3F52DB99A /* TOCropOverlayView.h in Headers */,
+				3D4B4316CDB653D75BFAAFEE788986FB /* TOCroppedImageAttributes.h in Headers */,
+				A7391FB1364A8056DFA8FDD75DF0CC70 /* TOCropScrollView.h in Headers */,
+				63079503ACB8BC55F28F64BB643406F9 /* TOCropToolbar.h in Headers */,
+				29FB1B7670D0A1A0E714E583930894D9 /* TOCropView.h in Headers */,
+				0D4E3A9B6B0D4DC26FAE1E92EC6A0ECE /* TOCropViewConstants.h in Headers */,
+				77ECC298F09FC1D5D12F3DEAAF541199 /* TOCropViewController.h in Headers */,
+				AD65EBE63305F26FA9FE73CBB3E1EB90 /* TOCropViewControllerTransitioning.h in Headers */,
+				27CDF5AE6804771B035728CDCD87C467 /* UIImage+CropRotate.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -631,17 +477,16 @@
 /* Begin PBXNativeTarget section */
 		1DB89A86AE14E3D5399E50B45FDF21EB /* PreviewEditMedia */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9573C70A4744CD5CEDCDB2C011452D1F /* Build configuration list for PBXNativeTarget "PreviewEditMedia" */;
+			buildConfigurationList = FCAB61100BDD8516DAC8233B7F608781 /* Build configuration list for PBXNativeTarget "PreviewEditMedia" */;
 			buildPhases = (
-				11F1E70697D08D00031264441C3E6FBE /* Headers */,
-				57EC9E19EA4CF5A1F3CAF17330B1659D /* Sources */,
-				7D9BC69A491147E4260BA218722B2DAF /* Frameworks */,
-				7AB2D94E1B74E06412686AD53EE645A6 /* Resources */,
+				809D8FE10C1D6A2BD82CA88545339291 /* Headers */,
+				D8F591264C0043D209171EBBBA0F77F0 /* Sources */,
+				5DA2EB04885528356F9CDEF2140F56FC /* Frameworks */,
+				C58F679EA77C9D8631CBFC60D59AF270 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				7AC933A788347E54FDC6F0F797005BFA /* PBXTargetDependency */,
 			);
 			name = PreviewEditMedia;
 			productName = PreviewEditMedia;
@@ -650,58 +495,21 @@
 		};
 		B49E5CC38350413CB1BF130601F50836 /* Pods-PreviewEditMedia_Example */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7E4CF154528AA7131642A32285F8260C /* Build configuration list for PBXNativeTarget "Pods-PreviewEditMedia_Example" */;
+			buildConfigurationList = 7AEB341C026FE92CE984E774FC43461B /* Build configuration list for PBXNativeTarget "Pods-PreviewEditMedia_Example" */;
 			buildPhases = (
-				0EEF4F5AA68390DFE0E3F83DC38B1DA7 /* Headers */,
-				1C94766FFBAF48774FEE7C885CE9C25A /* Sources */,
-				DBE1770E76933EBFF18CC42B4B94D8ED /* Frameworks */,
-				A1A89FFE60B70EC2982647D3B26BF197 /* Resources */,
+				118D69E13AA402C7E727701B511E4080 /* Headers */,
+				C4C89626F125C8A1958EFB69603F6849 /* Sources */,
+				F8B998E45BC13BF380C6DAEA69EB903C /* Frameworks */,
+				A31CEC24EF84048A8517DDDFEC51C9CA /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				C386ED564B7B46E41641FCB0100FF4AC /* PBXTargetDependency */,
-				6C24E7F4143807BED762FE98724E951E /* PBXTargetDependency */,
+				6EDF7D05E386F050D97B78947DCCD0F1 /* PBXTargetDependency */,
 			);
 			name = "Pods-PreviewEditMedia_Example";
 			productName = "Pods-PreviewEditMedia_Example";
 			productReference = DA7E714C076DAD6AFD9E2525A973BA96 /* Pods_PreviewEditMedia_Example.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		BB4EEF23ECB2BAF774CE8EFA5AF90C40 /* CropViewController-TOCropViewControllerBundle */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = F60C275C796509E676DF5629F1132FCD /* Build configuration list for PBXNativeTarget "CropViewController-TOCropViewControllerBundle" */;
-			buildPhases = (
-				A3BE8B66210CFF8A930560EF64CAFF5E /* Sources */,
-				8A54CBBAC6489FBBE90288FA627D3BBC /* Frameworks */,
-				2BA948FD16BACBD3E15FD36E2C7DFAE8 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "CropViewController-TOCropViewControllerBundle";
-			productName = "CropViewController-TOCropViewControllerBundle";
-			productReference = 97A93DCEF2B1499B1F84D43333829DC7 /* TOCropViewControllerBundle.bundle */;
-			productType = "com.apple.product-type.bundle";
-		};
-		CC81A5995F9CEB2971CBA61ACA13FCA3 /* CropViewController */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 4C059009F070A3EDEDB8A85EEAA300D0 /* Build configuration list for PBXNativeTarget "CropViewController" */;
-			buildPhases = (
-				FD904BBD6547CFCD43F7D5AACA2AEB1A /* Headers */,
-				7490D7D022737A6AC054F9FD3E81B6A9 /* Sources */,
-				43994F25024B80E65651CA58D14FE23B /* Frameworks */,
-				A0A1CB14FF481750E028CE79CCA8BE98 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				3551B919998B563C4D5C4A9C80E30B32 /* PBXTargetDependency */,
-			);
-			name = CropViewController;
-			productName = CropViewController;
-			productReference = 19672639458D5EF5EC76A48F6BF5A2B3 /* CropViewController.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -722,12 +530,10 @@
 				Base,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = BCEDC2FE0C031720B33248AFA046B74E /* Products */;
+			productRefGroup = 0C8ACCA74B772F25F78F3E44B003D97C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				CC81A5995F9CEB2971CBA61ACA13FCA3 /* CropViewController */,
-				BB4EEF23ECB2BAF774CE8EFA5AF90C40 /* CropViewController-TOCropViewControllerBundle */,
 				B49E5CC38350413CB1BF130601F50836 /* Pods-PreviewEditMedia_Example */,
 				1DB89A86AE14E3D5399E50B45FDF21EB /* PreviewEditMedia */,
 			);
@@ -735,187 +541,141 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		2BA948FD16BACBD3E15FD36E2C7DFAE8 /* Resources */ = {
+		A31CEC24EF84048A8517DDDFEC51C9CA /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				47092AB076EEB0E83408250BA2A32B0B /* ar.lproj in Resources */,
-				EA0616EB4A85ACBDC770669A9578F803 /* Base.lproj in Resources */,
-				28BB3EB566E124451F2D74E0B7A0B7E2 /* ca.lproj in Resources */,
-				F6047B3C4722BEBCA10B5B3608FED6E5 /* cs.lproj in Resources */,
-				E03C83B9A27E51A02FBC18C6B32F323A /* da-DK.lproj in Resources */,
-				6D6A7EE278BF0459F6076E2704A20824 /* de.lproj in Resources */,
-				4D8AEC7166448533CDE631B93D969B8C /* en.lproj in Resources */,
-				9E473BE991C7A78954D2AFAF8CFB7AB2 /* es.lproj in Resources */,
-				95C157372EE372F0D0D3EFE761B0D108 /* fa-IR.lproj in Resources */,
-				F90A2049D43C2CB310692FFBD3CD573E /* fa.lproj in Resources */,
-				92191BFA8894EA408A3A34D20D75BD27 /* fi.lproj in Resources */,
-				37BFDD6043D01A1266403AE88AB8C383 /* fr.lproj in Resources */,
-				9E41DEAECD7D6B9514A813480E61A530 /* hu.lproj in Resources */,
-				9C977CBEE0DCB07FF65719D3E720CCB9 /* id.lproj in Resources */,
-				23C52D623597F2C07D36B73D709D1AAA /* it.lproj in Resources */,
-				98B3CD2F10F45617D2F9E097A031D0F6 /* ja.lproj in Resources */,
-				0A8010519CFBDE465454769536803C51 /* ko.lproj in Resources */,
-				F76A06BA712A0E7333B5BC7BFC2E5803 /* ms.lproj in Resources */,
-				A3B0BAB6E6C625DF7E502FD7E5481474 /* nl.lproj in Resources */,
-				CB0001777BFB3D1C371E4EF8AEA93C3A /* pl.lproj in Resources */,
-				36D2C89933FACA19497BF99047A11534 /* pt-BR.lproj in Resources */,
-				035EBCDDDF072A1EDE3754101D25E333 /* pt.lproj in Resources */,
-				70CBF2782BA7B4EDFEFC116F4FFC3370 /* ro.lproj in Resources */,
-				15B5BB3CEADF868E2A0A6C0E04969A95 /* ru.lproj in Resources */,
-				43E38F8F8CECC2E8B3FDAC710D529979 /* sk.lproj in Resources */,
-				6B5CBE682C3AEDDA634915BC0A230CD9 /* tr.lproj in Resources */,
-				3EAC12CA501993BE84ABCC9F4CF18504 /* vi.lproj in Resources */,
-				3902F3BDDF682DB57BA4F7244C7607C3 /* zh-Hans.lproj in Resources */,
-				69D8A914589B21D8893A8B5FE5425965 /* zh-Hant.lproj in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7AB2D94E1B74E06412686AD53EE645A6 /* Resources */ = {
+		C58F679EA77C9D8631CBFC60D59AF270 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				20190E7544A41131DE4B679976B07DC6 /* bottom_shadow.png in Resources */,
-				FE5FA4D0C6BA540782CDBE2E95687A1D /* BottomSheetViewController.xib in Resources */,
-				CF65B632A19B57D371085FBC1580AE7C /* ColorCollectionViewCell.xib in Resources */,
-				C53C13E6B161951CE4AD5C7CC103E093 /* EmojiCollectionViewCell.xib in Resources */,
-				14CBFFEE110AB4DFD38FABB97C9FB230 /* PEM-clear-all-icon.png in Resources */,
-				567168AC6B518DC83BFA2A64019AC618 /* PEM-clear-all-icon@2x.png in Resources */,
-				399A969220B6CA303A1E21F3FB853FA4 /* PEM-clear-all-icon@3x.png in Resources */,
-				743A22F821B4D58A1AB9A08673EBB8F2 /* PEM-close-icon.png in Resources */,
-				513BC041A794E9E1BF21DC1238F3EEC1 /* PEM-close-icon@2x.png in Resources */,
-				B1256CCFA2D619D02A81562FA3FEA093 /* PEM-close-icon@3x.png in Resources */,
-				933A05EF9D5E5ABDCD9024DB8B941B50 /* PEM-crop-icon.png in Resources */,
-				08A1266F5D9C8BA40333277549795943 /* PEM-crop-icon@2x.png in Resources */,
-				99A179F3F84D0CEF05FEFC32DB2609E3 /* PEM-crop-icon@3x.png in Resources */,
-				4F429E0DD0275CD9CDE171B34924570E /* PEM-delete-icon.png in Resources */,
-				25C034A74E9084272B27D6C6A83B8B5D /* PEM-delete-icon@2x.png in Resources */,
-				C73043F372DB7AF03E0B0418CB0DC67B /* PEM-delete-icon@3x.png in Resources */,
-				D740948F465644C61F0D81509ED52EDB /* PEM-drawing-icon.png in Resources */,
-				F931DEB281D20107F7276AA1AA2D8D98 /* PEM-drawing-icon@2x.png in Resources */,
-				3223419CDA99A329C8882B8E3395C6C6 /* PEM-drawing-icon@3x.png in Resources */,
-				F55E96D125013DD17286A21BB858EC37 /* PEM-save-icon.png in Resources */,
-				24810750C58EA74BB77C77BB21803FED /* PEM-save-icon@2x.png in Resources */,
-				A82B291754E9BD97E45F7C2DB7AC5C39 /* PEM-save-icon@3x.png in Resources */,
-				04CD40BE32B0F61E2FEB9AB2B7D8D411 /* PEM-sent-icon.png in Resources */,
-				5CD7C164D645C311140C12CAE0F2A398 /* PEM-sent-icon@2x.png in Resources */,
-				EBABA2B5605E3DF9C4F665091F52AF7E /* PEM-sent-icon@3x.png in Resources */,
-				51093ECE58C2AF8308A1109D96624736 /* PEM-text-icon.png in Resources */,
-				F4EB4606401DBEEBBDCBDAB7AC66EF9C /* PEM-text-icon@2x.png in Resources */,
-				79D52079D65D3B9E60EBA38107DAEE09 /* PEM-text-icon@3x.png in Resources */,
-				1958DFD95B95B786E0941BF3FA6D1F44 /* PhotoEditor.storyboard in Resources */,
-				DC9318DF0748DC29FC8A078D4EA9857F /* StickerCollectionViewCell.xib in Resources */,
-				5807D20E008994BFBEB83A4105E7DEEC /* top_shadow.png in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A0A1CB14FF481750E028CE79CCA8BE98 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				019516545AC63CA984C16C93734685B9 /* TOCropViewControllerBundle.bundle in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A1A89FFE60B70EC2982647D3B26BF197 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				C4731B665FC05E94D084D51256CFCDA6 /* bottom_shadow.png in Resources */,
+				AA854B5F71D5D1DE8DD153DDE37EEDFD /* BottomSheetViewController.xib in Resources */,
+				2727B7AB372A25341DFFADB7F49F6468 /* ColorCollectionViewCell.xib in Resources */,
+				4DE157437954584B996603E7013CBDF9 /* EmojiCollectionViewCell.xib in Resources */,
+				3651524158A2CF5A212E4E9496BA4A09 /* PEM-clear-all-icon.png in Resources */,
+				91766FAAA2E1CBD0650CF21415F1DA7B /* PEM-clear-all-icon@2x.png in Resources */,
+				8ED558EF592224CCBB33B432A0EBD080 /* PEM-clear-all-icon@3x.png in Resources */,
+				C220979F22E9EF099F6C8C8E58959469 /* PEM-close-icon.png in Resources */,
+				64D66E385A95766E1A48BEC27A149B09 /* PEM-close-icon@2x.png in Resources */,
+				5415627BDAE1B204C4C8CDFFA69A6A33 /* PEM-close-icon@3x.png in Resources */,
+				0F9795108B9AB7D2AFA2BFCAE05E0AD2 /* PEM-crop-icon.png in Resources */,
+				A2A76409132642A015CC57B98F406F08 /* PEM-crop-icon@2x.png in Resources */,
+				9A389EDD97DBA12CED845252C26236A5 /* PEM-crop-icon@3x.png in Resources */,
+				B5AB9A995060616DEB8197DA240469D6 /* PEM-delete-icon.png in Resources */,
+				2403206FBF3E9D7C0BA68288F3A17528 /* PEM-delete-icon@2x.png in Resources */,
+				0A40977CF0E9419DF1824D717A2D55B3 /* PEM-delete-icon@3x.png in Resources */,
+				6C9399AF5BCAF4662CEE07800C91800B /* PEM-drawing-icon.png in Resources */,
+				EA66C93645F693A56268323DCCF232C7 /* PEM-drawing-icon@2x.png in Resources */,
+				56B1D9D86931BADFCBBFB17E5B830F83 /* PEM-drawing-icon@3x.png in Resources */,
+				C8625C117F959E493B426A156B905689 /* PEM-save-icon.png in Resources */,
+				BB57364AEEA27A6459531A4711B32C36 /* PEM-save-icon@2x.png in Resources */,
+				A74E4BDE33B3F4CA60B3356325064435 /* PEM-save-icon@3x.png in Resources */,
+				9B22E406D22E6A39A45B2A8834E4B75B /* PEM-sent-icon.png in Resources */,
+				A8AE9DDB6424C832E1D7507C30702A76 /* PEM-sent-icon@2x.png in Resources */,
+				B11D4CA25A49367836B45E5758756228 /* PEM-sent-icon@3x.png in Resources */,
+				FF97C8FDD9687A445ECD2E10143DF7C2 /* PEM-text-icon.png in Resources */,
+				CF4A0F867C3544A6E844CED31EB6AA22 /* PEM-text-icon@2x.png in Resources */,
+				086F804F627C2A9BB79681E5D19AEF66 /* PEM-text-icon@3x.png in Resources */,
+				C9F6BCD368FB74A7E071BE8E42CE23CB /* PhotoEditor.storyboard in Resources */,
+				3004F1849ED009AE10553905D7ADA455 /* StickerCollectionViewCell.xib in Resources */,
+				26BF77F08A155E567C560C2E36B724C9 /* top_shadow.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		1C94766FFBAF48774FEE7C885CE9C25A /* Sources */ = {
+		C4C89626F125C8A1958EFB69603F6849 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8B3DAFF9DBB2C19E5B333D3B242E7AFD /* Pods-PreviewEditMedia_Example-dummy.m in Sources */,
+				A83C1018AD3A39E7BC629D24744D8754 /* Pods-PreviewEditMedia_Example-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		57EC9E19EA4CF5A1F3CAF17330B1659D /* Sources */ = {
+		D8F591264C0043D209171EBBBA0F77F0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CFC7BCD792FD5C9481B1F73C210045D2 /* BottomSheetViewController.swift in Sources */,
-				132DD5E93E7B67F1E48225D9E2FD8F22 /* ColorCollectionViewCell.swift in Sources */,
-				4765C44E9B4A3259F3F659B192874C3F /* ColorsCollectionViewDelegate.swift in Sources */,
-				D137392CD3E23E9AC5D26A552F1223FD /* CropViewController.swift in Sources */,
-				4EBAF1322938391D1BC2008F6615569C /* EmojiCollectionViewCell.swift in Sources */,
-				30794B85385B60B35FE4CEA49FE3473C /* EmojisCollectionViewDelegate.swift in Sources */,
-				81F238602C7F1B1015BA840AACF5C469 /* GradientView.swift in Sources */,
-				41FC38D10F9B2B8322DADBB76653EDE7 /* Pencil.swift in Sources */,
-				90F142054E2AC145D278ACA4F92B55AE /* PhotoEditorViewController.swift in Sources */,
-				2F4CC51183FFC90AADC5108693CE36AD /* PreviewEditMedia-dummy.m in Sources */,
-				C8D83A98155AD69170667266D849814E /* ReplaceMe.swift in Sources */,
-				7BD263EC68A2D8F64D4C8095B474072B /* StickerCollectionViewCell.swift in Sources */,
-				725E2A6B6C99139683C80A356D586E55 /* UIImageExtensions.swift in Sources */,
-				61092E96BFF9C31C64ADB19C6A68D472 /* UIImageViewExtensions.swift in Sources */,
-				3CA8EAC8609DA77C47ABB8CA4F358630 /* UIView+Image.swift in Sources */,
-				714D6513C52D68F8AC46660F059F15B1 /* ViewController.swift in Sources */,
-				64DCA22C7B0053BB9B3BA925FBD0B5F0 /* ViewGestures.swift in Sources */,
-				684468FDB145A40EC281F5E69C760C2E /* WatermarkCompositionInstruction.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7490D7D022737A6AC054F9FD3E81B6A9 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				7792FA12CCDDAC82901BBE6AEB8D2E3B /* CropViewController-dummy.m in Sources */,
-				401CD0BD09E521F419A29D14B6A3BBD1 /* CropViewController.swift in Sources */,
-				D6F4C0BD5596FD963A5145CA4CE681A9 /* TOActivityCroppedImageProvider.m in Sources */,
-				DF7A7B3D21760F88961F22853A7933D1 /* TOCropOverlayView.m in Sources */,
-				C5B7A069FE2E3D7F8960CC0A96014705 /* TOCroppedImageAttributes.m in Sources */,
-				38D44E2273593EFDC604A0EAD9477E83 /* TOCropScrollView.m in Sources */,
-				C2DC4D021F180C8BD42879CFE7A5ABA1 /* TOCropToolbar.m in Sources */,
-				9EEC431379D3E0817A6775B784054D5C /* TOCropView.m in Sources */,
-				CC562E77F6F309E4B2CA2CEA250A73E3 /* TOCropViewController.m in Sources */,
-				F7F29B0957743B548DFB6C6B18D005F3 /* TOCropViewControllerTransitioning.m in Sources */,
-				C4C75893575177E7415B155989EE6854 /* UIImage+CropRotate.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A3BE8B66210CFF8A930560EF64CAFF5E /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				FD8449DFE9E450D92CA1AFC64E97D94E /* BottomSheetViewController.swift in Sources */,
+				8B00EB04DF0F37B76FC4B3982B25D196 /* ColorCollectionViewCell.swift in Sources */,
+				B53D7B5B8F9DE972341F873AC79365D5 /* ColorsCollectionViewDelegate.swift in Sources */,
+				6BB84D6B86AF46234E76EAF908A52EB1 /* CropViewController.swift in Sources */,
+				37A2A2AB0D71F1967E2FEF9EB2B7BA01 /* EmojiCollectionViewCell.swift in Sources */,
+				94C1311832900E6ADCBAF5102F1192ED /* EmojisCollectionViewDelegate.swift in Sources */,
+				D085BA9AABC75A86B527A55B41D6DA75 /* GradientView.swift in Sources */,
+				0AF16E8D1C1573E0809A5B2B6965A463 /* Pencil.swift in Sources */,
+				E185F7164E855E07A14FDD1F754BFE8F /* PhotoEditorViewController.swift in Sources */,
+				5DD0FE9B53C718D5A1570C24544BFC39 /* PreviewEditMedia-dummy.m in Sources */,
+				879F5B7D2067898558501575FB7CBBED /* ReplaceMe.swift in Sources */,
+				C643C5489138B69339F48301699B4758 /* StickerCollectionViewCell.swift in Sources */,
+				F666D217CB86C897EFD8589B6612A43C /* TOActivityCroppedImageProvider.m in Sources */,
+				EFAE2AABB674DB2982DA8AC0B823A324 /* TOCropOverlayView.m in Sources */,
+				3EF4D5C0B0817EED5649856A07901515 /* TOCroppedImageAttributes.m in Sources */,
+				3B0898A82A0969A321F0432A7C04D233 /* TOCropScrollView.m in Sources */,
+				0E7C5ABAEEFC730E7BBED6D459C15459 /* TOCropToolbar.m in Sources */,
+				1A0D811D7EC9D5AA994B3A028DDD985F /* TOCropView.m in Sources */,
+				C0248A39B50AA8D374BB582894A852EA /* TOCropViewController.m in Sources */,
+				7A04DE9142FC99C18D1477F51911AFF3 /* TOCropViewControllerTransitioning.m in Sources */,
+				2FAF4E60E36776ABCAC860C2D8BC057B /* UIImage+CropRotate.m in Sources */,
+				AE91340B555A5705380B3A0EFE783253 /* UIImageExtensions.swift in Sources */,
+				1C0699BFE93B67FC494263BBAA57FB07 /* UIImageViewExtensions.swift in Sources */,
+				BBB8B798DE622800012F43C03C9E7E0F /* UIView+Image.swift in Sources */,
+				32A2BBEA9DEC2D972227C83DD29DA836 /* ViewController.swift in Sources */,
+				09EC879E41C831BBE394E72D6A1FAB61 /* ViewGestures.swift in Sources */,
+				D3DE6573E21F0B87A0141101D9CF6187 /* WatermarkCompositionInstruction.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		3551B919998B563C4D5C4A9C80E30B32 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "CropViewController-TOCropViewControllerBundle";
-			target = BB4EEF23ECB2BAF774CE8EFA5AF90C40 /* CropViewController-TOCropViewControllerBundle */;
-			targetProxy = FF66402F37C9CAF15702F166DB45D0DB /* PBXContainerItemProxy */;
-		};
-		6C24E7F4143807BED762FE98724E951E /* PBXTargetDependency */ = {
+		6EDF7D05E386F050D97B78947DCCD0F1 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = PreviewEditMedia;
 			target = 1DB89A86AE14E3D5399E50B45FDF21EB /* PreviewEditMedia */;
-			targetProxy = 83BCA968660331E9A9E64B439F01076F /* PBXContainerItemProxy */;
-		};
-		7AC933A788347E54FDC6F0F797005BFA /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = CropViewController;
-			target = CC81A5995F9CEB2971CBA61ACA13FCA3 /* CropViewController */;
-			targetProxy = 25726181318721585BA39E20D024DAD7 /* PBXContainerItemProxy */;
-		};
-		C386ED564B7B46E41641FCB0100FF4AC /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = CropViewController;
-			target = CC81A5995F9CEB2971CBA61ACA13FCA3 /* CropViewController */;
-			targetProxy = 3AA9C83378E3D504E74B07432E7C59AA /* PBXContainerItemProxy */;
+			targetProxy = 4E0DDBBDDA4FA7E095C16F5FBED9ADB1 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		0210DBCC8CB7B6D4EEDCC6E0F9B7A566 /* Release */ = {
+		1A020BB7539FAC36C522F3BE93FE848D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0739E4837738B62731B5B4DA5E623C7E /* PreviewEditMedia.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/PreviewEditMedia/PreviewEditMedia-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/PreviewEditMedia/PreviewEditMedia-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/PreviewEditMedia/PreviewEditMedia.modulemap";
+				PRODUCT_MODULE_NAME = PreviewEditMedia;
+				PRODUCT_NAME = PreviewEditMedia;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		22B50650FC464459D2BCE30B38DEA0B7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 0D7E7042E9CD9D8B3933B78C1F7A23F5 /* Pods-PreviewEditMedia_Example.release.xcconfig */;
 			buildSettings = {
@@ -949,7 +709,38 @@
 			};
 			name = Release;
 		};
-		2687BA2843F0F37447A45346DE6B41CA /* Debug */ = {
+		40E9261D7F714371EE331712028F7EA0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 71079995FC5257DC84988CAD79EED574 /* PreviewEditMedia.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/PreviewEditMedia/PreviewEditMedia-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/PreviewEditMedia/PreviewEditMedia-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/PreviewEditMedia/PreviewEditMedia.modulemap";
+				PRODUCT_MODULE_NAME = PreviewEditMedia;
+				PRODUCT_NAME = PreviewEditMedia;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		6B5A9323B6C8C533103C827272B6E33E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5D828B4EBA4688F896B351F99643D5BE /* Pods-PreviewEditMedia_Example.debug.xcconfig */;
 			buildSettings = {
@@ -976,69 +767,6 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		33E4BF7C468B12A674D98A5D27C6E93D /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 84017D96BEC61C456E999404044F198A /* PreviewEditMedia.release.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/PreviewEditMedia/PreviewEditMedia-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/PreviewEditMedia/PreviewEditMedia-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/PreviewEditMedia/PreviewEditMedia.modulemap";
-				PRODUCT_MODULE_NAME = PreviewEditMedia;
-				PRODUCT_NAME = PreviewEditMedia;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		353DB14C00A13B1BC582D2D81B53A5A2 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = EAA1C2847C4899E15E3ED2B9CA62BA54 /* PreviewEditMedia.debug.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/PreviewEditMedia/PreviewEditMedia-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/PreviewEditMedia/PreviewEditMedia-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/PreviewEditMedia/PreviewEditMedia.modulemap";
-				PRODUCT_MODULE_NAME = PreviewEditMedia;
-				PRODUCT_NAME = PreviewEditMedia;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -1100,57 +828,12 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Release;
-		};
-		8D1FAE833102656CBD59C0577731FF14 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 870E857945E483CE3DD2BE3638E93C33 /* CropViewController.release.xcconfig */;
-			buildSettings = {
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/CropViewController";
-				IBSC_MODULE = CropViewController;
-				INFOPLIST_FILE = "Target Support Files/CropViewController/ResourceBundle-TOCropViewControllerBundle-CropViewController-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				PRODUCT_NAME = TOCropViewControllerBundle;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Release;
-		};
-		91B8237C754B2EE739230188597175A5 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 66E03097891C1EAE07E11A6C80CE268A /* CropViewController.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/CropViewController/CropViewController-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/CropViewController/CropViewController-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/CropViewController/CropViewController.modulemap";
-				PRODUCT_MODULE_NAME = CropViewController;
-				PRODUCT_NAME = CropViewController;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
 		};
 		D299434AB35E7FD6F7921C8EF24742FF /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -1218,53 +901,6 @@
 			};
 			name = Debug;
 		};
-		E05F41EDEF37FD9056B9280792A27C58 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 66E03097891C1EAE07E11A6C80CE268A /* CropViewController.debug.xcconfig */;
-			buildSettings = {
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/CropViewController";
-				IBSC_MODULE = CropViewController;
-				INFOPLIST_FILE = "Target Support Files/CropViewController/ResourceBundle-TOCropViewControllerBundle-CropViewController-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				PRODUCT_NAME = TOCropViewControllerBundle;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Debug;
-		};
-		ECC2A902B0955DB23B950DF798DA7292 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 870E857945E483CE3DD2BE3638E93C33 /* CropViewController.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/CropViewController/CropViewController-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/CropViewController/CropViewController-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/CropViewController/CropViewController.modulemap";
-				PRODUCT_MODULE_NAME = CropViewController;
-				PRODUCT_NAME = CropViewController;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1277,38 +913,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4C059009F070A3EDEDB8A85EEAA300D0 /* Build configuration list for PBXNativeTarget "CropViewController" */ = {
+		7AEB341C026FE92CE984E774FC43461B /* Build configuration list for PBXNativeTarget "Pods-PreviewEditMedia_Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				91B8237C754B2EE739230188597175A5 /* Debug */,
-				ECC2A902B0955DB23B950DF798DA7292 /* Release */,
+				6B5A9323B6C8C533103C827272B6E33E /* Debug */,
+				22B50650FC464459D2BCE30B38DEA0B7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7E4CF154528AA7131642A32285F8260C /* Build configuration list for PBXNativeTarget "Pods-PreviewEditMedia_Example" */ = {
+		FCAB61100BDD8516DAC8233B7F608781 /* Build configuration list for PBXNativeTarget "PreviewEditMedia" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2687BA2843F0F37447A45346DE6B41CA /* Debug */,
-				0210DBCC8CB7B6D4EEDCC6E0F9B7A566 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		9573C70A4744CD5CEDCDB2C011452D1F /* Build configuration list for PBXNativeTarget "PreviewEditMedia" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				353DB14C00A13B1BC582D2D81B53A5A2 /* Debug */,
-				33E4BF7C468B12A674D98A5D27C6E93D /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		F60C275C796509E676DF5629F1132FCD /* Build configuration list for PBXNativeTarget "CropViewController-TOCropViewControllerBundle" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				E05F41EDEF37FD9056B9280792A27C58 /* Debug */,
-				8D1FAE833102656CBD59C0577731FF14 /* Release */,
+				40E9261D7F714371EE331712028F7EA0 /* Debug */,
+				1A020BB7539FAC36C522F3BE93FE848D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
