@@ -10,8 +10,3 @@
 #endif
 #endif
 
-#import "PreviewEditMedia.h"
-
-FOUNDATION_EXPORT double PreviewEditMediaVersionNumber;
-FOUNDATION_EXPORT const unsigned char PreviewEditMediaVersionString[];
-

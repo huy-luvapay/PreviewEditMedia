@@ -1,15 +1,22 @@
 PODS:
-  - PreviewEditMedia (0.1.5)
+  - CropViewController (2.6.0)
+  - PreviewEditMedia (0.1.10):
+    - CropViewController
 
 DEPENDENCIES:
   - PreviewEditMedia (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - CropViewController
 
 EXTERNAL SOURCES:
   PreviewEditMedia:
     :path: "../"
 
 SPEC CHECKSUMS:
-  PreviewEditMedia: 176ad8b2ea7706b096a947a2081779011acf62f1
+  CropViewController: 7093b39ec3cb508531b22d35773e06cecd7378d8
+  PreviewEditMedia: e45ad13ae7f37f8062bb9911cc3e4ea0aa7963f6
 
 PODFILE CHECKSUM: 260d48bca0d810b5f17757e0cd92fc90c222c3b2
 

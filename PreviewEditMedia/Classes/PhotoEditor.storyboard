@@ -65,6 +65,9 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eiH-5R-h9P">
                                 <rect key="frame" x="0.0" y="31" width="375" height="60"/>
                                 <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="top_shadow.png" translatesAutoresizingMaskIntoConstraints="NO" id="pFg-a5-BV9">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
+                                    </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mPI-JK-Yqm">
                                         <rect key="frame" x="12" y="12" width="30" height="36"/>
                                         <fontDescription key="fontDescription" name="Eventtus-Icons" family="Eventtus-Icons" pointSize="20"/>
@@ -137,7 +140,11 @@
                                     <constraint firstItem="mPI-JK-Yqm" firstAttribute="centerY" secondItem="eiH-5R-h9P" secondAttribute="centerY" id="88E-TZ-add"/>
                                     <constraint firstItem="yUw-6S-RSl" firstAttribute="top" secondItem="eiH-5R-h9P" secondAttribute="top" id="9kt-JF-JOJ"/>
                                     <constraint firstAttribute="bottom" secondItem="yUw-6S-RSl" secondAttribute="bottom" id="JKU-3I-zby"/>
+                                    <constraint firstAttribute="trailing" secondItem="pFg-a5-BV9" secondAttribute="trailing" id="LQi-LN-qbe"/>
                                     <constraint firstAttribute="trailing" secondItem="yUw-6S-RSl" secondAttribute="trailing" constant="30" id="SqD-am-zKZ"/>
+                                    <constraint firstItem="pFg-a5-BV9" firstAttribute="leading" secondItem="eiH-5R-h9P" secondAttribute="leading" id="ZKE-U0-Mbi"/>
+                                    <constraint firstAttribute="bottom" secondItem="pFg-a5-BV9" secondAttribute="bottom" id="gF4-zL-21Q"/>
+                                    <constraint firstItem="pFg-a5-BV9" firstAttribute="top" secondItem="eiH-5R-h9P" secondAttribute="top" id="r4b-kO-9fb"/>
                                     <constraint firstItem="mPI-JK-Yqm" firstAttribute="leading" secondItem="eiH-5R-h9P" secondAttribute="leading" constant="12" id="t6b-D3-S8M"/>
                                 </constraints>
                             </view>
@@ -154,6 +161,9 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zOl-HT-5yt">
                                 <rect key="frame" x="0.0" y="730" width="375" height="60"/>
                                 <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bottom_shadow.png" translatesAutoresizingMaskIntoConstraints="NO" id="Ebm-23-1cp">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
+                                    </imageView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="sZ3-Ps-Lir">
                                         <rect key="frame" x="12" y="0.0" width="72" height="52"/>
                                         <subviews>
@@ -208,11 +218,15 @@
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="Ebm-23-1cp" secondAttribute="trailing" id="1ga-6V-1z5"/>
+                                    <constraint firstItem="Ebm-23-1cp" firstAttribute="top" secondItem="zOl-HT-5yt" secondAttribute="top" id="4HY-rX-xwP"/>
+                                    <constraint firstItem="Ebm-23-1cp" firstAttribute="leading" secondItem="zOl-HT-5yt" secondAttribute="leading" id="4mC-lw-LG6"/>
                                     <constraint firstItem="sZ3-Ps-Lir" firstAttribute="leading" secondItem="zOl-HT-5yt" secondAttribute="leading" constant="12" id="7Yc-Xx-V97"/>
                                     <constraint firstAttribute="height" constant="60" id="EmI-A0-GLV"/>
                                     <constraint firstItem="sZ3-Ps-Lir" firstAttribute="top" secondItem="zOl-HT-5yt" secondAttribute="top" id="NsA-kA-6VB"/>
                                     <constraint firstAttribute="bottom" secondItem="2sC-op-bgJ" secondAttribute="bottom" constant="12" id="Svg-ss-z18"/>
                                     <constraint firstAttribute="trailing" secondItem="2sC-op-bgJ" secondAttribute="trailing" constant="12" id="p4q-hm-2QF"/>
+                                    <constraint firstAttribute="bottom" secondItem="Ebm-23-1cp" secondAttribute="bottom" id="p9J-Qo-5cx"/>
                                     <constraint firstAttribute="bottom" secondItem="sZ3-Ps-Lir" secondAttribute="bottom" constant="8" id="y1g-sZ-EgC"/>
                                 </constraints>
                             </view>
@@ -331,4 +345,8 @@
             <point key="canvasLocation" x="-538.39999999999998" y="35.467980295566505"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="bottom_shadow.png" width="128" height="128"/>
+        <image name="top_shadow.png" width="128" height="128"/>
+    </resources>
 </document>

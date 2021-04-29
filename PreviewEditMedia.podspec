@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'PreviewEditMedia'
-  s.version          = '0.1.9'
+  s.version          = '0.1.11'
   s.summary          = 'A short description of PreviewEditMedia.'
 
 # This description is used to generate tags and improve search results.
@@ -43,6 +43,7 @@ TODO: Add long description of the pod here.
     'PreviewEditMedia/Classes/**/*.storyboard',
     "PreviewEditMedia/Assets/**/*.lproj"
   ]
+  s.dependency 'CropViewController'
   
   # s.resource_bundles = {
   #   'PreviewEditMedia' => ['PreviewEditMedia/Assets/*.png']

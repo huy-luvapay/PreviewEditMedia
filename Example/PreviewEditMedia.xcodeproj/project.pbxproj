@@ -223,10 +223,12 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-PreviewEditMedia_Example/Pods-PreviewEditMedia_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/CropViewController/CropViewController.framework",
 				"${BUILT_PRODUCTS_DIR}/PreviewEditMedia/PreviewEditMedia.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CropViewController.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PreviewEditMedia.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;

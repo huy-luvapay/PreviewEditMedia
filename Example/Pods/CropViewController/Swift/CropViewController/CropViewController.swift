@@ -20,7 +20,9 @@
 //  WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR
 //  IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-import CropViewController
+#if canImport(TOCropViewController)
+import TOCropViewController
+#endif
 
 /**
  An enum containing all of the aspect ratio presets that this view controller supports
@@ -41,7 +43,7 @@ public typealias CropViewCroppingStyle = TOCropViewCroppingStyle
 /// @name Delegate
 ///------------------------------------------------
 
-@objc protocol CropViewControllerDelegate: NSObjectProtocol {
+@objc public protocol CropViewControllerDelegate: NSObjectProtocol {
     /**
      Called when the user has committed the crop action, and provides
      just the cropping rectangle.
@@ -86,8 +88,7 @@ public typealias CropViewCroppingStyle = TOCropViewCroppingStyle
 /// @name Class
 ///------------------------------------------------
 
-
-class CropViewController: UIViewController, TOCropViewControllerDelegate {
+open class CropViewController: UIViewController, TOCropViewControllerDelegate {
     
     /**
      The original, uncropped image that was passed to this controller.
