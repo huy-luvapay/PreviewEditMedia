@@ -185,6 +185,19 @@ open class PreviewEditMedia {
     }
 }
 
+extension PhotoEditorViewController {
+    
+    var topBarHeight: CGFloat {
+        var top = self.navigationController?.navigationBar.frame.height ?? 0.0
+        if #available(iOS 13.0, *) {
+            top += UIApplication.shared.windows.first?.windowScene?.statusBarManager?.statusBarFrame.height ?? 0
+        } else {
+            top += UIApplication.shared.statusBarFrame.height
+        }
+        return top
+    }
+}
+
 public final class PhotoEditorViewController: UIViewController, CropViewControllerDelegate {
     
     
@@ -270,9 +283,7 @@ public final class PhotoEditorViewController: UIViewController, CropViewControll
     
     override public func viewDidLoad() {
         super.viewDidLoad()
-        
-        
-        
+        initBezierPathLine()
         cancelButton.setImage(UIImage(named: "PEM-close-icon.png", in: PreviewEditMedia.bundle(), compatibleWith: nil)?.withRenderingMode(.alwaysTemplate), for: UIControl.State())
         cancelButton.imageView?.contentMode = .scaleAspectFit
         cancelButton.tintColor = UIColor.white
@@ -313,9 +324,9 @@ public final class PhotoEditorViewController: UIViewController, CropViewControll
         clearButton.tintColor = UIColor.white
         clearButton.setTitle("", for: UIControl.State())
         
-        doneButton.setTitle("Save", for: UIControl.State())
+        doneButton.setTitle("Save".localized(), for: UIControl.State())
         
-        deleteView.layer.zPosition = -100
+        deleteView.layer.zPosition = 100
         deleteView.backgroundColor = UIColor.red
         deleteView.layer.cornerRadius = deleteView.bounds.height / 2
         deleteView.layer.borderWidth = 2.0
@@ -337,8 +348,6 @@ public final class PhotoEditorViewController: UIViewController, CropViewControll
         
         */
         
-        
-  
         if checkVideoOrIamge {
             videoViewContainer.isHidden = true
             imageView.contentMode = UIView.ContentMode.scaleAspectFit
@@ -384,8 +393,6 @@ public final class PhotoEditorViewController: UIViewController, CropViewControll
         
             
         }
-       
-        
         
         let edgePan = UIScreenEdgePanGestureRecognizer(target: self, action: #selector(screenEdgeSwiped))
         edgePan.edges = .bottom
@@ -406,9 +413,11 @@ public final class PhotoEditorViewController: UIViewController, CropViewControll
                                                selector: #selector(keyboardWillChangeFrame),
                                                name: UIResponder.keyboardWillChangeFrameNotification, object: nil)
     
-        
         configureCollectionView()
         bottomSheetVC = BottomSheetViewController(nibName: "BottomSheetViewController", bundle: Bundle(for: BottomSheetViewController.self))
+        
+        
+        self.refreshShapeLayer()
         
     }
     
@@ -423,6 +432,59 @@ public final class PhotoEditorViewController: UIViewController, CropViewControll
         }
        
     }
+    
+    
+    
+    //
+    internal var bezierPathLine: UIBezierPath!
+    internal var bufferImage: UIImage?
+ 
+    internal var bezierCurvePoints: [CGPoint] = []
+    
+    func initBezierPathLine() {
+        
+        bezierPathLine = UIBezierPath()
+        bezierPathLine.lineWidth = 4
+    }
+    
+    //
+    var maskLayer: CAShapeLayer? = nil
+    
+    func refreshShapeLayer() {
+        if let maskLayer = self.maskLayer {
+            maskLayer.removeFromSuperlayer()
+        }
+        let scale = UIScreen.main.scale
+        var rect = self.getImageFrameInImageView(imageView: self.imageView)
+        rect = CGRect(x: rect.origin.x / scale, y: (rect.origin.y / scale), width: rect.size.width / scale, height: rect.size.height / scale)
+        
+        let maskPath = UIBezierPath(rect: self.view.bounds)
+        
+        
+        let maskLayer = CAShapeLayer()
+        maskLayer.fillRule = .evenOdd
+        maskLayer.fillColor = UIColor.black.withAlphaComponent(0.5).cgColor
+        maskLayer.lineWidth = 0.1
+        maskLayer.strokeColor = UIColor.white.cgColor
+        
+        
+        let clipPath = UIBezierPath(rect: rect)
+        clipPath.append(maskPath)
+        clipPath.usesEvenOddFillRule = true
+        
+        
+        let pathAnimation = CABasicAnimation(keyPath: "path")
+        pathAnimation.duration = CATransaction.animationDuration()
+        pathAnimation.timingFunction = CATransaction.animationTimingFunction()
+        maskLayer.add(pathAnimation, forKey: "path")
+        maskLayer.path = clipPath.cgPath
+        
+        self.canvasView.layer.addSublayer(maskLayer)
+        
+        self.maskLayer = maskLayer
+    }
+    
+    
     
     @objc fileprivate func playerItemDidReachEnd(_ notification: Notification) {
         if self.player != nil {
@@ -531,6 +593,7 @@ public final class PhotoEditorViewController: UIViewController, CropViewControll
         self.croppedAngle = angle
         self.imageView.image = image
         cropViewController.dismiss(animated: true, completion: nil)
+        self.refreshShapeLayer()
     }
     
     @objc func keyboardWillShow(notification: NSNotification) {

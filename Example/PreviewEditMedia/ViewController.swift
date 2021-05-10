@@ -12,6 +12,10 @@ import PreviewEditMedia
 
 
 class ViewController: UIViewController {
+    
+    
+    
+    @IBOutlet weak var imageView: UIImageView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,7 +28,12 @@ class ViewController: UIViewController {
     }
     
     func presentEditPhoto() {
-        self.presetPhotoEditorViewController(photo: UIImage(named: "photo2.jpg")!)
+        self.presetPhotoEditorViewController(photo: UIImage(named: "photo3.png")!, languageInt: 2) { (viewController, image) in
+            self.imageView.image = image
+            viewController.dismiss(animated: true, completion: nil)
+        } canceled: {
+        }
+
     }
     
     

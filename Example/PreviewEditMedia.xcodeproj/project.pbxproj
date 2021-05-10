@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		07B215454AD9E2BE4AF47A6C /* Pods_PreviewEditMedia_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B0D81AA31B0240269FA698D /* Pods_PreviewEditMedia_Example.framework */; };
 		4508A9522631682C0066AB27 /* photo.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 4508A9512631682C0066AB27 /* photo.jpeg */; };
+		45108E8B2648D62300BDDA18 /* photo3.png in Resources */ = {isa = PBXBuildFile; fileRef = 45108E8A2648D62200BDDA18 /* photo3.png */; };
 		45C00F9726327751006BB941 /* photo2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 45C00F9626327751006BB941 /* photo2.jpg */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
@@ -23,6 +24,7 @@
 		05C89559D3B9C038AE114E58 /* Pods-PreviewEditMedia_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PreviewEditMedia_Tests.debug.xcconfig"; path = "Target Support Files/Pods-PreviewEditMedia_Tests/Pods-PreviewEditMedia_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		2F85073DA82FEFAB2B3580F7 /* PreviewEditMedia.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = PreviewEditMedia.podspec; path = ../PreviewEditMedia.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		4508A9512631682C0066AB27 /* photo.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = photo.jpeg; sourceTree = "<group>"; };
+		45108E8A2648D62200BDDA18 /* photo3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = photo3.png; sourceTree = "<group>"; };
 		45C00F9626327751006BB941 /* photo2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = photo2.jpg; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* PreviewEditMedia_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PreviewEditMedia_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -95,6 +97,7 @@
 		607FACD21AFB9204008FA782 /* Example for PreviewEditMedia */ = {
 			isa = PBXGroup;
 			children = (
+				45108E8A2648D62200BDDA18 /* photo3.png */,
 				45C00F9626327751006BB941 /* photo2.jpg */,
 				4508A9512631682C0066AB27 /* photo.jpeg */,
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
@@ -177,6 +180,7 @@
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = 5VQJKFV338;
 						LastSwiftMigration = 0900;
 					};
 				};
@@ -209,6 +213,7 @@
 				4508A9522631682C0066AB27 /* photo.jpeg in Resources */,
 				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
+				45108E8B2648D62300BDDA18 /* photo3.png in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -394,6 +399,7 @@
 			baseConfigurationReference = 9B5B4335ECDD7D46186ADB82 /* Pods-PreviewEditMedia_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 5VQJKFV338;
 				INFOPLIST_FILE = PreviewEditMedia/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -410,6 +416,7 @@
 			baseConfigurationReference = 66685417F99DD234AF98EC0C /* Pods-PreviewEditMedia_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 5VQJKFV338;
 				INFOPLIST_FILE = PreviewEditMedia/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

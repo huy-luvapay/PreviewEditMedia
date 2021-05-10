@@ -16,6 +16,7 @@ extension PhotoEditorViewController {
             swiped = false
             if let touch = touches.first {
                 lastPoint = touch.location(in: self.tempImageView)
+                bezierCurvePoints.append(lastPoint)
             }
         }
             //Hide stickersVC if clicked outside it
@@ -34,6 +35,7 @@ extension PhotoEditorViewController {
                                       with event: UIEvent?){
         if isDrawing {
             // 6
+            /*
             swiped = true
             if let touch = touches.first {
                 let currentPoint = touch.location(in: canvasView)
@@ -42,16 +44,58 @@ extension PhotoEditorViewController {
                 // 7
                 lastPoint = currentPoint
             }
+            */
+            if let touch = touches.first {
+                let point = touch.location(in: canvasView)
+                bezierCurvePoints.append(point)
+     
+                if bezierCurvePoints.count == 5 {
+                    
+     
+                    // Calculate center point of 3rd and 5th point
+                    let x1 = bezierCurvePoints[2].x
+                    let y1 = bezierCurvePoints[2].y
+                    
+                    let x2 = bezierCurvePoints[4].x
+                    let y2 = bezierCurvePoints[4].y
+                    
+                    // Replace 4th point with the calculated center point
+                    bezierCurvePoints[3] = CGPoint(x: (x1 + x2) / 2, y: (y1 + y2) / 2)
+                    
+                    // Draw arc between 1st and 4th point
+                    bezierPathLine.move(to: bezierCurvePoints[0])
+                    bezierPathLine.addCurve(to: bezierCurvePoints[3], controlPoint1: bezierCurvePoints[1], controlPoint2: bezierCurvePoints[2])
+                    
+                    let point1 = bezierCurvePoints[3]
+                    let point2 = bezierCurvePoints[4]
+                    
+                    bezierCurvePoints.removeAll()
+                    
+                    // Last two points will be starting two points for next arc.
+                    bezierCurvePoints.append(point1)
+                    bezierCurvePoints.append(point2)
+                    
+                }
+                drawLine()
+            }
+            
         }
     }
     
     override public func touchesEnded(_ touches: Set<UITouch>,
                                       with event: UIEvent?){
         if isDrawing {
+            /*
             if !swiped {
                 // draw a single point
                 drawLineFrom(lastPoint, toPoint: lastPoint)
             }
+            */
+            
+            drawLine()
+            
+            bezierCurvePoints.removeAll()
+            bezierPathLine.removeAllPoints()
         }
         
     }
@@ -76,6 +120,29 @@ extension PhotoEditorViewController {
             UIGraphicsEndImageContext()
         }
     }
+    
+    
+    private func drawLine() {
+        UIGraphicsBeginImageContextWithOptions(tempImageView.frame.size, false, UIScreen.main.scale)
+        
+        if let context = UIGraphicsGetCurrentContext() {
+            tempImageView.image?.draw(in: CGRect(x: 0, y: 0, width: tempImageView.frame.size.width, height: tempImageView.frame.size.height))
+            
+            context.setLineCap( CGLineCap.round)
+            context.setLineWidth(5.0)
+            context.setStrokeColor(drawColor.cgColor)
+            context.setBlendMode( CGBlendMode.normal)
+            context.addPath(bezierPathLine.cgPath)
+  
+            context.strokePath()
+     
+            tempImageView.image = UIGraphicsGetImageFromCurrentImageContext()
+            UIGraphicsEndImageContext()
+            
+        }
+    }
+    
+    
     
 }
 

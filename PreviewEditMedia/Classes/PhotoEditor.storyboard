@@ -346,7 +346,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="bottom_shadow.png" width="128" height="128"/>
-        <image name="top_shadow.png" width="128" height="128"/>
+        <image name="bottom_shadow.png" width="180" height="76"/>
+        <image name="top_shadow.png" width="180" height="76"/>
     </resources>
 </document>
