@@ -125,16 +125,43 @@ extension PhotoEditorViewController {
     private func drawLine() {
         UIGraphicsBeginImageContextWithOptions(tempImageView.frame.size, false, UIScreen.main.scale)
         
+        
+        /*
+        context.setFillColor(color.cgColor)
+        context.setStrokeColor(color.cgColor)
+        context.setShadow(offset: CGSize(width:0, height: 0), blur: 20, color: color.cgColor)
+        context.setLineJoin(.round)
+        context.setLineCap(.round)
+        context.setLineWidth(brush.radius * 2)
+        
+        context.move(to: startPoint)
+        context.addLine(to: endPoint)
+        
+        context.drawPath(using: .stroke)
+        */
         if let context = UIGraphicsGetCurrentContext() {
             tempImageView.image?.draw(in: CGRect(x: 0, y: 0, width: tempImageView.frame.size.width, height: tempImageView.frame.size.height))
+            if(self.brushStyle == .glow) {
+                context.setFillColor(drawColor.cgColor)
+                context.setShadow(offset: CGSize(width:0, height: 0), blur: 1, color: drawColor.cgColor)
+                
+                context.setLineCap( CGLineCap.round)
+                context.setLineWidth(self.drawLineWidth)
+                context.setStrokeColor(UIColor.white.cgColor)
+                context.setBlendMode( CGBlendMode.normal)
+                context.addPath(bezierPathLine.cgPath)
+      
+                context.strokePath()
+            } else {
+                context.setLineCap( CGLineCap.round)
+                context.setLineWidth(self.drawLineWidth)
+                context.setStrokeColor(drawColor.cgColor)
+                context.setBlendMode( CGBlendMode.normal)
+                context.addPath(bezierPathLine.cgPath)
+      
+                context.strokePath()
+            }
             
-            context.setLineCap( CGLineCap.round)
-            context.setLineWidth(5.0)
-            context.setStrokeColor(drawColor.cgColor)
-            context.setBlendMode( CGBlendMode.normal)
-            context.addPath(bezierPathLine.cgPath)
-  
-            context.strokePath()
      
             tempImageView.image = UIGraphicsGetImageFromCurrentImageContext()
             UIGraphicsEndImageContext()

@@ -10,6 +10,7 @@
 #endif
 #endif
 
+#import "FTPopOverMenu.h"
 #import "NSBundle+ EditMediaLanguage.h"
 #import "NSString+Localized.h"
 #import "PreviewEditMedia.h"

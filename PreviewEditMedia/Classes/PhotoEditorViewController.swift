@@ -13,6 +13,11 @@ import Photos
 
 public var switchCam = Bool()
 
+internal enum BrushStyle {
+    case glow
+    case normal
+}
+
 
 internal extension UIImage {
     
@@ -245,6 +250,22 @@ public final class PhotoEditorViewController: UIViewController, CropViewControll
     
     var colorsCollectionViewDelegate: ColorsCollectionViewDelegate!
     
+    
+    @IBOutlet weak var brushButton: UIButton!
+    @IBOutlet weak var brushButtonWidthConstraint: NSLayoutConstraint!
+    var brushStyle: BrushStyle = .normal {
+        didSet {
+            if(self.brushStyle == .normal) {
+                self.brushButton.setImage(UIImage(named: "brush1.png", in: PreviewEditMedia.bundle(), compatibleWith: nil)?.withRenderingMode(.alwaysOriginal), for: UIControl.State())
+            } else {
+                self.brushButton.setImage(UIImage(named: "brush2.png", in: PreviewEditMedia.bundle(), compatibleWith: nil)?.withRenderingMode(.alwaysOriginal), for: UIControl.State())
+            }
+        }
+    }
+    
+    private let colorSlider: ColorSlider = ColorSlider(orientation: .vertical, previewSide: .right)
+    
+    
     public var photo: UIImage?
     public var stickers : [UIImage] = []
     
@@ -260,8 +281,12 @@ public final class PhotoEditorViewController: UIViewController, CropViewControll
     
     //
     var bottomSheetIsVisible = false
-    var drawColor: UIColor = UIColor.black
-    var textColor: UIColor = UIColor.white
+    var drawColorSelectedIndex: Int = 6
+    var textColorSelectedIndex: Int = 6
+    
+    var drawLineWidth: CGFloat = 3.0
+    var drawColor: UIColor = UIColor.red
+    var textColor: UIColor = UIColor.red
     var isDrawing: Bool = false
     var lastPoint: CGPoint!
     var swiped = false
@@ -283,6 +308,7 @@ public final class PhotoEditorViewController: UIViewController, CropViewControll
     
     override public func viewDidLoad() {
         super.viewDidLoad()
+        colorPickerView.backgroundColor = UIColor.black.withAlphaComponent(0.4)
         initBezierPathLine()
         cancelButton.setImage(UIImage(named: "PEM-close-icon.png", in: PreviewEditMedia.bundle(), compatibleWith: nil)?.withRenderingMode(.alwaysTemplate), for: UIControl.State())
         cancelButton.imageView?.contentMode = .scaleAspectFit
@@ -419,6 +445,20 @@ public final class PhotoEditorViewController: UIViewController, CropViewControll
         
         self.refreshShapeLayer()
         
+        self.brushButton.layer.borderWidth = 0.2
+        self.brushButton.layer.borderColor = UIColor.gray.cgColor
+        self.brushButton.layer.cornerRadius = self.brushButton.frame.size.width / 2.0
+        self.brushButton.backgroundColor = UIColor.white
+        self.brushButton.addTarget(self, action: #selector(brushButtonPressed), for: .touchUpInside)
+        self.brushButton.tintColor = UIColor.black
+        
+        self.brushStyle = .normal
+        
+        colorSlider.addTarget(self, action: #selector(changedColor(slider:)), for: .valueChanged)
+        self.view.addSubview(colorSlider)
+        colorSlider.progress = self.drawLineWidth
+        self.setupColorSliderConstraints()
+        
     }
     
     override public func viewDidAppear(_ animated: Bool) {
@@ -431,6 +471,47 @@ public final class PhotoEditorViewController: UIViewController, CropViewControll
              player?.play()
         }
        
+    }
+    
+    // Set up view constraints.
+    func setupColorSliderConstraints() {
+        colorSlider.isHidden = true
+        let colorSliderHeight = CGFloat(240)
+        colorSlider.translatesAutoresizingMaskIntoConstraints = false
+        NSLayoutConstraint.activate([
+            colorSlider.leadingAnchor.constraint(equalTo: self.view.leadingAnchor, constant: 20),
+            //colorSlider.centerXAnchor.constraint(equalTo: self.view.centerXAnchor),
+            colorSlider.centerYAnchor.constraint(equalTo: self.view.centerYAnchor),
+            colorSlider.widthAnchor.constraint(equalToConstant: 5),
+            colorSlider.heightAnchor.constraint(equalToConstant: colorSliderHeight),
+            
+        ])
+    }
+    
+    @objc func changedColor(slider: ColorSlider) {
+        self.drawLineWidth = slider.progress
+    }
+    
+    
+    @objc func brushButtonPressed() {
+        let config = FTConfiguration()
+        config.backgoundTintColor = UIColor.white
+        config.borderColor = UIColor.black
+        config.menuWidth = 55
+        config.menuSeparatorColor = UIColor.black
+        config.menuRowHeight = 55
+        config.cornerRadius = 7
+        config.textColor = UIColor.white
+        config.textAlignment = NSTextAlignment.center
+    
+        FTPopOverMenu.showForSender(sender: self.brushButton, with: ["", ""], menuImageArray: [UIImage(named: "brush1.png", in: PreviewEditMedia.bundle(), compatibleWith: nil)!, UIImage(named: "brush2.png", in: PreviewEditMedia.bundle(), compatibleWith: nil)!], config: config) {[weak self] (index) in
+            guard let `self` = self else { return }
+            if(index == 0) {
+                self.brushStyle = .normal
+            } else {
+                self.brushStyle = .glow
+            }
+        }
     }
     
     
@@ -510,6 +591,7 @@ public final class PhotoEditorViewController: UIViewController, CropViewControll
             UINib(nibName: "ColorCollectionViewCell", bundle: Bundle(for: ColorCollectionViewCell.self)),
             forCellWithReuseIdentifier: "ColorCollectionViewCell")
         
+        
     }
     
     @IBAction func saveButtonTapped(_ sender: AnyObject) {
@@ -561,6 +643,7 @@ public final class PhotoEditorViewController: UIViewController, CropViewControll
     @IBAction func doneButtonTapped(_ sender: Any) {
         view.endEditing(true)
         doneButton.isHidden = true
+        colorSlider.isHidden = true
         colorPickerView.isHidden = true
         tempImageView.isUserInteractionEnabled = true
         hideToolbar(hide: false)
@@ -598,8 +681,12 @@ public final class PhotoEditorViewController: UIViewController, CropViewControll
     
     @objc func keyboardWillShow(notification: NSNotification) {
         doneButton.isHidden = false
+        colorSlider.isHidden = false
         colorPickerView.isHidden = false
+        colorsCollectionView.reloadData()
+        self.colorsCollectionView.selectItem(at: IndexPath(item: self.textColorSelectedIndex, section: 0), animated: false, scrollPosition: .left)
         hideToolbar(hide: true)
+        brushButtonWidthConstraint.constant = 0
     }
     
     @objc func keyboardWillHide(notification: NSNotification) {
@@ -722,12 +809,18 @@ public final class PhotoEditorViewController: UIViewController, CropViewControll
         textView.becomeFirstResponder()
     }
     
+    
     @IBAction func pencilButtonTapped(_ sender: Any) {
+        
         isDrawing = true
         tempImageView.isUserInteractionEnabled = false
         doneButton.isHidden = false
+        colorSlider.isHidden = false
         colorPickerView.isHidden = false
+        colorsCollectionView.reloadData()
+        colorsCollectionView.selectItem(at: IndexPath(item: self.drawColorSelectedIndex, section: 0), animated: false, scrollPosition: .left)
         hideToolbar(hide: true)
+        brushButtonWidthConstraint.constant = 44
     }
     
     
@@ -1161,14 +1254,17 @@ public final class PhotoEditorViewController: UIViewController, CropViewControll
  
 
 extension PhotoEditorViewController: ColorDelegate {
-    func chosedColor(color: UIColor) {
+    func chosedColor(color: UIColor, at index: Int) {
         if isDrawing {
+            self.drawColorSelectedIndex = index
             self.drawColor = color
         } else if activeTextView != nil {
+            self.textColorSelectedIndex = index
             activeTextView?.textColor = color
             textColor = color
         }
     }
+    
 }
 
 extension PhotoEditorViewController: UITextViewDelegate {
