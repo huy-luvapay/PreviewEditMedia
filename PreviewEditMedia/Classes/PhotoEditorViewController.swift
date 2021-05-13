@@ -263,7 +263,10 @@ public final class PhotoEditorViewController: UIViewController, CropViewControll
         }
     }
     
-    private let colorSlider: ColorSlider = ColorSlider(orientation: .vertical, previewSide: .right)
+    
+    private let brushSizeSliderContainView: UIView = UIView()
+    private let brushSizeSliderBackgroundImage: UIImageView = UIImageView()
+    private let brushSizeSlider: ColorSlider = ColorSlider(orientation: .vertical, previewSide: .right)
     
     
     public var photo: UIImage?
@@ -289,7 +292,13 @@ public final class PhotoEditorViewController: UIViewController, CropViewControll
     var textColor: UIColor = UIColor.red
     var isDrawing: Bool = false
     var lastPoint: CGPoint!
-    var swiped = false
+    var swiped = false {
+        didSet {
+            self.brushSizeSliderContainView.isHidden = swiped
+            self.colorPickerView.isHidden = swiped
+            self.doneButton.isHidden = swiped
+        }
+    }
     var opacity: CGFloat = 1.0
     var lastPanPoint: CGPoint?
     var lastTextViewTransform: CGAffineTransform?
@@ -454,9 +463,9 @@ public final class PhotoEditorViewController: UIViewController, CropViewControll
         
         self.brushStyle = .normal
         
-        colorSlider.addTarget(self, action: #selector(changedColor(slider:)), for: .valueChanged)
-        self.view.addSubview(colorSlider)
-        colorSlider.progress = self.drawLineWidth
+        brushSizeSlider.backgroundColor = UIColor.black.withAlphaComponent(0.5)
+        brushSizeSlider.addTarget(self, action: #selector(changedColor(slider:)), for: .valueChanged)
+        brushSizeSlider.progress = self.drawLineWidth
         self.setupColorSliderConstraints()
         
     }
@@ -475,6 +484,47 @@ public final class PhotoEditorViewController: UIViewController, CropViewControll
     
     // Set up view constraints.
     func setupColorSliderConstraints() {
+        
+        self.brushSizeSliderContainView.isHidden = true
+        self.view.addSubview(self.brushSizeSliderContainView)
+        self.brushSizeSliderContainView.translatesAutoresizingMaskIntoConstraints = false
+        let brushSizeSliderContainViewHeight = CGFloat(280)
+        NSLayoutConstraint.activate([
+            brushSizeSliderContainView.leadingAnchor.constraint(equalTo: self.view.leadingAnchor, constant: 0),
+            //colorSlider.centerXAnchor.constraint(equalTo: self.view.centerXAnchor),
+            brushSizeSliderContainView.centerYAnchor.constraint(equalTo: self.view.centerYAnchor),
+            brushSizeSliderContainView.widthAnchor.constraint(equalToConstant: 35),
+            brushSizeSliderContainView.heightAnchor.constraint(equalToConstant: brushSizeSliderContainViewHeight),
+            
+        ])
+        
+        self.brushSizeSliderBackgroundImage.image = UIImage(named: "right_shadow.png", in: PreviewEditMedia.bundle(), compatibleWith: nil)
+        self.brushSizeSliderBackgroundImage.translatesAutoresizingMaskIntoConstraints = false
+        self.brushSizeSliderContainView.addSubview(self.brushSizeSliderBackgroundImage)
+        NSLayoutConstraint.activate([
+            self.brushSizeSliderBackgroundImage.leadingAnchor.constraint(equalTo: self.brushSizeSliderContainView.leadingAnchor, constant: 0),
+            self.brushSizeSliderBackgroundImage.trailingAnchor.constraint(equalTo: self.brushSizeSliderContainView.trailingAnchor, constant: -15),
+            self.brushSizeSliderBackgroundImage.topAnchor.constraint(equalTo: self.brushSizeSliderContainView.topAnchor, constant: 0),
+            self.brushSizeSliderBackgroundImage.bottomAnchor.constraint(equalTo: self.brushSizeSliderContainView.bottomAnchor, constant: 0),
+            
+        ])
+        
+        //self.brushSizeSliderContainView.backgroundColor = UIColor.black.withAlphaComponent(0.5)
+        self.brushSizeSliderContainView.addSubview(brushSizeSlider)
+        brushSizeSlider.translatesAutoresizingMaskIntoConstraints = false
+        NSLayoutConstraint.activate([
+            brushSizeSlider.leadingAnchor.constraint(equalTo: self.brushSizeSliderContainView.leadingAnchor, constant: 15),
+            brushSizeSlider.centerYAnchor.constraint(equalTo: self.brushSizeSliderContainView.centerYAnchor),
+            brushSizeSlider.widthAnchor.constraint(equalToConstant: 5),
+            brushSizeSlider.heightAnchor.constraint(equalToConstant: brushSizeSliderContainViewHeight - 40),
+            
+        ])
+        
+        self.brushSizeSliderContainView.isHidden = true
+        
+        
+        /*
+        self.view.addSubview(colorSlider)
         colorSlider.isHidden = true
         let colorSliderHeight = CGFloat(240)
         colorSlider.translatesAutoresizingMaskIntoConstraints = false
@@ -486,6 +536,7 @@ public final class PhotoEditorViewController: UIViewController, CropViewControll
             colorSlider.heightAnchor.constraint(equalToConstant: colorSliderHeight),
             
         ])
+        */
     }
     
     @objc func changedColor(slider: ColorSlider) {
@@ -643,7 +694,7 @@ public final class PhotoEditorViewController: UIViewController, CropViewControll
     @IBAction func doneButtonTapped(_ sender: Any) {
         view.endEditing(true)
         doneButton.isHidden = true
-        colorSlider.isHidden = true
+        self.brushSizeSliderContainView.isHidden = true
         colorPickerView.isHidden = true
         tempImageView.isUserInteractionEnabled = true
         hideToolbar(hide: false)
@@ -681,7 +732,7 @@ public final class PhotoEditorViewController: UIViewController, CropViewControll
     
     @objc func keyboardWillShow(notification: NSNotification) {
         doneButton.isHidden = false
-        colorSlider.isHidden = false
+        self.brushSizeSliderContainView.isHidden = true
         colorPickerView.isHidden = false
         colorsCollectionView.reloadData()
         self.colorsCollectionView.selectItem(at: IndexPath(item: self.textColorSelectedIndex, section: 0), animated: false, scrollPosition: .left)
@@ -811,11 +862,10 @@ public final class PhotoEditorViewController: UIViewController, CropViewControll
     
     
     @IBAction func pencilButtonTapped(_ sender: Any) {
-        
         isDrawing = true
         tempImageView.isUserInteractionEnabled = false
         doneButton.isHidden = false
-        colorSlider.isHidden = false
+        self.brushSizeSliderContainView.isHidden = false
         colorPickerView.isHidden = false
         colorsCollectionView.reloadData()
         colorsCollectionView.selectItem(at: IndexPath(item: self.drawColorSelectedIndex, section: 0), animated: false, scrollPosition: .left)

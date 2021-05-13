@@ -13,7 +13,7 @@ extension PhotoEditorViewController {
     override public func touchesBegan(_ touches: Set<UITouch>,
                                       with event: UIEvent?){
         if isDrawing {
-            swiped = false
+            swiped = true
             if let touch = touches.first {
                 lastPoint = touch.location(in: self.tempImageView)
                 bezierCurvePoints.append(lastPoint)
@@ -45,6 +45,7 @@ extension PhotoEditorViewController {
                 lastPoint = currentPoint
             }
             */
+            swiped = true
             if let touch = touches.first {
                 let point = touch.location(in: canvasView)
                 bezierCurvePoints.append(point)
@@ -85,6 +86,7 @@ extension PhotoEditorViewController {
     override public func touchesEnded(_ touches: Set<UITouch>,
                                       with event: UIEvent?){
         if isDrawing {
+            swiped = false
             /*
             if !swiped {
                 // draw a single point
@@ -124,7 +126,6 @@ extension PhotoEditorViewController {
     
     private func drawLine() {
         UIGraphicsBeginImageContextWithOptions(tempImageView.frame.size, false, UIScreen.main.scale)
-        
         
         /*
         context.setFillColor(color.cgColor)
