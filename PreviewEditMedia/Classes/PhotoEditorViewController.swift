@@ -175,8 +175,10 @@ open class PreviewEditMedia {
         EditMediaSetting.shared.languageApp = EditMediaLanguage(rawValue: languageInt) ?? EditMediaLanguage.en
         EditMediaSetting.shared.loadLocalized()
         
+        //
+        
         let storyboard = UIStoryboard(name: "PhotoEditor", bundle: PreviewEditMedia.bundle())
-        let vc = storyboard.instantiateViewController(withIdentifier: "PhotoEditorViewController") as! PhotoEditorViewController
+        let vc = PhotoEditorViewController(nibName: "PhotoEditorViewController", bundle: PreviewEditMedia.bundle())//storyboard.instantiateViewController(withIdentifier: "PhotoEditorViewController") as! PhotoEditorViewController
         vc.saveImageToLibrary = saveImageToLibrary
         vc.endEdited = endEdited
         vc.canceled = canceled
@@ -209,9 +211,7 @@ public final class PhotoEditorViewController: UIViewController, CropViewControll
     @IBOutlet weak var canvasView: UIView!
     //To hold the image
     @IBOutlet var imageView: UIImageView!
-    @IBOutlet var videoViewContainer: UIView!
     @IBOutlet weak var imageViewHeightConstraint: NSLayoutConstraint!
-    @IBOutlet weak var videoViewHeightConstraint: NSLayoutConstraint!
     
     // video output
     
@@ -229,7 +229,6 @@ public final class PhotoEditorViewController: UIViewController, CropViewControll
     @IBOutlet weak var bottomToolbar: UIView!
     @IBOutlet weak var bottomGradient: UIView!
     
-    @IBOutlet weak var tickerButton: UIButton!
     @IBOutlet weak var drawButton: UIButton!
     @IBOutlet weak var cropButton: UIButton!
     @IBOutlet weak var textButton: UIButton!
@@ -297,6 +296,8 @@ public final class PhotoEditorViewController: UIViewController, CropViewControll
             self.brushSizeSliderContainView.isHidden = swiped
             self.colorPickerView.isHidden = swiped
             self.doneButton.isHidden = swiped
+            self.topGradient.isHidden = swiped
+            self.bottomGradient.isHidden = swiped
         }
     }
     var opacity: CGFloat = 1.0
@@ -368,30 +369,18 @@ public final class PhotoEditorViewController: UIViewController, CropViewControll
         deleteView.layer.borderColor = UIColor.red.cgColor
         deleteView.clipsToBounds = true
         
-        deleteImageView.tintColor = UIColor.white
-        deleteImageView.image = UIImage(named: "PEM-delete-icon.png", in: PreviewEditMedia.bundle(), compatibleWith: nil)?.withRenderingMode(.alwaysTemplate)
+        //deleteImageView.tintColor = UIColor.white
+        //deleteImageView.image = UIImage(named: "PEM-delete-icon.png", in: PreviewEditMedia.bundle(), compatibleWith: nil)?.withRenderingMode(.alwaysTemplate)
     
-        tickerButton.isHidden = true
-        topGradient.isHidden = true
-        bottomGradient.isHidden = true
-       /*
-        if switchCam {
-            videoViewContainer.transform = CGAffineTransform(scaleX: -1, y: 1)
-        } else {
-            videoViewContainer.transform = CGAffineTransform(scaleX: 1, y: 1)
-        }
-        
-        */
         
         if checkVideoOrIamge {
-            videoViewContainer.isHidden = true
             imageView.contentMode = UIView.ContentMode.scaleAspectFit
           // tempImageView.contentMode = UIViewContentMode.scaleAspectFit
-           canvasView.frame = CGRect(x: 0, y: 0, width: imageView.frame.size.width, height: imageView.frame.size.height)
-           tempImageView.frame = CGRect(x: 0, y: 0, width: imageView.frame.size.width, height: imageView.frame.size.height)
+           //canvasView.frame = CGRect(x: 0, y: 0, width: imageView.frame.size.width, height: imageView.frame.size.height)
+           //tempImageView.frame = CGRect(x: 0, y: 0, width: imageView.frame.size.width, height: imageView.frame.size.height)
             
             imageView.isHidden = false
-            imageView.image = photo
+            self.setImageView(image: photo!)
 
            // canvasView.layer.cornerRadius = 10
           //  self.canvasView.layer.masksToBounds = true
@@ -400,7 +389,6 @@ public final class PhotoEditorViewController: UIViewController, CropViewControll
             
         } else {
             
-            videoViewContainer.isHidden = true
             imageView.isHidden = true
             
             //imageView.image = (UIImage(named: "pic")!)
@@ -611,7 +599,7 @@ public final class PhotoEditorViewController: UIViewController, CropViewControll
         maskLayer.add(pathAnimation, forKey: "path")
         maskLayer.path = clipPath.cgPath
         
-        self.canvasView.layer.addSublayer(maskLayer)
+        //self.canvasView.layer.addSublayer(maskLayer)
         
         self.maskLayer = maskLayer
     }
@@ -725,7 +713,7 @@ public final class PhotoEditorViewController: UIViewController, CropViewControll
     func cropViewController(_ cropViewController: CropViewController, didCropToImage image: UIImage, withRect cropRect: CGRect, angle: Int) {
         self.croppedRect = cropRect
         self.croppedAngle = angle
-        self.imageView.image = image
+        self.setImageView(image: image)
         cropViewController.dismiss(animated: true, completion: nil)
         self.refreshShapeLayer()
     }
@@ -913,7 +901,16 @@ public final class PhotoEditorViewController: UIViewController, CropViewControll
         })
     }
     
+    func setImageView(image: UIImage) {
+        imageView.image = image
+        let size = image.suitableSize(widthLimit: UIScreen.main.bounds.width)
+        imageViewHeightConstraint.constant = (size?.height)!
+    }
+    
+    
     func hideToolbar(hide: Bool) {
+        //topGradient.isHidden = hide
+        //bottomGradient.isHidden = hide
         topToolbar.isHidden = hide
         bottomToolbar.isHidden = hide
      
@@ -1273,13 +1270,15 @@ public final class PhotoEditorViewController: UIViewController, CropViewControll
     
     func getFinalImage() -> UIImage? {
         let image = canvasView.toImage()
+        return image
+        /*
         let rect = self.getImageFrameInImageView(imageView: self.imageView)
         if let cgImage = image.toCIImage()?.toCGImage(), let imageRef = cgImage.cropping(to: rect) {
             let croppedImage = UIImage(cgImage: imageRef)
             return croppedImage
         }
         return nil
-        
+        */
     }
     
     

@@ -1,6 +1,6 @@
 {
   "name": "PreviewEditMedia",
-  "version": "0.1.16",
+  "version": "0.1.17",
   "summary": "A short description of PreviewEditMedia.",
   "description": "TODO: Add long description of the pod here.",
   "homepage": "https://github.com/huy-luvapay/PreviewEditMedia",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/huy-luvapay/PreviewEditMedia.git",
-    "tag": "0.1.16"
+    "tag": "0.1.17"
   },
   "platforms": {
     "ios": "10.0"
