@@ -543,7 +543,7 @@ public final class PhotoEditorViewController: UIViewController, CropViewControll
         config.textColor = UIColor.white
         config.textAlignment = NSTextAlignment.center
     
-        FTPopOverMenu.showForSender(sender: self.brushButton, with: ["", ""], menuImageArray: [UIImage(named: "brush1.png", in: PreviewEditMedia.bundle(), compatibleWith: nil)!, UIImage(named: "brush2.png", in: PreviewEditMedia.bundle(), compatibleWith: nil)!], config: config) {[weak self] (index) in
+        FTPopOverMenu.presentForSender(sender: self.brushButton, with: ["", ""], menuImageArray: [UIImage(named: "brush1.png", in: PreviewEditMedia.bundle(), compatibleWith: nil)!, UIImage(named: "brush2.png", in: PreviewEditMedia.bundle(), compatibleWith: nil)!], config: config) {[weak self] (index) in
             guard let `self` = self else { return }
             if(index == 0) {
                 self.brushStyle = .normal

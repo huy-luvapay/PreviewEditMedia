@@ -10,15 +10,15 @@ import UIKit
 
 extension FTPopOverMenu {
     
-    public class func showForSender(sender: UIView, with menuArray: [FTMenuObject], menuImageArray: [Imageable]? = nil, popOverPosition: FTPopOverPosition = .automatic, config: FTConfiguration? = nil, done: ((NSInteger)->())?, cancel: (()->())? = nil) {
+    public class func presentForSender(sender: UIView, with menuArray: [FTMenuObject], menuImageArray: [Imageable]? = nil, popOverPosition: FTPopOverPosition = .automatic, config: FTConfiguration? = nil, done: ((NSInteger)->())?, cancel: (()->())? = nil) {
         FTPopOverMenu.shared.showForSender(sender: sender, or: nil, with: menuArray, menuImageArray: menuImageArray, popOverPosition: popOverPosition, config: config, done: done, cancel: cancel)
     }
 
-    public class func showForEvent(event: UIEvent, with menuArray: [FTMenuObject], menuImageArray: [Imageable]? = nil, popOverPosition: FTPopOverPosition = .automatic, config: FTConfiguration? = nil, done: ((NSInteger)->())?, cancel: (()->())? = nil) {
+    public class func presentForEvent(event: UIEvent, with menuArray: [FTMenuObject], menuImageArray: [Imageable]? = nil, popOverPosition: FTPopOverPosition = .automatic, config: FTConfiguration? = nil, done: ((NSInteger)->())?, cancel: (()->())? = nil) {
         FTPopOverMenu.shared.showForSender(sender: event.allTouches?.first?.view!, or: nil, with: menuArray, menuImageArray: menuImageArray, popOverPosition: popOverPosition, config: config, done: done, cancel: cancel)
     }
 
-    public class func showFromSenderFrame(senderFrame: CGRect, with menuArray: [FTMenuObject], menuImageArray: [Imageable]? = nil,popOverPosition: FTPopOverPosition = .automatic, config: FTConfiguration? = nil, done: ((NSInteger)->())?, cancel: (()->())? = nil) {
+    public class func presentFromSenderFrame(senderFrame: CGRect, with menuArray: [FTMenuObject], menuImageArray: [Imageable]? = nil,popOverPosition: FTPopOverPosition = .automatic, config: FTConfiguration? = nil, done: ((NSInteger)->())?, cancel: (()->())? = nil) {
         FTPopOverMenu.shared.showForSender(sender: nil, or: senderFrame, with: menuArray, menuImageArray: menuImageArray, popOverPosition: popOverPosition, config: config, done: done, cancel: cancel)
     }
     
